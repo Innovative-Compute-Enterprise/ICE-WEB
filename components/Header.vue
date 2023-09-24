@@ -1,11 +1,13 @@
 <template>
-  <header class="fixed top-0 left-0 w-full bg-opacity-0 z-50">
-    <div class="container mx-auto flex justify-between items-center p-4">
+  <header class="fixed top-0 w-full bg-opacity-0 z-50">
+    <div class="font">
+    <div class="container max-w-full flex justify-between items-center px-8 py-4">
       <Logo />
-      <div class="flex bg-black p-2 rounded-lg">
+      <div class="flex bg-black p-2 rounded-xl">
         <NavDropdown />
         <ContactButton />
       </div>
+    </div>
     </div>
   </header>
 </template>
@@ -18,5 +20,8 @@ import ContactButton from './ContactButton.vue';
 </script>
 
 <style scoped>
-/* Custom styling if needed */
+.font{
+  font-family: CustomHelveticaNeue; 
+
+}
 </style>

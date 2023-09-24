@@ -1,6 +1,6 @@
 <template>
     <div class="hero-text-container">
-      <p class="text-black">Your Text Here</p>
+      <p class="text-black pl-8">Your Text Here</p>
     </div>
   </template>
   
@@ -16,7 +16,7 @@
     
   }
 p {
-    font-size: 2rem;
+    font-size: 3.25rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2rem;

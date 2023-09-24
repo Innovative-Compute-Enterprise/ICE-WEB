@@ -1,7 +1,7 @@
 <template>
     <div class="hero-video-container">
       <video autoplay loop muted class="hero-video">
-        <source src="@/assets/your-video.mp4" type="video/mp4">
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
       </video>
     </div>
   </template>

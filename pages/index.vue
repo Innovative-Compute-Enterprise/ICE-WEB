@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto p-4">
+  <section>
     <HeroSection />
   </section>
 </template>
@@ -11,6 +11,7 @@ import HeroSection from '~/components/HeroSection.vue';
 
 <style scoped>
 body {
+
   background-color: #FEFEFE;
 }
 </style>
