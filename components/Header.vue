@@ -1,9 +1,9 @@
 <template>
   <header class="fixed top-0 w-full bg-opacity-0 z-50">
     <div class="font">
-    <div class="container max-w-full flex justify-between items-center px-8 py-4">
+    <div class="container max-w-full flex justify-between items-center px-2 py-2 md:px-8 md:py-4 lg:px-8 lg:py-4 xl:px-8 xl:py-4 ">
       <Logo />
-      <div class="flex bg-black p-2 rounded-xl">
+      <div class="flex bg-black p-[4.448px] gap-2 rounded-xl items-center justify-center ">
         <NavDropdown />
         <ContactButton />
       </div>
@@ -21,7 +21,7 @@ import ContactButton from './ContactButton.vue';
 
 <style scoped>
 .font{
-  font-family: CustomHelveticaNeue; 
+  font-family: 'Helvetica Neue Medium', sans-serif;
 
 }
 </style>

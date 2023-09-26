@@ -11,7 +11,6 @@ import HeroSection from '~/components/HeroSection.vue';
 
 <style scoped>
 body {
-
   background-color: #FEFEFE;
 }
 </style>

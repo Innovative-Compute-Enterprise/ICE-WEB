@@ -1,7 +1,7 @@
 
 <template>
   <button :class="isMobile ? mobileButtonClass : desktopButtonClass">
-    TALK TO US
+    CONTACT US
   </button>
 </template>
 
@@ -12,8 +12,8 @@ import { useGlobalState } from '~/composables/useGlobalState';
 const { isMobile } = useGlobalState();
 
 // Define button classes based on device type
-const desktopButtonClass = 'bg-blue-500 hover:bg-white hover:text-black text-white py-2 px-3 rounded text-xl';
-const mobileButtonClass = 'bg-blue-500 hover:bg-white hover:text-black text-white py-1 px-1 rounded text-sm';
+const desktopButtonClass = 'bg-blue-500 hover:bg-white hover:text-black text-white py-3 px-4 rounded-md text-xl';
+const mobileButtonClass = 'bg-blue-500 hover:bg-white hover:text-black text-white py-2 px-2 rounded-md text-md';
 
 </script>
 

@@ -3,8 +3,11 @@
 @import 'tailwindcss/utilities';
 
 @font-face {
-  font-family: 'CustomHelveticaNeue'; /* Unique name */
-  src: url('~assets/fonts/helveticaneue.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Helvetica Neue';
+  src: url('/assets/fonts/HelveticaNe.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Medium';
+  src: url('/assets/fonts/HelveticaNeueMedium.ttf') format('truetype');
 }

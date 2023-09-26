@@ -1,26 +1,22 @@
 <template>
     <div class="hero-text-container">
-      <p class="text-black pl-8">Your Text Here</p>
+      <p class="text-black pl-0 sm:pl-2 md:pl-4 lg:pl-8 xl:pl-8 text-4xl sm:text-5xl md:text-7xl lg:text-7xl xl:text-8xl">ContinuumGlow stands for technological innovation.</p>
     </div>
   </template>
   
   <style scoped>
   .hero-text-container {
+    font-weight: bold;
+    font-family: 'Helvetica Neue Medium', sans-serif;;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     text-align: left;
     color: white;
-    padding: 1rem;
+    padding-bottom: 1rem;
+  
     
-  }
-p {
-    font-size: 3.25rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    padding-bottom: 42px;
   }
   </style>
   
