@@ -8,5 +8,5 @@ console.log('Hello from the app')
 </template>
 
 <style scoped>
-/* Any app styles can go here */
+
 </style>
