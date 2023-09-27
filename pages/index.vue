@@ -2,13 +2,16 @@
   <section>
     <HeroSection />
     <ContextSection />
+    <KeySection />
+    <BookDemoSection />
   </section>
 </template>
 
 <script setup>
 import HeroSection from '~/components/HeroSection.vue';
 import ContextSection from '~/components/ContextSection.vue';
-// Any homepage logic can go here
+import KeySection from '~/components/KeySection.vue';
+import BookDemoSection from '~/components/BookDemoSection.vue'; 
 </script>
 
 <style scoped>

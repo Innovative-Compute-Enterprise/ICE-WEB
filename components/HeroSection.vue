@@ -8,6 +8,7 @@
   <script setup>
   import HeroBackground from './HeroBackground.vue';
   import HeroText from './HeroText.vue';
+  
   </script>
   
   <style scoped>

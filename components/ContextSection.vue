@@ -19,29 +19,33 @@
       </div>
     
       <!-- Stone Section -->
-      <div class="p-4 md:p-16 bg-gray-300 flex flex-col justify-between items-start">
+      <div class="p-6 md:p-16 bg-gray-300 flex flex-col justify-between items-start">
             <!-- Top Section -->
-            <div class="flex-grow flex flex-col justify-between items-start">
-                <h3 class="text-black text-3xl">Top</h3>
-                <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <div class="flex items-center">
+            <div class="flex-grow flex flex-col justify-center items-start">
+              <div>
+                <h3 class="text-black text-4xl p-6">TOP</h3>
+                <p class="text-black p-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <div class="flex items-center p-6">
                 <svg class="h-6 w-6 mr-2 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <!-- Your SVG icon content here -->
                 </svg>
                 <a href="#" class="text-black">Link</a>
                 </div>
+              </div>
             </div>
 
             <!-- Bottom Section -->
-            <div class="flex-grow flex flex-col justify-between items-start">
-                <h3 class="text-black text-3xl">Bottom</h3>
-                <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <div class="flex items-center">
+            <div class="flex-grow flex flex-col justify-center items-start">
+              <div>
+                <h3 class="text-black text-3xl p-6">BOTTOM</h3>
+                <p class="text-black p-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <div class="flex items-center p-6">
                 <svg class="h-6 w-6 mr-2 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <!-- Your SVG icon content here -->
                 </svg>
                 <a href="#" class="text-black">Link</a>
                 </div>
+              </div>
             </div>
             </div>
 
@@ -49,7 +53,7 @@
   </template>
   
   <script setup>
-    // Any logic for this section can be placed here
+   
   </script>
   
   <style scoped>

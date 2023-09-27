@@ -22,7 +22,7 @@
     
     <!-- Dropdown styling based on isMobile -->
     <div v-if="isDropdownOpen" :class="isMobile ? mobileDropdownClass : desktopDropdownClass">
-      <p class="p-2">ContinuumGlow stands for continuous technological innovation that brings a glow to your operations and business decisions</p>
+      <p class="p-2">Continuum Glow stands for continuous technological innovation that brings a glow to your operations and business decisions</p>
       <div class="flex space-x-2 py-2">
     <a href="#" class="text-blue-600">
       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
