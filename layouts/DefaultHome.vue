@@ -1,11 +1,19 @@
 <template>
-    <div>
-      <Header />
-      <Nuxt />
-    </div>
-  </template>
-  
-  <script setup>
-  import Header from '~/components/Header.vue';
-  </script>
-  
+  <div>
+    <Header />
+    <NuxtLoadingIndicator/>
+    <Nuxt />
+  </div>
+</template>
+
+<script setup>
+import Header from '~/components/Header.vue';
+import NuxtLoadingIndicator from '~/components/NuxtLoadingIndicator.vue';
+</script>
+
+<style scoped>
+body {
+  overflow-x: hidden;
+  background-color: #FEFEFE;
+}
+</style>
