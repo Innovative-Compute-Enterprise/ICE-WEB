@@ -1,7 +1,8 @@
 export default defineNuxtConfig({
-  plugins: [
-    
+  
+  plugins: [  
     '~/plugins/global-state.js'
+    
   ],
   css: ['~/assets/css/main.css'],
   postcss: {
@@ -10,5 +11,4 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  
 })
