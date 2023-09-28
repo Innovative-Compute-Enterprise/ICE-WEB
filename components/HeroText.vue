@@ -1,6 +1,6 @@
 <template>
     <div class="hero-text-container">
-      <p class="text-black pb-6 pl-8 sm:pl-2 md:pl-4 lg:pl-8 xl:pl-8 text-4xl sm:text-5xl md:text-7xl lg:text-7xl xl:text-8xl">Continuum Glow stands for technological innovation.</p>
+      <p class="w-auto h-auto text-black pb-6 pl-4 sm:pl-2 md:pl-4 lg:pl-8 xl:pl-8 text-4xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl">Continuum Glow stands for technological innovation.</p>
     </div>
   </template>
   
@@ -15,6 +15,7 @@
     text-align: left;
     color: white;
     padding-bottom: 1rem;
+    z-index: 3;
   
     
   }
