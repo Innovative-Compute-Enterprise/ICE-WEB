@@ -50,8 +50,8 @@ const isDropdownOpen = ref(false);
 const { isMobile } = useGlobalState();
 
 // Define classes based on device type
-const desktopButtonClass = 'bg-black text-white leading-8 py-[10px] pl-[22px] pr-[5px] rounded text-xl';
-const mobileButtonClass = 'bg-black text-white leading-8 py-[4px] pl-[11px] pr-[5px] rounded text-md sm:text-md lg:text-xl xl:text-xl xs:text-xs';
+const desktopButtonClass = 'bg-black text-white leading-8 py-[10px] pl-[22px] pr-[5px] rounded text-sm sm:text-md md:text-lg lg:text-xl xl:text-xl';
+const mobileButtonClass = 'bg-black text-white leading-8 py-[4px] pl-[11px] pr-[5px] rounded text-sm sm:text-md md:text-lg lg:text-xl xl:text-xl ';
 
 const desktopDropdownClass = 'absolute left-0 mt-2 md:w-[325px] lg:w-[325px] xl:w-[325px] rounded-md shadow-md bg-white p-4';
 const mobileDropdownClass = 'absolute left-0 mt-2 w-[252px] rounded-md shadow-md bg-white p-2';
