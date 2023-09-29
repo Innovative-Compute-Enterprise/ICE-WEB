@@ -1,6 +1,6 @@
 <template>
   <div class="hero-video-container">
-    <video autoplay loop muted class="hero-video">
+    <video autoplay loop muted playsinline class="hero-video">
       <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
     </video>
     <div class="overlay"></div>
