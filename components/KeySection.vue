@@ -21,7 +21,7 @@
     <ul class="md:col-start-3">
       <li v-for="item in principles" :key="item" class="bg-white flex flex-col items-start p-[20px] md:p-[40px]">
         <div class="w-8 h-8 bg-zinc-800 rounded-sm"></div>
-        <div class="text-zinc-800 text-xl font-normal leading-10">{{ item }}</div>
+        <div class="text-zinc-800 text-2xl font-normal leading-10">{{ item }}</div>
       </li>
     </ul>
   </div>

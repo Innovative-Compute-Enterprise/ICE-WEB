@@ -1,20 +1,20 @@
 <template>
-    <div class="w-full h-full grid md:grid-cols-2 md:grid-rows-2 grid-cols-1">
+  <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[minmax(600px,1fr)]">
       <!-- Blue Section -->
-      <div class="min-h-[800px] p-8 md:p-16 xl:p-16 lg:p-16 bg-blue-400 flex flex-col justify-between items-start">
-        <h1 class="text-white text-7xl">Blue Section Title</h1>
-        <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-      </div>
+      <div class="p-12 md:p-16 xl:p-16 lg:p-16 bg-blue-400 flex flex-col justify-between items-start">
+      <h1 class="text-white text-6xl">Blue Section Title</h1>
+      <p class="text-white text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </div>
       
       <!-- White Section 1 -->
-      <div class="min-h-[800px] p-8 md:p-16 xl:p-16 lg:p-16 bg-white flex flex-col justify-between items-start">
-        <h1 class="text-black text-7xl">White Section 1 Title</h1>
-        <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="p-12 md:p-16 xl:p-16 lg:p-16 bg-white flex flex-col justify-between items-start">
+        <h1 class="text-black text-6xl">White Section 1 Title</h1>
+        <p class="text-black text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     
       <!-- White Section 2 -->
-      <div class="min-h-[800px] p-8 md:p- xl:p-16 lg:p-16 bg-rose-700  md:bg-white lg:bg-white xl:bg-white flex flex-col justify-between items-start">
-        <h1 class="text-black text-7xl">White Section 2 Title</h1>
+      <div class="p-12 md:p-16 xl:p-16 lg:p-16 bg-rose-700  md:bg-white lg:bg-white xl:bg-white flex flex-col justify-between items-start">
+        <h1 class="text-black text-6xl">White Section 2 Title</h1>
         <p class="text-black"></p>
       </div>
     

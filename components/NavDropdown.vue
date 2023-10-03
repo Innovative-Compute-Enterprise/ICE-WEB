@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <!-- Button styling based on isMobile -->
-    <button @click="toggleDropdown" :class="isMobile ? mobileButtonClass : desktopButtonClass">
+    <button @click="toggleDropdown" :class="isMobile ? mobileButtonClass : desktopButtonClass" class="gap-2">
       ABOUT US
       <svg 
          v-if="!isDropdownOpen"
@@ -50,8 +50,8 @@ const isDropdownOpen = ref(false);
 const { isMobile } = useGlobalState();
 
 // Define classes based on device type
-const desktopButtonClass = 'bg-black text-white leading-8 py-[10px] pl-[22px] pr-[5px] rounded-sm text-xs sm:text-md md:text-lg lg:text-xl xl:text-xl';
-const mobileButtonClass = 'bg-black text-white leading-8 py-[4px] pl-[11px] pr-[5px] rounded-sm text-xs sm:text-md md:text-lg lg:text-xl xl:text-xl ';
+const desktopButtonClass = 'bg-black text-white leading-8 px-2 py-[10px] pl-[22px] pr-[5px] rounded-sm text-xs sm:text-md md:text-lg lg:text-xl xl:text-2xl';
+const mobileButtonClass = 'bg-black text-white leading-8 px-2 py-[4px] pl-[11px] pr-[5px] rounded-sm text-md sm:text-md md:text-lg lg:text-xl xl:text-2xl ';
 
 const desktopDropdownClass = 'absolute left-0 mt-2 md:w-[250px] lg:w-[325px] xl:w-[325px] rounded-md shadow-md bg-white p-4';
 const mobileDropdownClass = 'absolute left-0 mt-2 w-[200px] rounded-md shadow-md bg-white p-2';
