@@ -3,13 +3,13 @@
     <div class="font">
       <div class="container max-w-full flex justify-between items-center px-4 py-2 md:px-16 md:py-4 lg:px-16 lg:py-4 xl:px-16 xl:py-4 ">
         <Logo />
-        <div class="hidden md:flex bg-black p-1 md:p-[6px] gap-1 md:gap-3 rounded-lg items-center justify-center ">
+        <div class="hidden md:flex bg-black p-[6px] rounded-lg items-center justify-center ">
           <NavDropdown />
           <ContactButton />
         </div>
       </div>
       <!-- Mobile Menu fixed at bottom -->
-      <div v-cloak class="md:hidden fixed bottom-4 left-7 right-7 flex bg-black p-2 rounded-md items-center justify-between align-bottom ">
+      <div v-cloak class="md:hidden fixed bottom-4 left-7 right-7 flex bg-black p-1 rounded-md items-center justify-between align-bottom ">
         <NavDropdown />
         <ContactButton />
       </div>
@@ -30,7 +30,7 @@ import ContactButton from './ContactButton.vue';
 }
 [v-cloak] {
     display: none;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
   }
  
 </style>
