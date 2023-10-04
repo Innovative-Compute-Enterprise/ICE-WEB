@@ -30,5 +30,7 @@ import ContactButton from './ContactButton.vue';
 }
 [v-cloak] {
     display: none;
+    transition: all 0.3s ease;
   }
+ 
 </style>

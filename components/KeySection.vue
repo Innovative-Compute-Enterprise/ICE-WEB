@@ -13,7 +13,7 @@
     </div>
 
     <!-- Key Principles Section -->
-    <div class="h-full w-auto bg-zinc-800 p-4 md:col-start-2">
+    <div class="h-full w-auto bg-zinc-800 p-6 mb-28 md:col-start-2">
       <div class="sticky top-8 text-gray-200  text-5xl lg:text-[85px] font-normal leading-[91.78px] tracking-tight">Key principles</div>
     </div>
 
