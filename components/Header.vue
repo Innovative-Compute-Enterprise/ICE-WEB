@@ -9,7 +9,7 @@
         </div>
       </div>
       <!-- Mobile Menu fixed at bottom -->
-      <div class="md:hidden fixed bottom-4 left-8 right-8 flex bg-black p-2 rounded-lg items-center justify-between ">
+      <div v-cloak class="md:hidden fixed bottom-4 left-7 right-7 flex bg-black p-2 rounded-md items-center justify-between align-bottom ">
         <NavDropdown />
         <ContactButton />
       </div>
@@ -28,4 +28,7 @@ import ContactButton from './ContactButton.vue';
 .font{
   font-family: 'Helvetica Neue Medium', sans-serif;
 }
+[v-cloak] {
+    display: none;
+  }
 </style>
