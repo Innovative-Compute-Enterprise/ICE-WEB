@@ -1,7 +1,7 @@
 
 <template>
   <button :class="isMobile ? mobileButtonClass : desktopButtonClass">
-    LOGIN
+    TALK
   </button>
 </template>
 

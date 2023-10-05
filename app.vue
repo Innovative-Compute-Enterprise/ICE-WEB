@@ -1,5 +1,5 @@
 <script setup lang="ts">
-console.log('Hello from the app')
+console.log('Be the Change.')
 </script>
 
 <template>
