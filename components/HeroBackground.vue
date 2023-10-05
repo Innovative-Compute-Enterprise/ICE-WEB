@@ -1,11 +1,26 @@
 <template>
   <div class="hero-video-container">
-    <video autoplay loop muted playsinline class="hero-video">
+    <video ref="videoRef" loop muted playsinline class="hero-video">
       <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
     </video>
     <div class="overlay"></div>
   </div>
 </template>
+
+<script setup>
+import { onMounted, ref } from 'vue';
+
+const videoRef = ref(null);
+
+onMounted(() => {
+  const videoElement = videoRef.value;
+  if (videoElement) {
+    videoElement.play().catch(error => {
+      console.error("Autoplay was prevented:", error);
+    });
+  }
+});
+</script>
 
 <style scoped>
 .hero-video-container {
