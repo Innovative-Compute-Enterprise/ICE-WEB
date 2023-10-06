@@ -2,18 +2,18 @@
   <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[minmax(500px,1fr)]">
       <!-- Blue Section -->
       <div class="p-12 md:p-16 bg-blue-500 flex flex-col justify-between items-start">
-      <h1 class="text-white text-5xl mb-6 md:mb-0">Blue Section Title</h1>
+      <h1 class="text-white text-5xl mb-12 md:mb-0">Blue Section Title</h1>
       <p class="text-white text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </div>
       
       <!-- White Section 1 -->
       <div class="p-12 md:p-16 bg-white flex flex-col justify-between items-start">
-        <h1 class="text-black text-5xl mb-6 md:mb-0">White Section 1 Title</h1>
+        <h1 class="text-black text-5xl mb-12 md:mb-0">White Section 1 Title</h1>
         <p class="text-black text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     
       <!-- White Section 2 -->
-      <div class="p-12 md:p-16 bg-rose-700  md:bg-white flex flex-col justify-between items-start">
+      <div class="p-24 md:p-16 bg-rose-700  md:bg-white flex flex-col justify-between items-start">
         <h1 class="text-black text-5xl">White Section 2 Title</h1>
         <p class="text-black"></p>
       </div>
