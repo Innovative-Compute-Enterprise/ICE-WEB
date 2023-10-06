@@ -5,11 +5,10 @@
       ABOUT US
       <svg v-if="!isDropdownOpen"
       xmlns="http://www.w3.org/2000/svg" 
-      fill="none" viewBox="0 0 24 24" 
-      stroke-width="1.5" stroke="currentColor" 
-      class="w-8 h-8 inline-block pb-1">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+      fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 inline-block pb-1">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
       </svg>
+
  
       <svg v-else xmlns="http://www.w3.org/2000/svg" 
       fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
@@ -48,11 +47,11 @@ const isDropdownOpen = ref(false);
 const { isMobile } = useGlobalState();
 
 // Define classes based on device type
-const desktopButtonClass = 'bg-black text-white leading-8 px-5 py-2 rounded-sm text-lg xl:text-2xl';
-const mobileButtonClass = 'bg-black text-white leading-8 px-5 py-2 rounded-sm text-lg xl:text-2xl ';
+const desktopButtonClass = 'bg-black text-white leading-8 px-5 py-2 rounded-sm text-[17px] xl:text-[20px]';
+const mobileButtonClass = 'bg-black text-white leading-8 px-5 py-2 rounded-sm text-[17px] xl:text-[20px] ';
 
-const desktopDropdownClass = 'absolute left-0 mt-2 md:w-[270px] lg:w-[270px] xl:w-[325px] rounded-md shadow-md bg-white p-4';
-const mobileDropdownClass = 'absolute bottom-full mb-2 left-0 w-[260px] rounded-md shadow-md bg-white p-2';
+const desktopDropdownClass = 'absolute left-0 mt-2 md:w-[270px] lg:w-[270px] xl:w-[325px] rounded-md shadow-md bg-white p-4 text-[17px]';
+const mobileDropdownClass = 'absolute bottom-full mb-2 left-0 w-[260px] rounded-md shadow-md bg-white p-2 text-[14px]';
 
 const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value;
