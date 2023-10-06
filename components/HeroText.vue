@@ -15,7 +15,7 @@
     color: white;
     padding-bottom: 1.5rem;
     z-index: 3;
-    font-weight: 500;
+    font-weight: 700;
     line-height: screen;
     
   }
