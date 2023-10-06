@@ -9,10 +9,12 @@
         </div>
       </div>
       <!-- Mobile Menu fixed at bottom -->
+      <div class="flex">
       <div v-cloak class="md:hidden fixed bottom-4 left-7 right-7 flex bg-black p-1 rounded-md items-center justify-between align-bottom ">
         <NavDropdown />
         <ContactButton />
       </div>
+    </div>
     </div>
   </header>
 </template>

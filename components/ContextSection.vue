@@ -1,14 +1,14 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[minmax(500px,1fr)]">
       <!-- Blue Section -->
-      <div class="p-12 md:p-16 bg-blue-400 flex flex-col justify-between items-start">
-      <h1 class="text-white text-5xl">Blue Section Title</h1>
+      <div class="p-12 md:p-16 bg-blue-500 flex flex-col justify-between items-start">
+      <h1 class="text-white text-5xl mb-6 md:mb-0">Blue Section Title</h1>
       <p class="text-white text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </div>
       
       <!-- White Section 1 -->
       <div class="p-12 md:p-16 bg-white flex flex-col justify-between items-start">
-        <h1 class="text-black text-5xl">White Section 1 Title</h1>
+        <h1 class="text-black text-5xl mb-6 md:mb-0">White Section 1 Title</h1>
         <p class="text-black text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     
@@ -19,11 +19,11 @@
       </div>
     
       <!-- Stone Section -->
-      <div class="p-6 md:p-16 bg-gray-300 flex flex-col justify-between items-start">
+      <div class="p-6 md:p-16 bg-[#0f151d] flex flex-col justify-between items-start">
             <!-- Top Section -->
             <div class="flex-grow flex flex-col justify-center items-start">
-              <div>
-                <h3 class="text-black text-3xl p-6">TOP</h3>
+              <div class="bg-white rounded-tl-[44px] rounded-tr-[22px] shadow-2xl">
+                <h3 class="text-black text-3xl p-6">Top</h3>
                 <p class="text-black p-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 <div class="flex items-center p-6">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 cursor-pointer hover:text-blue-500">
@@ -33,11 +33,11 @@
                 </div>
               </div>
             </div>
-
+            <br>
             <!-- Bottom Section -->
-            <div class="flex-grow flex flex-col justify-center items-start">
-              <div>
-                <h3 class="text-black text-3xl p-6">BOTTOM</h3>
+            <div class="flex-grow flex flex-col justify-center items-start ">
+              <div class="bg-white rounded-br-[22px] shadow-2xl">
+                <h3 class="text-black text-3xl p-6">Bottom</h3>
                 <p class="text-black p-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 <div class="flex items-center p-6">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 cursor-pointer hover:text-blue-500">
@@ -67,6 +67,12 @@
    p{
     font-family: 'Georgia', sans-serif;
     font-size: 17px;
+    font-weight: 500;
+    line-height: 28.17px;
+   }
+   h3{
+    font-family: 'Georgia', sans-serif;
+    font-size: 24px;
     font-weight: 500;
     line-height: 28.17px;
    }

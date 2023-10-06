@@ -50,8 +50,8 @@ const { isMobile } = useGlobalState();
 const desktopButtonClass = 'bg-black text-white leading-8 px-5 py-2 rounded-sm text-[17px] xl:text-[20px]';
 const mobileButtonClass = 'bg-black text-white leading-8 px-5 py-2 rounded-sm text-[17px] xl:text-[20px] ';
 
-const desktopDropdownClass = 'absolute left-0 mt-2 md:w-[270px] lg:w-[270px] xl:w-[325px] rounded-md shadow-md bg-white p-4 text-[17px]';
-const mobileDropdownClass = 'absolute bottom-full mb-2 left-0 w-[260px] rounded-md shadow-md bg-white p-2 text-[14px]';
+const desktopDropdownClass = 'absolute left-0 mt-2 md:w-[250px] lg:w-[255px] xl:w-[278px] rounded-md shadow-md bg-white p-4 text-[17px]';
+const mobileDropdownClass = 'absolute bottom-full mb-2 left-0 w-[290px] rounded-md shadow-md bg-white p-2 text-[14px]';
 
 const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value;
