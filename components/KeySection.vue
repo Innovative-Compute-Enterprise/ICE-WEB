@@ -28,7 +28,7 @@
 
     <!-- List of Principles -->
     <ul class="md:col-start-3">
-      <li v-for="item in principles" :key="item" class="bg-white flex flex-col items-start p-[20px] md:p-[40px]">
+      <li v-for="item in principles" :key="item" class="bg-white flex flex-col items-start p-6 md:p-10">
         <div class="w-8 h-8 bg-[#0f151d] rounded-lg rounded-br-xl"></div>
         <div class="text-[#0f151d] text-[21px] font-semibold leading-10">{{ item }}</div>
       </li>
@@ -53,5 +53,8 @@ export default {
 </script>
 
 <style scoped>
-/* If you have additional styles, place them here */
+ul{
+  font-family: 'Georgia', sans-serif;
+  line-height: 23.17px;
+}
 </style>

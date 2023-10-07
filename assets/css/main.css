@@ -4,10 +4,10 @@
 
 @font-face {
   font-family: 'Helvetica Neue';
-  src: url('/assets/fonts/HelveticaNe.ttf') format('truetype');
+  src: url('/fonts/HelveticaNe.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Helvetica Neue Medium';
-  src: url('/assets/fonts/HelveticaNeueMedium.ttf') format('truetype');
+  src: url('/fonts/HelveticaNeueMedium.ttf') format('truetype');
 }
