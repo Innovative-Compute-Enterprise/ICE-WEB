@@ -60,14 +60,14 @@
   
   <style scoped>
    h1{
-    font-family: 'Helvetica Neue Medium', sans-serif;
+    font-family: 'Georgia', sans-serif;
     font-weight: 600;
     line-height: 90%; 
     font-size: 36px;
     letter-spacing: -1.836px;
    }
    p{
-    font-family: 'Georgia', sans-serif;
+    font-family: 'Helvetica Neue Medium', sans-serif;
     font-size: 21px;
     font-weight: 300;
     line-height: 23.17px;

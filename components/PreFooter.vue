@@ -1,15 +1,15 @@
 <template>
-    <section class="bg-gray-100 py-16 px-8">
-      <div class="container mx-auto">
+    <section class="bg-gray-100 ">
+      <div class="container">
         <div class="flex flex-wrap -mx-8">
   
           <!-- Coluna Esquerda -->
-          <div class="w-full md:w-1/2 px-8 mb-8 md:mb-0">
-            <h2 class="text-3xl font-semibold mb-6">Nosso Processo</h2>
+          <div class="w-full md:w-1/2 p-6 mb-8 md:mb-0 bg-[#0f151d]">
+            <h2 class="text-[48px] md:text-[64px] xl:text-[96px] mb-6 p-6 text-white">Nosso Processo</h2>
           </div>
   
           <!-- Coluna Direita -->
-          <div class="w-full md:w-1/2 px-8">
+          <div class="w-full md:w-1/2 p-6">
             <!-- Item 1 -->
             <div class="flex items-start mb-8">
               <p>Texto descritivo  relacionado ao ícone 1. Explicando o processo ou a característica em questão.</p>
