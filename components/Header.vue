@@ -1,7 +1,7 @@
 <template>
   <header class="fixed top-0 w-full bg-opacity-0 z-50 ">
     <div class="font">
-      <div class="container max-w-full flex justify-between items-center px-4 py-2 md:px-16 md:py-4 lg:px-16 lg:py-4 xl:px-16 xl:py-4 ">
+      <div class="container max-w-full flex justify-between items-center px-4 md:px-8 py-2 md:py-4 lg:py-6 xl:py-8 ">
         <Logo />
         <div class="hidden md:flex bg-black p-[6px] rounded-lg items-center justify-center ">
           <NavDropdown />
@@ -10,7 +10,7 @@
       </div>
       <!-- Mobile Menu fixed at bottom -->
       <div class="flex">
-      <div v-cloak class="md:hidden fixed bottom-4 left-7 right-7 flex bg-black p-1 rounded-md items-center justify-between align-bottom ">
+      <div v-cloak class="md:hidden fixed bottom-4 left-4 right-4 flex bg-black p-1 rounded-md items-center justify-between align-bottom ">
         <NavDropdown />
         <ContactButton />
       </div>
