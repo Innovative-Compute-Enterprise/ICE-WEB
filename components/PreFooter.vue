@@ -1,11 +1,11 @@
 <template>
     <section class="bg-gray-100 ">
       <div class="container">
-        <div class="flex flex-wrap -mx-8">
+        <div class="flex flex-wrap">
   
           <!-- Coluna Esquerda -->
           <div class="w-full md:w-1/2 p-6 mb-8 md:mb-0 bg-[#0f151d]">
-            <h2 class="text-[48px] md:text-[64px] xl:text-[96px] mb-6 p-6 text-white">Nosso Processo</h2>
+            <h2 class="text-[48px] md:text-[64px] xl:text-[96px] mb-6 text-white">Nosso Processo</h2>
           </div>
   
           <!-- Coluna Direita -->
