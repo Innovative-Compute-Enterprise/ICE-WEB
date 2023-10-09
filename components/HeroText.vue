@@ -15,7 +15,7 @@
     color: white;
     padding-bottom: 1.5rem;
     z-index: 3;
-    font-weight: 700;
+    font-weight: 600;
     line-height: screen;
     word-spacing: normal;
     letter-spacing: -1.8px;

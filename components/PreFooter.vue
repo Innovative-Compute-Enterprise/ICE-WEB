@@ -1,32 +1,22 @@
 <template>
-    <section class="bg-gray-100 ">
-      <div class="container">
-        <div class="flex flex-wrap">
-  
-          <!-- Coluna Esquerda -->
-          <div class="w-full md:w-1/2 p-6 mb-8 md:mb-0 bg-[#0f151d]">
-            <h2 class="text-[48px] md:text-[64px] xl:text-[96px] mb-6 text-white">Nosso Processo</h2>
-          </div>
-  
-          <!-- Coluna Direita -->
-          <div class="w-full md:w-1/2 p-6">
-            <!-- Item 1 -->
-            <div class="flex items-start mb-8">
-              <p>Texto descritivo  relacionado ao ícone 1. Explicando o processo ou a característica em questão.</p>
-            </div>
+  <section class="bg-gray-100 grid grid-cols-1 md:grid-cols-2 items-start gap-4">
+    <!-- Coluna Esquerda -->
+    <div class="p-6 bg-[#0f151d] h-full min-h-[200px]">
+      <h2 class="sticky top-8 text-[48px] md:text-[64px] xl:text-[96px] text-white">Nosso processo</h2>
+    </div>
 
-            <!-- Item 2 -->
-            <div class="flex items-start mb-8">
-              <p>Texto descritivo relacionado ao ícone 2. Explicando o processo ou a característica em questão.</p>
-            </div>
-            <!-- Adicione mais itens conforme necessário -->
-          </div>
-  
-        </div>
-      </div>
-    </section>
-  </template>
+    <!-- Coluna Direita --> 
+    <div class="p-6 space-y-8">
+      <!-- Item 1 -->
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 
+      <!-- Item 2 -->
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      
+      <!-- Adicione mais itens conforme necessário -->
+    </div>
+  </section>
+</template>
 
 <script>
 export default {
@@ -52,4 +42,10 @@ export default {
 };
 </script>
 
-  
+<style scoped>
+p {
+  font-family: 'Georgia', sans-serif;
+  font-size: 21.045px;
+  line-height: 23.17px;
+}
+</style>

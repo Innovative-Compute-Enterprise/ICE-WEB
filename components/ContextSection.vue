@@ -1,28 +1,28 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[minmax(500px,1fr)]">
       <!-- Blue Section -->
-      <div class="p-6 md:p-8 bg-blue-500 flex flex-col justify-between items-start">
+      <div class="order-1 p-6 md:p-8 bg-blue-500 flex flex-col justify-between items-start">
       <h1 class="text-white mb-16 md:mb-0">Blue Section Title</h1>
       <p class="text-white mb-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </div>
       
       <!-- White Section 1 -->
-      <div class="p-6 md:p-8 bg-white flex flex-col justify-between items-start">
+      <div class="order-2 p-6 md:p-8 bg-white flex flex-col justify-between items-start">
         <h1 class="text-black mb-16 md:mb-0">White Section 1 Title</h1>
         <p class="text-black mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
-    
+  
       <!-- White Section 2 -->
-      <div class="p-6 md:p-8 bg-rose-700 md:bg-white flex flex-col justify-between items-start">
+      <div class="order-4 md:order-3 p-6 md:p-8 bg-rose-700 md:bg-white flex flex-col justify-between items-start">
         <h1 class="text-black my-6 ">White Section 2 Title</h1>
         <p class="text-black "></p>
       </div>
     
       <!-- Stone Section -->
-      <div class="p-6 md:p-8 bg-[#0f151d] flex flex-col justify-between items-start">
+      <div class="order-3 md:order-4 p-6 md:p-8 bg-[#0f151d] flex flex-col justify-between items-start">
             <!-- Top Section -->
             <div class="flex-grow flex flex-col justify-center items-start pb-1 mt-6">
-              <div class="bg-white rounded-tl-[44px] rounded-tr-[22px] shadow-2xl">
+              <div class="bg-white rounded-tl-[44px] rounded-tr-[22px] shadow-2xl p-4">
                 <h3 class="text-black p-4">Top</h3>
                 <p class="text-black p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 <div class="flex items-center p-4">
@@ -37,7 +37,7 @@
             
             <!-- Bottom Section -->
             <div class="flex-grow flex flex-col justify-center items-start mb-6 ">
-              <div class="bg-white rounded-br-[22px] shadow-2xl">
+              <div class="bg-white rounded-br-[22px] shadow-2xl p-4">
                 <h3 class="text-black p-4">Bottom</h3>
                 <p class="text-black p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 <div class="flex items-center p-4">
