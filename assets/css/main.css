@@ -5,9 +5,11 @@
 @font-face {
   font-family: 'Helvetica Neue';
   src: url('/fonts/HelveticaNe.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Helvetica Neue Medium';
   src: url('/fonts/HelveticaNeueMedium.ttf') format('truetype');
+  font-display: swap;
 }
