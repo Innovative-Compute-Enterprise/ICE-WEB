@@ -1,5 +1,5 @@
 <template>
-    <div class="p-8 bg-white space-y-6 pb-36 md:pb-0">
+    <div class="p-8 md:p-10 bg-white space-y-6 pb-36 md:pb-0 pt-8">
       <h1 class="text-4xl font-semibold text-gray-800">Ready to<br />get started?</h1>
       <div class="email-info space-y-4">
         <h2 class="text-2xl font-medium text-gray-700">E-mail</h2>

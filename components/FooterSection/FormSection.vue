@@ -1,5 +1,5 @@
 <template>
-    <div class="p-8 bg-blue-500 text-white space-y-6">
+    <div class="p-8 md:p-10 bg-blue-500 text-white space-y-6">
       <h1 class="text-4xl font-semibold">Schedule a demo by submitting your contact information</h1>
       <form class="space-y-4">
         <div class="flex flex-col">
