@@ -1,7 +1,7 @@
 <script setup lang="ts">;
 console.log('Be the Change.');
 import Header from '~/components/Header/Header.vue';
-import Footer from '~/components/Footer/Footer.vue';
+import Footer from '~/components/FooterSection/Footer.vue';
 </script>
 
 <template>
