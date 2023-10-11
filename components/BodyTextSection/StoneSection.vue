@@ -1,5 +1,5 @@
 <template>
-<div class="order-3 md:order-4 p-6 md:p-8 bg-[#0f151d] flex flex-col justify-between items-start">
+<div class="order-3 md:order-4 p-8 md:p-10 bg-[#0f151d] flex flex-col justify-between items-start">
             <!-- Top Section -->
             <div class="flex-grow flex flex-col justify-center items-start pb-1 mt-6">
               <div class="bg-white rounded-tl-[44px] rounded-tr-[22px] shadow-2xl p-4">
@@ -36,13 +36,6 @@
 </script>
 
 <style scoped>
-   h1{
-    font-family: 'Georgia', sans-serif;
-    font-weight: 600;
-    line-height: 90%; 
-    font-size: 36px;
-    letter-spacing: -1.836px;
-   }
    p{
     font-family: 'Helvetica Neue Medium', sans-serif;
     font-size: 21px;
@@ -51,8 +44,8 @@
    }
    h3{
     font-family: 'Georgia', sans-serif;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 500;
-    line-height: 30.17px;
+    line-height: 34.17px;
    }
 </style>

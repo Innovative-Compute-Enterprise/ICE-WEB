@@ -1,6 +1,6 @@
 <template>
     <div class="hero-text-container bottom">
-      <h1 class="w-auto h-auto text-black pb-20 md:pb-6 lg:pb-6 xl:pb-6 pl-4 text-5xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl">Continuum Glow stands for technological innovation.</h1>
+      <h1 class="w-auto h-auto text-black px-6 md:px-10 pb-20 md:pb-8 lg:pb-10 text-5xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl">Continuum Glow stands for technological innovation.</h1>
     </div>
   </template>
   
@@ -18,7 +18,7 @@
     font-weight: 600;
     line-height: screen;
     word-spacing: normal;
-    letter-spacing: -1.8px;
+    letter-spacing: -2.0px;
     
   }
   @media screen and (max-width: 640px) { /* 640px is Tailwind's 'sm' breakpoint */

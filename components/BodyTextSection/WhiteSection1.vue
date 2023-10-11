@@ -1,5 +1,5 @@
 <template>
-    <div class="order-2 p-6 md:p-8 bg-white flex flex-col justify-between items-start">
+    <div class="order-2 p-8 md:p-10 bg-white flex flex-col justify-between items-start">
       <h1 class="text-black mb-16 md:mb-0">White Section 1 Title</h1>
       <p class="text-black mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
@@ -13,7 +13,7 @@
     font-family: 'Georgia', sans-serif;
     font-weight: 600;
     line-height: 90%; 
-    font-size: 36px;
+    font-size: 48px;
     letter-spacing: -1.836px;
    }
    p{

@@ -1,7 +1,7 @@
 <template>
   <header class="fixed top-0 w-full bg-opacity-0 z-50 ">
     <div class="font">
-      <div class="container max-w-full flex justify-between items-center px-4 md:px-8 py-2 md:py-2 lg:py-4 xl:py-6 ">
+      <div class="container max-w-full flex justify-between items-center px-8 md:px-10 py-2 md:py-2 lg:py-4 xl:py-6 ">
         <Logo />
         <div class="hidden md:flex bg-black p-[6px] rounded-lg items-center justify-center ">
           <NavDropdown />
