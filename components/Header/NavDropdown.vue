@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <!-- Button styling based on isMobile -->
-    <button @click="toggleDropdown" class="bg-black text-white leading-6 px-5 py-2 rounded-sm text-[17px] xl:text-[20px]" aria-haspopup="true" :aria-expanded="isDropdownOpen.toString()">
+    <button @click="toggleDropdown" class="bg-black text-white leading-6 px-5 py-1 rounded-sm text-[17px] xl:text-[20px]" aria-haspopup="true" :aria-expanded="isDropdownOpen.toString()">
       ABOUT US
       <svg v-if="!isDropdownOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 inline-block pb-1" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"></path>

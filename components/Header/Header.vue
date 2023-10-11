@@ -10,7 +10,7 @@
       </div>
       <!-- Mobile Menu fixed at bottom -->
       <div class="flex">
-      <div v-cloak class="md:hidden fixed bottom-4 left-4 right-4 flex bg-black p-1 rounded-md items-center justify-between align-bottom ">
+      <div v-cloak class="md:hidden fixed bottom-4 left-4 right-4 flex bg-black p-[6px] rounded-lg items-center justify-between align-bottom ">
         <NavDropdown />
         <ContactButton />
       </div>
