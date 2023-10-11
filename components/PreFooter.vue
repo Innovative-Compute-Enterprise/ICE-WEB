@@ -2,7 +2,7 @@
   <section class="bg-gray-100 grid grid-cols-1 md:grid-cols-2 items-start gap-4">
     <!-- Coluna Esquerda -->
     <div class="p-6 bg-[#0f151d] h-full min-h-[200px]">
-      <h2 class="sticky top-8 text-[48px] md:text-[64px] xl:text-[96px] text-white">Nosso processo</h2>
+      <h2 class="sticky top-8 text-[48px] md:text-[72px] leading-[80.78px text-white">Nosso processo</h2>
     </div>
 
     <!-- Coluna Direita --> 

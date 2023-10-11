@@ -22,7 +22,7 @@
 
     <!-- Key Principles Section -->
     <div class="h-full w-auto bg-[#0f151d] p-6 mb-28 md:col-start-2">
-      <div class="sticky top-8 text-white  text-[48px] md:text-[64px] xl:text-[96px] font-normal leading-[99.78px] tracking-tight">Key principles</div>
+      <div class="sticky top-8 text-white  text-[48px] md:text-[72px] font-normal leading-[80.78px] tracking-tight">Valores Chave</div>
     </div>
 
     <!-- List of Principles -->
