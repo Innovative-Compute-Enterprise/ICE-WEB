@@ -31,11 +31,10 @@
             </div>
             </div>         
 </template>
-<script>
-export default {
-  name: "StoneSection",
-};
+
+<script setup>
 </script>
+
 <style scoped>
    h1{
     font-family: 'Georgia', sans-serif;

@@ -6,7 +6,7 @@
     TALK
   </button>
 </template>
-<script>
+<script setup>
 </script>
 
 <style scoped>

@@ -5,9 +5,9 @@
     </div>
   </template>
   
-  <script>
-
+  <script setup>
   </script>
+
   <style scoped>
   h1{
     font-family: 'Georgia', sans-serif;

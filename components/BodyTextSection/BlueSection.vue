@@ -5,10 +5,7 @@
     </div>
   </template>
   
-  <script>
-  export default {
-    name: "BlueSection",
-  };
+  <script setup>
   </script>
   <style scoped>
    h1{
