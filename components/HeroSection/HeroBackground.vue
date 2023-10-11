@@ -1,7 +1,7 @@
 <template>
   <div class="hero-video-container">
     <video ref="videoRef" loop muted playsinline class="hero-video">
-      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+      <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
     </video>
     <div class="overlay"></div>
   </div>
