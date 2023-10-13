@@ -22,12 +22,12 @@
 
     <!-- Key Principles Section -->
     <div class="h-full w-auto bg-[#0f151d] p-8 md:p-10 mb-28 md:col-start-2">
-      <div class="sticky top-28 text-white  text-[48px] md:text-[72px] font-normal leading-[80.78px] tracking-tight">Valores Chave</div>
+      <div class="sticky top-28 text-white  text-[48px] md:text-[64px] lg:text-[72px] font-normal leading-[80.78px] tracking-tight">Valores Chave</div>
     </div>
 
     <!-- List of Principles -->
     <ul class="md:col-start-3 pt-4">
-      <li v-for="item in principles" :key="item" class="bg-white flex flex-col items-start p-6 md:p-10">
+      <li v-for="item in principles" :key="item" class="bg-white flex flex-col items-start p-8 md:p-10">
         <div class="w-8 h-8 bg-[#0f151d] rounded-lg rounded-br-xl"></div>
         <div class="text-[#0f151d] text-[21px] font-semibold leading-10">{{ item }}</div>
       </li>

@@ -12,7 +12,7 @@
     </button>
     
     <!-- Dropdown styling based on isMobile -->
-    <div v-if="isDropdownOpen" class="absolute mt-2 rounded-md shadow-md bg-white p-4 text-[17px]" :class="isMobile ? 'bottom-full mb-2 left-0 w-[290px] text-[14px]' : 'left-0 md:w-[250px] lg:w-[255px] xl:w-[278px]'">
+    <div v-if="isDropdownOpen" class="absolute mt-3 rounded-md shadow-md bg-white p-4 text-[17px]" :class="isMobile ? 'bottom-full mb-3 left-0 w-[290px] text-[14px]' : 'left-0 md:w-[250px] lg:w-[255px] xl:w-[278px]'">
       <p class="font-georgia">Continuum Glow stands for continuous technological innovation that brings a glow to your operations and business decisions</p>
       <div class="flex space-x-2 py-2">
         <!-- Adicione seus ícones de redes sociais aqui -->
