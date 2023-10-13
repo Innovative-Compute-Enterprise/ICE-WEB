@@ -1,32 +1,47 @@
 <template>
-    <div class="px-10 py-16 md:px-12 md:py-20 bg-blue-500 text-white space-y-6">
-      <h1 class="text-4xl font-semibold">Schedule a demo by submitting your contact information</h1>
-      <form class="space-y-4 p-4">
-        <div class="flex flex-col px-2 md:px-4">
-          <input type="text" id="name" name="name" placeholder="Your Name" class="p-2 rounded-md">
-        </div>
-        <div class="flex flex-col px-2 md:px-4">
-          <input type="text" id="company" name="company" placeholder="Your Company" class="p-2 rounded-md">
-        </div>
-        <div class="flex flex-col px-2 md:px-4">
-          <input type="email" id="email" name="email" placeholder="Your Email" class="p-2 rounded-md">
-        </div>
-        <div>
-          <label class="inline-flex items-center px-2 md:px-4">
-            <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" checked>
-            <span class="ml-2">I agree with the <span class="underline">Privacy Policy</span></span>
-          </label>
-        </div>
-        <button type="submit" class="bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800">BOOK A DEMO</button>
-      </form>
-    </div>
+  <div class="px-10 py-16 md:px-12 md:py-20 bg-blue-500 text-black space-y-6">
+    <h1>Schedule a demo by submitting your contact information</h1>
+    <form class="space-y-4">
+      <div class="flex flex-col">
+        <input type="text" id="name" name="name" placeholder="Your Name" minlength="5" required class="text-input p-6 rounded-md">
+      </div>
+      <div class="flex flex-col">
+        <input type="text" id="company" name="company" placeholder="Your Company" required class="text-input p-6 rounded-md">
+      </div>
+      <div class="flex flex-col">
+        <input type="email" id="email" name="email" placeholder="Your Email" minlength="5" required class="text-input p-6 rounded-md">
+      </div>
+      <button type="submit" class="bg-black text-white p-6 w-full rounded-md hover:bg-gray-800">BOOK A DEMO</button>
+    <div>
+        <label class="inline-flex items-center">
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" required>
+          <span class="ml-2">I agree with the <span class="underline">Privacy Policy</span></span>
+        </label>
+      </div>
+    </form>
+  </div>
 </template>
 
-  
-  <style scoped>
-  ::placeholder {
-    color: #000000;
-    opacity: 0.40; 
-  }
-  </style>
-  
+<style scoped>
+h1{
+  color: #ffffff;
+  line-height: 90%; 
+  font-size: 44px;
+  letter-spacing: 2.0px;
+}
+
+.text-input {
+  font-size: 20px;
+  font-family: 'Helvetica Neue Medium', sans-serif;
+}
+
+::placeholder {
+  color: #000000;
+  opacity: 0.30; 
+  font-size: 20px;
+}
+
+input:focus::placeholder {
+  opacity: 0.90;
+}
+</style>
