@@ -1,13 +1,13 @@
 <template>
   <section class="bg-gray-100 grid grid-cols-1 md:grid-cols-2 items-start">
     <!-- Coluna Esquerda -->
-    <div class="h-full bg-[#0f151d] p-10 md:p-12 mb-28">
+    <div class="h-full bg-[#0f151d] px-10 py-16 md:px-12 md:py-20 mb-28">
       <h2 class="sticky top-28 
       text-[48px] md:text-[72px] leading-[80.78px text-white">Nosso processo</h2>
     </div>
 
     <!-- Coluna Direita --> 
-    <div class="h-full space-y-16 p-10 md:p-12">
+    <div class="h-full space-y-16 px-10 py-16 md:px-12 md:py-20">
       <!-- Item 1 -->
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="p-10 md:p-12 bg-blue-500 text-white space-y-6">
+    <div class="px-10 py-16 md:px-12 md:py-20 bg-blue-500 text-white space-y-6">
       <h1 class="text-4xl font-semibold">Schedule a demo by submitting your contact information</h1>
       <form class="space-y-4 p-4">
         <div class="flex flex-col px-2 md:px-4">
