@@ -11,10 +11,10 @@
   <style scoped>
    h1{
     font-family: 'Georgia', sans-serif;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 90%; 
     font-size: 48px;
-    letter-spacing: -1.836px;
+    letter-spacing: 2.0px;
    }
    p{
     font-family: 'Helvetica Neue Medium', sans-serif;

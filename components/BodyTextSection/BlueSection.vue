@@ -1,5 +1,5 @@
 <template>
-    <div class="order-1 p-8 md:p-10 bg-blue-500 flex flex-col justify-between items-start">
+    <div class="order-1 p-10 md:p-12 bg-blue-500 flex flex-col justify-between items-start">
       <h1 class="text-white mb-16 md:mb-0">Blue Section Title</h1>
       <p class="text-white mb-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </div>
@@ -10,10 +10,10 @@
   <style scoped>
    h1{
     font-family: 'Georgia', sans-serif;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 90%; 
     font-size: 48px;
-    letter-spacing: -1.836px;
+    letter-spacing: 2.0px;
    }
    p{
     font-family: 'Helvetica Neue Medium', sans-serif;
