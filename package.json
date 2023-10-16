@@ -17,6 +17,7 @@
     "node": "^18.0.0"
   },
   "dependencies": {
-    "@vueuse/head": "^2.0.0"
+    "@vueuse/head": "^2.0.0",
+    "netlify": "^13.1.10"
   }
 }
