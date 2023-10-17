@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@vueuse/head": "^2.0.0",
-    "netlify": "^13.1.10"
+    "netlify": "^13.1.10",
+    "vue-composable": "^1.0.0-beta.24"
   }
 }

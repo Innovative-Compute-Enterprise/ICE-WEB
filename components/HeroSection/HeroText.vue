@@ -19,7 +19,7 @@
     font-weight: 600;
     word-spacing: normal;
     line-height: 0.9;
-    letter-spacing: -1.0px;
+    letter-spacing: -1.9px;
     
   }
   @media screen and (max-width: 640px) { /* 640px is Tailwind's 'sm' breakpoint */
