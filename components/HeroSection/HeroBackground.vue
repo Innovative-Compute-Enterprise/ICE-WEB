@@ -6,7 +6,7 @@
       <source src="https://ccommondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
     </video>
     -->
-    <img src="teste.png" alt="Hero Image" class="hero-image">
+    <img src="/public/teste.png" alt="Hero Image" class="hero-image">
     <div class="overlay"></div>
   </div>
 </template>
