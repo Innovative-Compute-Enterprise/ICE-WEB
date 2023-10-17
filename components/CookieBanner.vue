@@ -1,21 +1,23 @@
 <template>
-  <div v-if="showBanner" class="cookie-banner fixed bottom-0 left-0 p-4 flex flex-col z-50 bg-gray-800 text-white rounded-r-lg space-y-4">
-    <div class="flex items-center">
-      <!-- Cookie icon -->
-      <svg class="w-6 h-6 mr-2 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h4m2 0h14M4 12h18m-8-8v8"></path>
-      </svg>
-      <div class="text-sm leading-5">
-        Este site usa cookies para melhorar sua experiência.
+  <div v-if="showBanner" class="cookie-banner fixed bottom-0 left-0 w-full z-50 bg-blue-600 text-white px-4 py-2 sm:px-6 sm:py-4">
+    <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between">
+      
+      <div class="flex flex-col sm:flex-row items-center mb-2 sm:mb-0">
+        <div class="text-sm sm:text-lg mb-2 sm:mb-0">
+          We and selected third parties use cookies or similar technologies for technical purposes and, with your consent, for other purposes as specified in the 
+          <a href="#" class="underline text-white">cookie policy</a>. Denying consent may make related features unavailable.
+        </div>
       </div>
-    </div>
-    <div class="flex space-x-4">
-      <button @click="acceptCookies" class="text-center text-sm px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded text-white">Aceitar</button>
-      <button @click="declineCookies" class="text-center text-sm px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded text-white">Recusar</button>
-      <a href="#" class="text-sm underline">Política de Privacidade</a>
+
+      <div class="flex space-x-2 sm:space-x-4">
+        <button @click="declineCookies" class="text-white bg-transparent border border-white px-2 sm:px-4 py-1 sm:py-2 rounded hover:bg-white hover:text-blue-600">Reject</button>
+        <button @click="acceptCookies" class="bg-white text-blue-600 px-2 sm:px-4 py-1 sm:py-2 rounded hover:bg-blue-600 hover:text-white">Accept</button>
+      </div>
+
     </div>
   </div>
 </template>
+
 
 
 <script setup>
@@ -33,15 +35,11 @@ const declineCookies = () => {
 </script>
 
 <!-- Seus estilos aqui -->
-
-  
   <style scoped>
   button{
 text-align: center;
 font-weight: bold;
 font-size: 21px;
-
-    
   }
   </style>
   

@@ -45,4 +45,9 @@ h1{
 input:focus::placeholder {
   opacity: 0.90;
 }
+
+button {
+  font-size: 20px;
+  font-family: 'Helvetica Neue Medium', sans-serif;
+}
 </style>

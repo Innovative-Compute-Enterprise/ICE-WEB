@@ -2,7 +2,7 @@
   <section class="bg-gray-100 grid grid-cols-1 md:grid-cols-2 items-start">
     <!-- Coluna Esquerda -->
     <div class="h-full bg-[#0f151d] px-12 py-16 md:px-24 md:py-24 mb-28">
-      <h2 class="sticky top-28 
+      <h2 class="sticky top-20 
       text-[48px] md:text-[72px] leading-[80.78px text-white">Nosso processo</h2>
     </div>
 
@@ -51,7 +51,7 @@ export default {
 <style scoped>
 p {
   font-family: 'Georgia', sans-serif;
-  font-size: 17.09px;
-  line-height: 21.09px;
+  font-size: 21.09px;
+  line-height: 23.09px;
 }
 </style>

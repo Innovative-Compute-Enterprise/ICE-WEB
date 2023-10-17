@@ -1,8 +1,12 @@
 <template>
   <div class="hero-video-container">
+    <!-- Commenting out the video to retain the code for future use -->
+    <!--
     <video ref="videoRef" loop muted playsinline class="hero-video">
       <source src="https://ccommondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
     </video>
+    -->
+    <img src="teste.png" alt="Hero Image" class="hero-image">
     <div class="overlay"></div>
   </div>
 </template>
@@ -28,7 +32,7 @@ onMounted(() => {
   overflow: hidden;
 }
 
-.hero-video {
+.hero-video, .hero-image {
   display: inline;
   width: 100%;
   height: 100vh;
