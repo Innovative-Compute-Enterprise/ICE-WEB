@@ -48,14 +48,8 @@ onMounted(() => {
 .font{
   font-family: 'Helvetica Neue Medium', sans-serif;
 }
-[v-cloak] {
-    display: none;
-    transition: all 0.2s ease;
-  }
- 
-  .headerM {
-    padding-bottom: env(safe-area-inset-bottom);
+body{
+  overscroll-behavior-y: contain;
 }
-
 
 </style>
