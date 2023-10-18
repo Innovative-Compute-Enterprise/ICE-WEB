@@ -26,14 +26,6 @@ onMounted(() => {
   });
 });
 
-onMounted(() => {
-  gsap.from("#about", {
-    duration: 1.5,
-    opacity: 0.50,
-    x: 50,
-    ease: "power1.out"
-  });
-});
 </script>
 
 <style scoped>
