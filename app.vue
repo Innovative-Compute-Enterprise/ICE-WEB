@@ -8,7 +8,7 @@ import CookieBanner from '~/components/CookieBanner.vue';
 <template>
 <Header />
   <NuxtPage />
-<Footer />
+<Footer id="footer" />
 <CookieBanner />
 </template>
 

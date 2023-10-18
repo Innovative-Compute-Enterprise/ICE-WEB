@@ -15,23 +15,23 @@
   <!-- Menu list --> 
   <ul class="p-2 space-y-4 justify-center text-center">
     <li>
-      <a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 active:bg-gray-600 transition-colors">
+      <a href="#home" @click.prevent="scrollToSection" class="block py-2 px-2 rounded-md hover:bg-blue-700 active:bg-gray-600 transition-colors">
         Home
       </a>
     </li>
     <li>
-      <a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 active:bg-gray-600 transition-colors">
-        FAQ
-      </a>
-    </li>
-    <li>
-      <a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 active:bg-gray-600 transition-colors">
+      <a href="#about" @click.prevent="scrollToSection" class="block py-2 px-3 rounded-md hover:bg-blue-700 active:bg-gray-600 transition-colors">
         About
       </a>
     </li>
     <li>
-      <a href="#" class="block py-2 px-3 rounded-md hover:bg-gray-700 active:bg-gray-600 transition-colors">
-        Survey
+      <a href="#faq" @click.prevent="scrollToSection" class="block py-2 px-3 rounded-md hover:bg-blue-700 active:bg-gray-600 transition-colors">
+        FAQ
+      </a>
+    </li>
+    <li>
+      <a href="#footer" @click.prevent="scrollToSection" class="block py-2 px-3 rounded-md hover:bg-blue-700 active:bg-gray-600 transition-colors">
+        Contact
       </a>
     </li>
   </ul>
@@ -44,12 +44,26 @@
 <script setup>
 import { ref } from 'vue';
 import { useGlobalState } from '~/composables/useGlobalState';
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
+// Register the plugin
+gsap.registerPlugin(ScrollToPlugin);
 const isDropdownOpen = ref(false);
 const { isMobile } = useGlobalState();
 
 const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value;
+};
+
+const scrollToSection = (event) => {
+  const targetId = event.target.getAttribute('href');
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: targetId,
+    ease: "power2"
+  });
+  toggleDropdown(); // Close the dropdown after click
 };
 </script>
 
