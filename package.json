@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@types/gsap": "^3.0.0",
     "autoprefixer": "^10.4.15",
     "nuxt": "^3.7.3",
     "postcss": "^8.4.29",

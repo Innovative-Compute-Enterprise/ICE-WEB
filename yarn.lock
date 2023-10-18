@@ -664,6 +664,13 @@
   "resolved" "https://registry.npmjs.org/@types/estree/-/estree-1.0.2.tgz"
   "version" "1.0.2"
 
+"@types/gsap@^3.0.0":
+  "integrity" "sha512-BbWLi4WRHGze4C8NV7U7yRevuBFiPkPZZyGa0rryanvh/9HPUFXTNBXsGQxJZJq7Ix7j4RXMYodP3s+OsqCErg=="
+  "resolved" "https://registry.npmjs.org/@types/gsap/-/gsap-3.0.0.tgz"
+  "version" "3.0.0"
+  dependencies:
+    "gsap" "*"
+
 "@types/http-proxy@^1.17.11":
   "integrity" "sha512-kQtujO08dVtQ2wXAuSFfk9ASy3sug4+ogFR8Kd8UgP8PEuc1/G/8yjYRmp//PcDNJEUKOza/MrQu15bouEUCiw=="
   "resolved" "https://registry.npmjs.org/@types/http-proxy/-/http-proxy-1.17.12.tgz"
@@ -2066,7 +2073,7 @@
   "resolved" "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz"
   "version" "4.2.11"
 
-"gsap@^3.12.2":
+"gsap@*", "gsap@^3.12.2":
   "integrity" "sha512-EkYnpG8qHgYBFAwsgsGEqvT1WUidX0tt/ijepx7z8EUJHElykg91RvW1XbkT59T0gZzzszOpjQv7SE41XuIXyQ=="
   "resolved" "https://registry.npmjs.org/gsap/-/gsap-3.12.2.tgz"
   "version" "3.12.2"

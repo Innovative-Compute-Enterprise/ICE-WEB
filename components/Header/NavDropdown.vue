@@ -1,6 +1,5 @@
 <template>
-  <div class="relative">
-    <!-- Button styling based on isMobile -->
+ <div class="relative" ref="dropdownRoot">
     <button @click="toggleDropdown" class="bg-black text-white leading-6 px-3 py-1 rounded-sm text-[17px] xl:text-[20px]" aria-haspopup="true" :aria-expanded="isDropdownOpen.toString()">
       <svg v-if="!isDropdownOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 inline-block" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"></path>
@@ -15,22 +14,22 @@
   <!-- Menu list --> 
   <ul class="p-2 space-y-4 justify-center text-center">
     <li>
-      <a href="#home" @click.prevent="scrollToSection" class="block py-2 px-2 rounded-md hover:bg-blue-700 active:bg-gray-600 transition-colors">
+      <a href="#home" @click.prevent="scrollToSection" class="block py-2 px-2 rounded-md transition-colors">
         Home
       </a>
     </li>
     <li>
-      <a href="#about" @click.prevent="scrollToSection" class="block py-2 px-3 rounded-md hover:bg-blue-700 active:bg-gray-600 transition-colors">
+      <a href="#about" @click.prevent="scrollToSection" class="block py-2 px-3 rounded-md transition-colors">
         About
       </a>
     </li>
     <li>
-      <a href="#faq" @click.prevent="scrollToSection" class="block py-2 px-3 rounded-md hover:bg-blue-700 active:bg-gray-600 transition-colors">
+      <a href="#faq" @click.prevent="scrollToSection" class="block py-2 px-3 rounded-md transition-colors">
         FAQ
       </a>
     </li>
     <li>
-      <a href="#footer" @click.prevent="scrollToSection" class="block py-2 px-3 rounded-md hover:bg-blue-700 active:bg-gray-600 transition-colors">
+      <a href="#footer" @click.prevent="scrollToSection" class="block py-2 px-3 rounded-md transition-colors">
         Contact
       </a>
     </li>
@@ -42,19 +41,21 @@
 
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import { useGlobalState } from '~/composables/useGlobalState';
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-// Register the plugin
 gsap.registerPlugin(ScrollToPlugin);
+
 const isDropdownOpen = ref(false);
 const { isMobile } = useGlobalState();
 
 const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value;
 };
+
+const dropdownRoot = ref(null);
 
 const scrollToSection = (event) => {
   const targetId = event.target.getAttribute('href');
@@ -63,13 +64,65 @@ const scrollToSection = (event) => {
     scrollTo: targetId,
     ease: "power2"
   });
-  toggleDropdown(); // Close the dropdown after click
+  toggleDropdown();
 };
+
+onMounted(() => {
+  const links = dropdownRoot.value.querySelectorAll('a')
+  links.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      gsap.to(link, {
+        backgroundColor: 'blue',
+        color: 'white',
+        delay: 0.2,
+        duration: 0.3
+      });
+      // For pseudo-elements, consider handling the effect via CSS
+    });
+
+    link.addEventListener('mouseleave', () => {
+      gsap.to(link, {
+        backgroundColor: 'transparent',
+        color: 'black',
+        duration: 0.3
+      });
+      // For pseudo-elements, consider handling the effect via CSS
+    });
+  });
+});
 </script>
+
 
 <style scoped>
 .font-georgia {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+a {
+  position: relative;
+  overflow: hidden; /* This will ensure the line (pseudo-element) doesn't spill outside the link */
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%; /* Start with the line on the left and not visible */
+  height: 2px; /* This is the height of the line. Adjust as needed. */
+  background-color: blue; /* The color of the line. Adjust as needed. */
+  transition: right 0.3s; /* Animation duration for the line */
+}
+
+a:hover::before {
+  right: 0; /* On hover, expand the line to the full width of the link */
+}
+
+a:hover {
+  background-color: blue; /* This will be the filled color */
+  animation-delay: 1s;
+  color: white; /* Adjust the text color on hover as needed */
+}
+
 </style>
 
