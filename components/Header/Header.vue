@@ -53,4 +53,9 @@ onMounted(() => {
     transition: all 0.2s ease;
   }
  
+  .headerM {
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+
 </style>

@@ -13,3 +13,9 @@
   src: url('assets/fonts/HelveticaNeueMedium.ttf') format('truetype');
   font-display: swap;
 }
+
+:root{
+
+  -webkit-font-smoothing: antialiased;
+
+}

@@ -31,6 +31,7 @@ onMounted(() => {
 <style scoped>
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
   background-color: #FEFEFE;
-}
+  }
 </style>

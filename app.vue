@@ -13,5 +13,5 @@ import CookieBanner from '~/components/CookieBanner.vue';
 </template>
 
 <style scoped>
-
+ 
 </style>
