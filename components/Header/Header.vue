@@ -48,8 +48,8 @@ onMounted(() => {
 .font{
   font-family: 'Helvetica Neue Medium', sans-serif;
 }
-body{
-  overscroll-behavior-y: contain;
+header {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    z-index: 9999;
 }
-
 </style>
