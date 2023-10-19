@@ -54,7 +54,14 @@ const dropdownRoot = ref(null);
 
 const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value;
+  
+  if (isDropdownOpen.value) {
+    document.body.classList.add('noscroll');
+  } else {
+    document.body.classList.remove('noscroll');
+  }
 };
+
 
 const scrollToSection = (event) => {
   const targetId = event.target.getAttribute('href');

@@ -19,3 +19,11 @@
   -webkit-font-smoothing: antialiased;
 
 }
+/* global.css */
+
+body.noscroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ...other styles */
