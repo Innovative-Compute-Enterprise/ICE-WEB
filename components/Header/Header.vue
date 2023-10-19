@@ -1,7 +1,7 @@
 <template>
-  <header class="fixed top-0 w-full bg-opacity-0 z-50 ">
+  <header class="fixed top-0 w-full bg-opacity-0">
     <div class="font">
-      <div class="headerA container max-w-full flex justify-between items-center px-4 md:px-8 py-2 md:py-4 lg:py-4 xl:py-4 ">
+      <div class="headerA container max-w-full flex justify-between items-center px-4 md:px-8 py-4 ">
         <Logo />
         <div class="hidden md:flex bg-black p-[8px] rounded-lg items-center justify-center">
           <ContactButton />
@@ -9,7 +9,7 @@
         </div>
       </div>
       <!-- Mobile Menu fixed at bottom -->
-      <div class="flex headerM pb-6">
+      <div class=" flex flex-col headerM justify-center pb-6">
       <div v-cloak class="md:hidden fixed bottom-4 left-4 right-4 flex bg-black p-[8px] rounded-lg items-center justify-between align-bottom ">
         <ContactButton />
         <NavDropdown />
@@ -45,11 +45,16 @@ onMounted(() => {
 </script>
 
 <style scoped>
+header{
+  z-index: 1000;
+}
 .font{
   font-family: 'Helvetica Neue Medium', sans-serif;
 }
-.headerM {
-    padding-bottom: env(safe-area-inset-bottom, 4px); /* The 4px is a fallback */
-}
 
+@media (min-width: 768px) {
+  .headerM{
+    display: -webkit-inline-flex;
+  }
+}
 </style>
