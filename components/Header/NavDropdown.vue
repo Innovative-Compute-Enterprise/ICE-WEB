@@ -10,26 +10,26 @@
     </button>
     
    
-    <div v-if="isDropdownOpen" class="absolute mt-1 shadow-lg rounded-md bg-black p-4 text-[17px] text-white transition-transform transform scale-95" :class="isMobile ? 'bottom-full mb-1 right-[-10px] w-[150px] text-[14px]' : 'right-[-10px] md:w-[165px] xl:w-[173px]'">      
+    <div v-if="isDropdownOpen" id="dropdownMenu" class="absolute mt-2 shadow-lg rounded-md bg-black p-4 text-[17px] text-white transition-transform transform scale-95" :class="isMobile ? 'bottom-full mb-2 right-[-10px] w-[150px] text-[14px]' : 'right-[-10px] md:w-[165px] xl:w-[173px]'">      
   <!-- Menu list --> 
   <ul class="p-2 space-y-4 justify-center text-center">
     <li>
-      <a href="#home" @click.prevent="scrollToSection" class="block py-2 px-2 rounded-md transition-colors">
+      <a href="#home" @click.prevent="scrollToSection" class="block py-3 px-4 rounded-md transition-colors">
         Home
       </a>
     </li>
     <li>
-      <a href="#about" @click.prevent="scrollToSection" class="block py-2 px-3 rounded-md transition-colors">
+      <a href="#about" @click.prevent="scrollToSection" class="block py-3 px-4 rounded-md transition-colors">
         About
       </a>
     </li>
     <li>
-      <a href="#faq" @click.prevent="scrollToSection" class="block py-2 px-3 rounded-md transition-colors">
+      <a href="#faq" @click.prevent="scrollToSection" class="block py-3 px-4 rounded-md transition-colors">
         FAQ
       </a>
     </li>
     <li>
-      <a href="#footer" @click.prevent="scrollToSection" class="block py-2 px-3 rounded-md transition-colors">
+      <a href="#footer" @click.prevent="scrollToSection" class="block py-3 px-4 rounded-md transition-colors">
         Contact
       </a>
     </li>
@@ -50,12 +50,11 @@ gsap.registerPlugin(ScrollToPlugin);
 
 const isDropdownOpen = ref(false);
 const { isMobile } = useGlobalState();
+const dropdownRoot = ref(null);
 
 const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value;
 };
-
-const dropdownRoot = ref(null);
 
 const scrollToSection = (event) => {
   const targetId = event.target.getAttribute('href');
@@ -111,7 +110,7 @@ a::before {
   right: 100%; /* Start with the line on the left and not visible */
   height: 2px; /* This is the height of the line. Adjust as needed. */
   background-color: blue; /* The color of the line. Adjust as needed. */
-  transition: right 0.3s; /* Animation duration for the line */
+  transition: right 0.6s; /* Animation duration for the line */
 }
 
 a:hover::before {
@@ -119,8 +118,8 @@ a:hover::before {
 }
 
 a:hover {
-  background-color: blue; /* This will be the filled color */
-  animation-delay: 1s;
+  background-color: rgb(117, 117, 241); /* This will be the filled color */
+  animation-delay: 2s;
   color: white; /* Adjust the text color on hover as needed */
 }
 

@@ -1,16 +1,16 @@
 <template>
   <header class="fixed top-0 w-full bg-opacity-0 z-50 ">
     <div class="font">
-      <div class="headerA container max-w-full flex justify-between items-center px-4 md:px-8 py-1 md:py-2 lg:py-2 xl:py-4 ">
+      <div class="headerA container max-w-full flex justify-between items-center px-4 md:px-8 py-2 md:py-4 lg:py-4 xl:py-4 ">
         <Logo />
-        <div class="hidden md:flex bg-black p-[6px] rounded-lg items-center justify-center">
+        <div class="hidden md:flex bg-black p-[8px] rounded-lg items-center justify-center">
           <ContactButton />
           <NavDropdown />
         </div>
       </div>
       <!-- Mobile Menu fixed at bottom -->
-      <div class="flex headerM pb-4">
-      <div v-cloak class="md:hidden fixed bottom-4 left-4 right-4 flex bg-black p-[6px] rounded-lg items-center justify-between align-bottom ">
+      <div class="flex headerM pb-6">
+      <div v-cloak class="md:hidden fixed bottom-4 left-4 right-4 flex bg-black p-[8px] rounded-lg items-center justify-between align-bottom ">
         <ContactButton />
         <NavDropdown />
       </div>
@@ -49,9 +49,7 @@ onMounted(() => {
   font-family: 'Helvetica Neue Medium', sans-serif;
 }
 .headerM {
-  padding: env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(
-      safe-area-inset-bottom,
-      20px
-    ) env(safe-area-inset-left, 20px);
+    padding-bottom: env(safe-area-inset-bottom, 4px); /* The 4px is a fallback */
 }
+
 </style>
