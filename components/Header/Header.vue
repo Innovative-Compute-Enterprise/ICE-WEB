@@ -1,27 +1,23 @@
 <template>
   <header class="fixed top-0 w-full bg-opacity-0 z-50">
-    <div class="font fixed-wrapper">
-      <div class="fixed-content">
-        <!-- Desktop Header -->
-        <div class="headerA container max-w-full flex justify-between items-center px-4 md:px-8 py-4 ">
-          <Logo />
-          <div class="hidden md:flex bg-black p-[8px] rounded-lg items-center justify-center">
-            <ContactButton />
-            <NavDropdown />
-          </div>
-        </div>
-        <!-- Mobile Menu fixed at bottom -->
-        <div class="flex flex-col headerM justify-center pb-6">
-          <div v-cloak class="md:hidden fixed bottom-4 left-4 right-4 flex bg-black p-[8px] rounded-lg items-center justify-between align-bottom ">
-            <ContactButton />
-            <NavDropdown />
-          </div>
+    <div class="font">
+      <div class="headerA container max-w-full flex justify-between items-center px-4 md:px-8 py-4 ">
+        <Logo />
+        <div class="hidden md:flex bg-black p-[8px] rounded-lg items-center justify-center">
+          <ContactButton />
+          <NavDropdown />
         </div>
       </div>
+      <!-- Mobile Menu fixed at bottom -->
+      <div class=" flex flex-col headerM justify-center pb-6">
+      <div v-cloak class="md:hidden fixed bottom-4 left-4 right-4 flex bg-black p-[8px] rounded-lg items-center justify-between align-bottom ">
+        <ContactButton />
+        <NavDropdown />
+      </div>
+    </div>
     </div>
   </header>
 </template>
-
 
 <script setup>
 // Import the components
@@ -54,21 +50,20 @@ onMounted(() => {
   font-family: 'Helvetica Neue Medium', sans-serif;
 }
 
-/* iOS Safari scrolling fix */
-.fixed-wrapper {
+.headerM {
   width: 100%;
   position: fixed;
-  top: 0px;
+  top: 0px; /* adding px unit also seems to be important for whatever reason, albeit I think we all concur that this should be unitless */
   left: 0px;
   bottom: 0px;
   height: 100vh;
-  overflow: scroll;
+  overflow: scroll; /* not auto! */
+
+  /* magic mobile viewport iOS bug fix */
+  /* also see: https://css-tricks.com/css-fix-for-100vh-in-mobile-webkit/ */
+  /* also see: https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/ */
   height: -webkit-fill-available;
   -webkit-overflow-scrolling: touch;
-}
-
-.fixed-wrapper .fixed-content {
-  min-height: 100vh;
 }
 </style>
 
