@@ -9,7 +9,7 @@
         </div>
       </div>
       <!-- Mobile Menu fixed at bottom -->
-      <div class="flex headerM">
+      <div class="flex headerM pb-4">
       <div v-cloak class="md:hidden fixed bottom-4 left-4 right-4 flex bg-black p-[6px] rounded-lg items-center justify-between align-bottom ">
         <ContactButton />
         <NavDropdown />
@@ -48,8 +48,10 @@ onMounted(() => {
 .font{
   font-family: 'Helvetica Neue Medium', sans-serif;
 }
-header {
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-    z-index: 9999;
+.headerM {
+  padding: env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(
+      safe-area-inset-bottom,
+      20px
+    ) env(safe-area-inset-left, 20px);
 }
 </style>
