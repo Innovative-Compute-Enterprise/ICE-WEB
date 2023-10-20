@@ -43,22 +43,6 @@ onMounted(() => {
   });
 });
 
-if (process.client) {
-  // Calculate the actual viewport height and set it as a CSS variable
-  function setVH() {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-
-  // Listen to the resize event and recalculate the viewport height
-  window.addEventListener('resize', () => {
-    setVH();
-  });
-
-  // Initial set
-  setVH();
-}
-
 </script>
 
 <style scoped>
@@ -67,10 +51,6 @@ if (process.client) {
   font-family: 'Helvetica Neue Medium', sans-serif;
 }
 
-.headerM {
-  height: calc(100 * var(--vh));
-  /* other existing styles */
-}
 
 </style>
 
