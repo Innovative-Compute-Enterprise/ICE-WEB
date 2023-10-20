@@ -9,13 +9,12 @@
         </div>
       </div>
       <!-- Mobile Menu fixed at bottom -->
-      <div class=" flex flex-col headerM justify-center pb-6">
-      <div class="md:hidden fixed bottom-4 left-4 right-4 flex bg-black p-[8px] rounded-lg items-center justify-between align-bottom ">
+      <div class="md:hidden headerM fixed bottom-4 left-4 right-4 flex bg-black p-[8px] rounded-lg items-center justify-between align-bottom ">
         <ContactButton />
         <NavDropdown />
       </div>
     </div>
-    </div>
+  
   </header>
 </template>
 
@@ -50,6 +49,7 @@ onMounted(() => {
 .font{
   font-family: 'Helvetica Neue Medium', sans-serif;
 }
+
 
 
 </style>
