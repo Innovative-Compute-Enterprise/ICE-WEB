@@ -1,6 +1,6 @@
 <template>
  <div class="relative" ref="dropdownRoot">
-    <button @click="toggleDropdown" class="bg-black text-white leading-6 px-3 py-1 rounded-sm text-[17px] xl:text-[20px]" aria-haspopup="true" :aria-expanded="isDropdownOpen.toString()">
+  <button @click="toggleDropdown" class="bg-black text-white leading-6 px-3 py-1 rounded-sm text-lg xl:text-xl">
       <svg v-if="!isDropdownOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 inline-block" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"></path>
       </svg>
@@ -10,7 +10,7 @@
     </button>
     
    
-    <div v-if="isDropdownOpen" id="dropdownMenu" class="absolute mt-2 shadow-lg rounded-md bg-black p-4 text-[17px] text-white transition-transform transform scale-95" :class="isMobile ? 'bottom-full mb-2 right-[-10px] w-[150px] text-[14px]' : 'right-[-10px] md:w-[165px] xl:w-[173px]'">      
+    <div v-if="isDropdownOpen" id="dropdownMenu" class="absolute mt-2 shadow-lg rounded-md bg-black p-4 text-lg text-white transition-transform transform scale-95 right-[-10px] w-[165px] xl:w-[173px] md:w-[150px]">      
   <!-- Menu list --> 
   <ul class="p-2 space-y-4 justify-center text-center">
     <li>
@@ -42,14 +42,12 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { useGlobalState } from '~/composables/useGlobalState';
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 gsap.registerPlugin(ScrollToPlugin);
 
 const isDropdownOpen = ref(false);
-const { isMobile } = useGlobalState();
 const dropdownRoot = ref(null);
 
 const toggleDropdown = () => {
