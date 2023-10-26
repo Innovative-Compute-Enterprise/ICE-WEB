@@ -1,7 +1,7 @@
 <template>
-    <div class="order-4 md:order-3 px-12 py-16 md:px-24 md:py-24 bg-rose-700 md:bg-white flex flex-col justify-between items-start">
-      <h1 class="text-black my-6">White Section 2 Title</h1>
-      <p class="text-black"></p>
+    <div class="order-4 md:order-3 px-12 py-16 md:px-24 md:py-24 bg-rose-700 md:bg-[#E1E1E1] flex flex-col justify-between items-start">
+      <h1 class="text-[#646464] my-6">White Section 2 Title</h1>
+      <p class="text-[#646464]"></p>
     </div>
   </template>
   

@@ -2,7 +2,7 @@
   <section class="bg-gray-100 grid grid-cols-1 md:grid-cols-2 items-start">
     <!-- Coluna Esquerda -->
     <div class="h-full bg-[#0f151d] px-12 py-16 md:px-24 md:py-24 mb-28">
-      <h2 class="sticky top-12 
+      <h2 class="sticky top-24 
       text-[48px] md:text-[72px] leading-[80.78px text-white">Nosso processo</h2>
     </div>
 

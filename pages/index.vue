@@ -32,6 +32,6 @@ onMounted(() => {
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: #FEFEFE;
+  background-color: #E1E1E1;
   }
 </style>

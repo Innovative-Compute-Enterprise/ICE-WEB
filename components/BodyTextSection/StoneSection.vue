@@ -1,5 +1,5 @@
 <template>
-<div class="order-3 md:order-4 px-8 py-12 md:px-12 md:py-16 bg-[#0f151d] flex flex-col justify-between items-start">
+<div class="bg-div order-3 md:order-4 px-8 py-12 md:px-12 md:py-16  flex flex-col justify-between items-start">
             <!-- Top Section -->
             <div class="flex-grow flex flex-col justify-center items-start pb-1 mt-6">
               <div class="bg-white rounded-tl-[44px] rounded-tr-[22px] shadow-2xl p-4">
@@ -48,4 +48,9 @@
     font-weight: 500;
     line-height: 34.17px;
    }
+   .bg-div{
+    background: 
+    linear-gradient(45deg, red, red 10%, orange 10%, orange 20%, yellow 20%, yellow 30%, green 30%, green 40%, blue 40%, blue 50%, indigo 50%, indigo 60%, violet 60%, violet 70%),
+    linear-gradient(135deg, violet, violet 10%, indigo 10%, indigo 20%, blue 20%, blue 30%, green 30%, green 40%, yellow 40%, yellow 50%, orange 50%, orange 60%, red 60%, red 70%);
+    background-blend-mode: screen;   }
 </style>

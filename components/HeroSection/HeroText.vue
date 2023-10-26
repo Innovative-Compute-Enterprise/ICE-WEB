@@ -1,6 +1,6 @@
 <template>
   <div class="hero-text-container bottom">
-    <h1 class="w-auto h-auto text-white px-4 md:px-8 pb-20 md:pb-8 lg:pb-10 text-[55.09px] sm:text-[63.09px] md:text-[84.09px] lg:text-[96.09px]">
+    <h1 class="w-auto h-auto text-white px-4 md:px-8 pb-20 md:pb-8 lg:pb-10 text-[55.09px] sm:text-[63.09px] md:text-[96.09px]">
       Continuum Glow stands for <br> <span id="changingWord">Tech</span> innovation.
     </h1>
   </div>
@@ -26,7 +26,7 @@ onMounted(() => {
 function animateWord() {
   gsap.to(wordContainer, {
     duration: 1.6,
-    delay: 0.5,
+    delay: 1,
     text: words[index],
     onComplete: function() {
       index = (index + 1) % words.length;
@@ -39,7 +39,9 @@ function animateWord() {
 
   <style scoped>
   #changingWord {
-    color: #10e4bd;
+    background: -webkit-linear-gradient(#0e042d, #0d3375, #b3aec0);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
   }
   .hero-text-container {
     font-family: 'Helvetica Neue Medium', sans-serif;;
@@ -49,7 +51,6 @@ function animateWord() {
     left: 0;
     width: 100%;
     text-align: left;
-    color: white;
     padding-bottom: 1.5rem;
     z-index: 3;
     font-weight: 600;

@@ -1,5 +1,5 @@
 <template>
-    <div class="order-1 px-12 py-16 md:px-24 md:py-24 bg-blue-500 flex flex-col justify-between items-start">
+    <div class="order-1 px-12 py-16 md:px-24 md:py-24 flex flex-col justify-between items-start">
       <h1 class="text-white mb-20 md:mb-0">Blue Section Title</h1>
       <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </div>
@@ -20,6 +20,9 @@
     font-size: 21px;
     font-weight: 300;
     line-height: 23.17px;
+   }
+   div{
+    background: -webkit-linear-gradient(top, #646464, #646464);
    }
   </style>
   
