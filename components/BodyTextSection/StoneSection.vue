@@ -1,10 +1,10 @@
 <template>
-<div class="bg-div order-3 md:order-4 px-8 py-12 md:px-12 md:py-16  flex flex-col justify-between items-start">
+<div class="bg-div bg-[#E1E1E1] order-3 md:order-4 px-8 py-12 md:px-12 md:py-16  flex flex-col justify-between items-start">
             <!-- Top Section -->
-            <div class="flex-grow flex flex-col justify-center items-start pb-1 mt-6">
-              <div class="bg-white rounded-tl-[44px] rounded-tr-[22px] shadow-2xl p-4">
+            <div class="flex-grow flex flex-col justify-center items-start pb-2 mt-6">
+              <div class="bg-glass rounded-tl-[44px] rounded-tr-[22px] shadow-md p-4">
                 <h3 class="text-black p-4">Top</h3>
-                <p class="text-black p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <p class="text-black p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 <div class="flex items-center p-4">
                   <a href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 cursor-pointer hover:text-blue-500">
@@ -17,7 +17,7 @@
             
             <!-- Bottom Section -->
             <div class="flex-grow flex flex-col justify-center items-start mb-6 ">
-              <div class="bg-white rounded-br-[22px] shadow-2xl p-4">
+              <div class="bg-glass rounded-br-[22px] shadow-md p-4">
                 <h3 class="text-black p-4">Bottom</h3>
                 <p class="text-black p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 <div class="flex items-center p-4">
@@ -48,9 +48,14 @@
     font-weight: 500;
     line-height: 34.17px;
    }
-   .bg-div{
-    background: 
-    linear-gradient(45deg, red, red 10%, orange 10%, orange 20%, yellow 20%, yellow 30%, green 30%, green 40%, blue 40%, blue 50%, indigo 50%, indigo 60%, violet 60%, violet 70%),
-    linear-gradient(135deg, violet, violet 10%, indigo 10%, indigo 20%, blue 20%, blue 30%, green 30%, green 40%, yellow 40%, yellow 50%, orange 50%, orange 60%, red 60%, red 70%);
-    background-blend-mode: screen;   }
+
+   .bg-glass{
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+   }
+   .bg-blob{
+
+   }
 </style>

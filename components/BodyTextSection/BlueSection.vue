@@ -22,7 +22,7 @@
     line-height: 23.17px;
    }
    div{
-    background: -webkit-linear-gradient(top, #646464, #646464);
+    background: #646464;
    }
   </style>
   

@@ -1,5 +1,5 @@
 <template>
-    <div class="order-2 px-12 py-16 md:px-24 md:py-24 bg-[#E1E1E1] flex flex-col justify-between items-start">
+    <div class="order-2 px-12 py-16 md:px-24 md:py-24 bg-white flex flex-col justify-between items-start">
       <h1 class="text-[#646464] mb-16 md:mb-0">White Section 1 Title</h1>
       <p class="text-[#646464]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>

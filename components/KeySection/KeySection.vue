@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-full grid grid-cols-1 md:grid-cols-3 items-start min-h-[500px] md:min-h-[800px]">
     <!-- Watch & Read More Section -->
-    <div class="bg-gray-200 space-y-4 row-span-2 md:row-span-1 pt-4">
+    <div class="bg-[#E1E1E1] space-y-4 row-span-2 md:row-span-1 pt-4">
       <div class="h-[350px] flex flex-col justify-between p-8 md:p-10">
         <div>
         <div class="text-gray-800 text-[36px] font-normal leading-12">Watch</div>
