@@ -24,6 +24,7 @@
 
 <style scoped>
 h1{
+  font-family: 'Georgia', sans-serif;
   color: #ffffff;
   line-height: 90%; 
   font-size: 32px;
@@ -48,6 +49,6 @@ input:focus::placeholder {
 
 button {
   font-size: 20px;
-  font-family: 'Helvetica Neue Medium', sans-serif;
+  font-family: 'Georgia', sans-serif;
 }
 </style>

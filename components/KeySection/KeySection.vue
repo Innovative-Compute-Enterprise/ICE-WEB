@@ -21,8 +21,8 @@
     </div>
 
     <!-- Key Principles Section -->
-    <div class="h-full w-auto bg-[#0f151d] p-10 md:p-12 mb-28 md:col-start-2">
-      <div class="sticky top-24 text-white  text-[48px] md:text-[63px] lg:text-[73px] font-normal leading-[80.78px] tracking-tight">Valores Chave</div>
+    <div class="h-full w-auto bg-black p-10 md:p-12 mb-28 md:col-start-2">
+      <div class="tittle-text sticky top-24 text-white  text-[48px] md:text-[63px] lg:text-[73px] font-normal leading-[80.78px] tracking-tight">Valores Chave</div>
     </div>
 
     <!-- List of Principles -->
@@ -52,9 +52,12 @@ export default {
 </script>
 
 <style scoped>
+.tittle-text{
+  font-family: 'Georgia', sans-serif;
+}
 ul{
   font-size: 21.09px;
-  font-family: 'Georgia', sans-serif;
+  font-family: 'Helvetica Neue Medium', sans-serif;
   line-height: 23.17px;
 }
 </style>

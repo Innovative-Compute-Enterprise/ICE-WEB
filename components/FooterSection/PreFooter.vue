@@ -1,9 +1,9 @@
 <template>
-  <section class="bg-gray-100 grid grid-cols-1 md:grid-cols-2 items-start">
+  <section class="bg-white grid grid-cols-1 md:grid-cols-2 items-start">
     <!-- Coluna Esquerda -->
-    <div class="h-full bg-[#0f151d] px-12 py-16 md:px-24 md:py-24 mb-28">
+    <div class="h-full bg-black px-12 py-16 md:px-24 md:py-24 mb-28">
       <h2 class="sticky top-24 
-      text-[48px] md:text-[72px] leading-[80.78px text-white">Nosso processo</h2>
+      text-[48px] md:text-[72px] leading-[80.78px] text-white">Nosso processo</h2>
     </div>
 
     <!-- Coluna Direita --> 
@@ -49,8 +49,11 @@ export default {
 </script>
 
 <style scoped>
-p {
+h2{
   font-family: 'Georgia', sans-serif;
+}
+p {
+  font-family: 'Helvetica Neue Medium', sans-serif;
   font-size: 21.09px;
   line-height: 23.09px;
 }

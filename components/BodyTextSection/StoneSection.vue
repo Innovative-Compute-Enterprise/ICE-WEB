@@ -1,8 +1,8 @@
 <template>
-<div class="bg-div bg-[#E1E1E1] order-3 md:order-4 px-8 py-12 md:px-12 md:py-16  flex flex-col justify-between items-start">
-            <!-- Top Section -->
+<div class="bg-div  order-3 md:order-4 px-8 py-12 md:px-12 md:py-16  flex flex-col justify-between items-start">
+  <!-- Top Section -->
             <div class="flex-grow flex flex-col justify-center items-start pb-2 mt-6">
-              <div class="bg-glass rounded-tl-[44px] rounded-tr-[22px] shadow-md p-4">
+              <div class="bg-glass rounded-tl-[44px] rounded-tr-[22px] shadow-sm p-4">
                 <h3 class="text-black p-4">Top</h3>
                 <p class="text-black p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 <div class="flex items-center p-4">
@@ -17,7 +17,7 @@
             
             <!-- Bottom Section -->
             <div class="flex-grow flex flex-col justify-center items-start mb-6 ">
-              <div class="bg-glass rounded-br-[22px] shadow-md p-4">
+              <div class="bg-glass rounded-br-[22px] shadow-sm p-4">
                 <h3 class="text-black p-4">Bottom</h3>
                 <p class="text-black p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 <div class="flex items-center p-4">
@@ -36,7 +36,7 @@
 </script>
 
 <style scoped>
-   p{
+  p{
     font-family: 'Helvetica Neue Medium', sans-serif;
     font-size: 21px;
     font-weight: 300;
@@ -49,13 +49,16 @@
     line-height: 34.17px;
    }
 
-   .bg-glass{
-    background: rgba( 255, 255, 255, 0.5 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );
+   .bg-div {
+     background-image: url('/stonebg.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
    }
-   .bg-blob{
 
+   .bg-glass{
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur( 18.5px );
+    -webkit-backdrop-filter: blur( 18.5px );
    }
 </style>
