@@ -2,10 +2,8 @@
   <div class="hero-video-container">
     <!-- Commenting out the video to retain the code for future use -->
   
-    <video ref="videoRef" loop muted playsinline class="hero-video">
-      <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-    </video>
    
+   <img class="hero-image" src="/main.png" alt="main" />
     
     <div class="overlay"></div>
   </div>
