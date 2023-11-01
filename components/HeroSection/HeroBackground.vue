@@ -1,12 +1,12 @@
 <template>
   <div class="hero-video-container">
     <!-- Commenting out the video to retain the code for future use -->
-    <!--
+  
     <video ref="videoRef" loop muted playsinline class="hero-video">
-      <source src="https://ccommondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+      <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
     </video>
-    -->
-    <img src="/teste.png" alt="Hero Image" class="hero-image">
+   
+    
     <div class="overlay"></div>
   </div>
 </template>

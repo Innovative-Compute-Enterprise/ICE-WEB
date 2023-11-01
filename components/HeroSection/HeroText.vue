@@ -1,6 +1,6 @@
 <template>
   <div class="hero-text-container bottom">
-    <h1 class="w-auto h-auto text-white px-4 md:px-8 pb-20 md:pb-8 lg:pb-10 text-[55.09px] sm:text-[63.09px] md:text-[75.09px]">
+    <h1 class="w-auto h-auto text-white px-4 md:pb-10 lg:pb-10 pt-20 md:pt-0 text-[55.09px] sm:text-[63.09px] md:text-[75.09px]">
       Continuum Glow stands for <br> <span ref="changingWordRef"></span> innovation.
     </h1>
   </div>
@@ -36,22 +36,22 @@ function animateWord() {
 
 function animateGradient() {
   gsap.to(changingWordRef.value, {
-    color: "#059ce9",
+    color: "red",
     duration: 2.5,
 
     onComplete: function() {
       gsap.to(changingWordRef.value, {
-        color: "#6f26ba",
+        color: "blue",
         duration: 2.5,
     
         onComplete: function() {
           gsap.to(changingWordRef.value, {
-            color: "#ef062d",
+            color: "green",
             duration: 2.5,
         
             onComplete: function() {
               gsap.to(changingWordRef.value, {
-                color: "#fef440",
+                color: "yellow",
                 duration: 2.5,
             
                 onComplete: animateGradient

@@ -1,7 +1,7 @@
 <template>
   <div class="px-12 py-16 md:px-24 md:py-24 bg-blue-500 text-black space-y-6">
     <h1>Schedule a demo by submitting your contact information</h1>
-    <form class="space-y-4" method="POST" data-netlify="true">
+    <form class="space-y-4" netlify>
       <div class="flex flex-col">
         <input type="text" id="name" name="name" placeholder="Your Name" minlength="5" required class="text-input p-6 rounded-md">
       </div>
@@ -49,6 +49,7 @@ input:focus::placeholder {
 
 button {
   font-size: 20px;
-  font-family: 'Georgia', sans-serif;
+  font-family: 'Helvetica Neue Medium', sans-serif;
+  font-weight: 500;
 }
 </style>

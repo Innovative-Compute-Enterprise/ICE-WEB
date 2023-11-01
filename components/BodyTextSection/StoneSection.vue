@@ -1,5 +1,5 @@
 <template>
-<div class="bg-div  order-3 md:order-4 px-8 py-12 md:px-12 md:py-16  flex flex-col justify-between items-start">
+<div class="order-3 md:order-4 px-8 py-12 md:px-12 md:py-16  flex flex-col justify-between items-start bg-[#dfdfdf]">
   <!-- Top Section -->
             <div class="flex-grow flex flex-col justify-center items-start pb-2 mt-6">
               <div class="bg-glass rounded-tl-[44px] rounded-tr-[22px] shadow-sm p-4">
@@ -48,16 +48,9 @@
     font-weight: 500;
     line-height: 34.17px;
    }
-
-   .bg-div {
-     background-image: url('/stonebg.png');
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center center;
-   }
-
    .bg-glass{
     background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
     backdrop-filter: blur( 18.5px );
     -webkit-backdrop-filter: blur( 18.5px );
    }

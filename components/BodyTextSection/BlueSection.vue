@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-blue-500  order-1 px-12 py-16 md:px-24 md:py-24 flex flex-col justify-between items-start">
+    <div class="bg-[#646464]  order-1 px-12 py-16 md:px-24 md:py-24 flex flex-col justify-between items-start">
       <h1 class="text-white mb-20 md:mb-0">Blue Section Title</h1>
       <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </div>

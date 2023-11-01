@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-full grid grid-cols-1 md:grid-cols-3 items-start min-h-[500px] md:min-h-[800px]">
     <!-- Watch & Read More Section -->
-    <div class="bg-[#E1E1E1] space-y-4 row-span-2 md:row-span-1 pt-4">
+    <div class="bg-[#dfdfdf] space-y-4 row-span-2 md:row-span-1 pt-4">
       <div class="h-[350px] flex flex-col justify-between p-8 md:p-10">
         <div>
         <div class="text-gray-800 text-[36px] font-normal leading-12">Watch</div>
@@ -12,9 +12,9 @@
         </svg>
     </div>
       
-      <div class="bg-gray-300 h-[350px] flex flex-col justify-between p-8 md:p-10">
-        <div class="text-gray-800 text-[36px] font-normal leading-12">Read more</div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 mt-4">
+      <div class="bg-[#646464] h-[350px] flex flex-col justify-between p-8 md:p-10">
+        <div class="text-white text-[36px] font-normal leading-12">Read more</div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" class="w-12 h-12 mt-4">
         <path fill-rule="evenodd" d="M15.75 2.25H21a.75.75 0 01.75.75v5.25a.75.75 0 01-1.5 0V4.81L8.03 17.03a.75.75 0 01-1.06-1.06L19.19 3.75h-3.44a.75.75 0 010-1.5zm-10.5 4.5a1.5 1.5 0 00-1.5 1.5v10.5a1.5 1.5 0 001.5 1.5h10.5a1.5 1.5 0 001.5-1.5V10.5a.75.75 0 011.5 0v8.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V8.25a3 3 0 013-3h8.25a.75.75 0 010 1.5H5.25z" clip-rule="evenodd" />
         </svg>
       </div>
@@ -22,7 +22,7 @@
 
     <!-- Key Principles Section -->
     <div class="h-full w-auto bg-black p-10 md:p-12 mb-28 md:col-start-2">
-      <div class="tittle-text sticky top-24 text-white  text-[48px] md:text-[63px] lg:text-[73px] font-normal leading-[80.78px] tracking-tight">Valores Chave</div>
+      <div class="tittle-text sticky top-24 text-white text-center text-[48px] md:text-[63px] lg:text-[73px] font-normal leading-[80.78px] tracking-tight">Valores Chave</div>
     </div>
 
     <!-- List of Principles -->
