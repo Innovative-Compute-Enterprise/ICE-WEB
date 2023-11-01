@@ -5,8 +5,10 @@
     name="contact"
     class="space-y-4" 
     method="POST" 
-    data-netlify="true"
+    netlify
+    data-netlify-honeypot="bot-field"
     >
+    <input class="hidden" name="bot-field">
       <div class="flex flex-col">
         <input type="text" id="inputname" name="name" placeholder="Your Name" minlength="5" required class="text-input p-6 rounded-md">
       </div>
