@@ -1,9 +1,9 @@
 <template>
-  <div class="hero-text-container bottom">
-    <h1 class="w-auto h-auto text-white px-4 md:pb-10 lg:pb-10 pt-20 md:pt-0 text-[55.09px] sm:text-[63.09px] md:text-[75.09px]">
-      Continuum Glow stands for <br> <span ref="changingWordRef"></span> innovation.
+  <div class="hero-text-container bottom flex flex-col items-start">
+    <h1 class="w-auto h-auto text-white px-4 md:pb-10 lg:pb-10 pb-20 md:pt-0 text-[45.09px] sm:text-[63.09px] md:text-[75.09px]">
+      We stand for <br class="md:hidden"> <span ref="changingWordRef"></span><br class="md:hidden"> innovation.
     </h1>
-  </div>
+    </div>
 </template>
 
 <script setup>
@@ -13,7 +13,7 @@ import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(TextPlugin);
 
-const words = ["AI", "Software", "Tech", "Robotic", "Automation"];
+const words = ["AI", "Software", "Tech"];
 let index = 0;
 const changingWordRef = ref(null);
 
@@ -88,9 +88,8 @@ function animateGradient() {
 
 @media screen and (max-width: 640px) {
   .hero-text-container {
-    bottom: auto;
-    top: 0;
-    padding-top: 6rem;
+    bottom: 0;
+    top: auto;
   }
 }
 </style>

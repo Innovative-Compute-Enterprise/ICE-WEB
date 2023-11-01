@@ -1,9 +1,9 @@
 <template>
   <section class="bg-white grid grid-cols-1 md:grid-cols-2 items-start">
     <!-- Coluna Esquerda -->
-    <div class="h-full bg-black px-12 py-16 md:px-24 md:py-24 mb-28">
+    <div class="h-full bg-black px-12 py-16 md:px-24 md:py-24 mb-28 ">
       <h2 class="sticky top-24 
-      text-[48px] md:text-[72px] leading-[80.78px] text-white">Nosso processo</h2>
+      text-[48px] md:text-[72px] leading-[80.78px] text-white text-left">Nosso processo</h2>
     </div>
 
     <!-- Coluna Direita --> 
@@ -23,30 +23,6 @@
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      features: [
-        {
-          id: 1,
-          icon: "path/to/your/icon1.svg",
-          title: "Feature 1",
-          description: "Descrição da feature 1"
-        },
-        {
-          id: 2,
-          icon: "path/to/your/icon2.svg",
-          title: "Feature 2",
-          description: "Descrição da feature 2"
-        },
-        // ... adicione outros recursos conforme necessário
-      ]
-    };
-  }
-};
-</script>
 
 <style scoped>
 h2{
