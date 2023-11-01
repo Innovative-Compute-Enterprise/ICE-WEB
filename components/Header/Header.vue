@@ -30,8 +30,8 @@
       </div>
     </div>
     <!-- Slide-in Menu -->
-    <div ref="menu" class="fixed top-0 right-0 w-64 h-screen bg-[#646464]  text-white p-4 transform" :class="{ 'translate-x-full': !menuOpen }">
-      <ul class="flex flex-col items-center justify-center h-[70%] space-y-8 text-2xl">
+    <div ref="menu" class="fixed top-0 right-0 w-64 h-screen bg-black  text-white p-4 transform" :class="{ 'translate-x-full': !menuOpen }">
+      <ul class="flex flex-col items-center justify-center h-[80%] space-y-8 text-2xl">
           <li><a href="#home" class="hover:text-blue-600">Home</a></li>
           <li><a href="#about" class="hover:text-blue-600">About</a></li>
           <li><a href="#faq" class="hover:text-blue-600">Services</a></li>
@@ -39,7 +39,10 @@
       </ul>
       
       <hr>
+      <div>
       <h3>Contunuum Glow</h3>
+      <p class="opacity-[80%]">"Achieve innovation,<br> fueled by AI"</p>
+     </div>
     </div>
   </header>
 </template>

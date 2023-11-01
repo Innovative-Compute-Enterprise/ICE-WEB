@@ -36,8 +36,12 @@
                 </svg>
             </a>
         </div>
+        <p class="text-[17px] p-2">&copy; {{ currentYear }} Continuum Glow. All rights reserved.</p>
     </div>
 </template>
+<script setup>
+const currentYear = ref(new Date().getFullYear());
+</script>
 
 <style scoped>
 h1{
