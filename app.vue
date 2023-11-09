@@ -1,17 +1,25 @@
-<script setup lang="ts">;
-console.log('Be the Change.');
-import Header from '~/components/Header/Header.vue';
-import Footer from '~/components/FooterSection/Footer.vue';
-import CookieBanner from '~/components/CookieBanner.vue';
-</script>
-
 <template>
-<Header />
-  <NuxtPage />
-<Footer id="footer" />
-<CookieBanner />
+  <NuxtLayout>
+      <NuxtPage />
+  </NuxtLayout>
 </template>
 
-<style scoped>
- 
+<script lang="ts" setup>
+console.log('Be the Change.');
+</script>
+
+<style>
+body {
+  overflow-x: hidden;
+  background-color: #000000;
+  }
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
 </style>

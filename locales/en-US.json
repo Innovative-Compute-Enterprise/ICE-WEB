@@ -1,0 +1,99 @@
+{
+
+    "header":{
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact",
+      "polices": "Polices"
+
+    },
+
+    "headerBrand":{
+      "name": "Continuum Glow",
+      "slogan": "Achieve inovation fueled by AI"
+    },
+
+    "heroText":{
+      "title1": "WE STAND FOR",
+      "title2": "INNOVATION"
+    },
+
+    "words":{
+      "ai": "AI",
+      "software": "SOFTWARE",
+      "tech": "TECH"
+    },
+
+    "blueSection": {
+      "title": "Blue Section Title",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+
+    "stoneSection": {
+      "topTitle": "Top",
+      "topDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "bottomTitle": "Bottom",
+      "bottomDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+
+    "whiteSection1": {
+      "title": "Blue Section Title",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+
+    "whiteSection2": {
+      "title": "Blue Section Title"
+    },
+
+    "keySection": {
+      "watch": "Watch",
+      "video": "our video",
+      "read": "Read more",
+      "key": "Key principles"
+
+    },
+
+    "principles": {
+      "principle1": "Companies cannot access genetic data held by other partner companies",
+      "principle2": "GENXT does not process, transmit or store any genetic or personal information",
+      "principle3": "Companies establish their own policies for collaboration with their chosen partners",
+      "principle4": "Identified matches contain only the personal information that individuals agreed to disclose",
+      "principle5": "Companies themselves deliver matches to their customer accounts"
+    },
+   
+    "bookSection":{
+     "titleMobile": "Neural",
+     "titlePC": "Neural Network"
+    },
+
+    "preFooterSection":{
+      "title": "Our Process",
+      "text1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "text2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "text3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "text4": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+     },
+
+     "footerEmail":{
+      "title": "Interested to find out more?",
+      "email": "E-mail",
+      "title2": "Location",
+      "address1": "AB318, Biodata Innovation Centre,",
+      "address2": "Wellcome Genome Campus,",
+      "address3": "Hinxton, Cambridgeshire, United",
+      "copyright": "Continuum Glow. All rights reserved."
+     },
+
+     "footerForm":{
+      "title": "Schedule a demo by submitting your contact information",
+      "namePlaceholder": "Your Name",
+      "companyPlaceholder": "Your Company",
+      "emailPlaceholder": "Your Email",
+      "buttonText": "BOOK A DEMO",
+      "agreementText": "I agree with the",
+      "privacyPolicy": "Privacy Policy",
+      "confirmationMessage": "Form has been successfully submitted!"
+    }
+
+}

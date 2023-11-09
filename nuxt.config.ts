@@ -1,20 +1,41 @@
 export default defineNuxtConfig({
-  app: {
-    head: {
-      titleTemplate: 'Continuum Glow',
-      meta: [
-        { charset: 'utf-8' },
-        // Updated viewport meta tag
-        { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
-        { name: 'description', content: 'Nuxt TypeScript' },
-      ]
-    }
-  },
   plugins: [  
-    '~/plugins/global-state.js'
+    '~/plugins/global-state.js',
+    
   ],
-  
-  css: ['~/assets/css/main.css'],
+  modules: [
+    [
+      '@nuxtjs/i18n',
+      
+      { 
+        fallbackLocale: 'en',
+        defaultLocale: 'en',
+        detectBrowserLanguage: {
+          useCookie: true,
+          cookieKey: 'i18n_redirected',
+        },
+      lazy: true,
+      strategy: 'prefix_except_default',
+      langDir: 'locales/',
+      locales: [
+        
+        {
+          code: 'en',
+          iso: 'en-US',
+          file: 'en-US.json'
+        },
+        {
+          code: 'pt',
+          iso: 'pt-BR',
+          file: 'pt-BR.json'
+        }
+      ],
+        },
+    ]
+  ],
+  css: [
+    '~/assets/css/main.css', 
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},

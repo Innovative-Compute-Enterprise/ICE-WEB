@@ -5,7 +5,7 @@
       <div class="flex flex-col sm:flex-row items-center mb-2 sm:mb-0">
         <div class="text-sm sm:text-lg mb-2 sm:mb-0">
           We and selected third parties use cookies or similar technologies for technical purposes and, with your consent, for other purposes as specified in the 
-          <a href="#" class="underline text-white">cookie policy</a>. Denying consent may make related features unavailable.
+          <a href="/pages/about.vue" class="underline text-white">cookie policy</a>. Denying consent may make related features unavailable.
         </div>
       </div>
 

@@ -3,26 +3,32 @@
     <!-- Coluna Esquerda -->
     <div class="h-full bg-black px-12 py-16 md:px-24 md:py-24 mb-28 ">
       <h2 class="sticky top-24 
-      text-[48px] md:text-[72px] leading-[80.78px] text-white text-left">Nosso processo</h2>
+      text-[48px] md:text-[72px] leading-[80.78px] text-white text-left">{{ $t('preFooterSection.title') }}</h2>
     </div>
 
     <!-- Coluna Direita --> 
     <div class="h-full space-y-16 px-10 py-16 md:px-12 md:py-20">
       <!-- Item 1 -->
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <p>{{ $t('preFooterSection.text1') }}</p>
 
       <!-- Item 2 -->
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <p>{{ $t('preFooterSection.text2') }}</p>
       
       <!-- Item 3 -->
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <p>{{ $t('preFooterSection.text3') }}</p>
      
-      <!-- Item 3 -->
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <!-- Item 4 -->
+      <p>{{ $t('preFooterSection.text4') }}</p>
 
     </div>
   </section>
 </template>
+
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+</script>
 
 <style scoped>
 h2{

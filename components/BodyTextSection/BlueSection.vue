@@ -1,11 +1,16 @@
 <template>
     <div class="bg-[#646464]  order-1 px-12 py-16 md:px-24 md:py-24 flex flex-col justify-between items-start">
-      <h1 class="text-white mb-20 md:mb-0">Blue Section Title</h1>
-      <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <h1 class="text-white mb-20 md:mb-0">{{ $t('blueSection.title') }}</h1>
+      <p class="text-white">{{ $t('blueSection.description') }}</p>
     </div>
   </template>
   
   <script setup>
+  
+ import { useI18n } from 'vue-i18n'
+
+
+  const { t } = useI18n()
   </script>
   <style scoped>
    h1{
@@ -17,7 +22,7 @@
    }
    p{
     font-family: 'Helvetica Neue Medium', sans-serif;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 23.17px;
    }

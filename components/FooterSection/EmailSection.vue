@@ -1,18 +1,18 @@
 <template>
-    <div class="p-12 md:p-24 bg-white pt-8 mb-10">
-        <h1 class="md:text-[63px] text-[48px] font-semibold text-gray-800 leading-tight mb-28">Interested to find out more?</h1>
+    <div class="p-12 md:p-24 bg-white pt-8 ">
+        <h1 class="md:text-[63px] text-[48px] font-semibold text-gray-800 leading-tight mb-28">{{ $t('footerEmail.title') }}</h1>
         
         <div>
             <div class="space-y-2">
-                <h2 class="text-xl font-medium text-gray-700">E-mail</h2>
+                <h2 class="text-xl font-medium text-gray-700">{{ $t('footerEmail.email') }}</h2>
                 <a href="#" class="text-lg text-blue-500 underline hover:text-blue-600">info@continuumglow.com</a>
             </div>
             <div class="space-y-2">
-                <h2 class="text-xl font-medium text-gray-700">Location</h2>
+                <h2 class="text-xl font-medium text-gray-700">{{ $t('footerEmail.title2') }}</h2>
                 <div class="text-lg text-gray-600 leading-snug">
-                    AB318, Biodata Innovation Centre,<br />
-                    Wellcome Genome Campus,<br />
-                    Hinxton, Cambridgeshire, United<br />
+                    {{ $t('footerEmail.address1') }}<br />
+                    {{ $t('footerEmail.address2') }}<br />
+                    {{ $t('footerEmail.address3') }}<br />
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
                 </svg>
             </a>
         </div>
-        <p class="text-[17px] p-2">&copy; {{ currentYear }} Continuum Glow. All rights reserved.</p>
+        <p class="text-[17px] p-2">&copy; {{ currentYear }} {{ $t('footerEmail.copyright') }}</p>
     </div>
 </template>
 <script setup>
