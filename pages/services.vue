@@ -21,7 +21,7 @@
   <div class="black-section flex items-center justify-center py-28">
       <div class="flex items-center justify-center space-x-4 md:space-x-8 mx-24 md:mx-32">
          <div class="flex flex-col items-center gap-y-4">
-         <img src="bb.png" alt="Your Logo" class="logo w-28 h-28">
+         <img src="/bb.png" alt="Your Logo" class="logo w-28 h-28">
           <h1 class=" text-white mb-4 text-[32px]">{{$t('services.blacktitle')}}</h1>
           <p class=" text-white text-[18px] text-center w-[60%] mb-12">
             {{$t('services.blacktext')}}
