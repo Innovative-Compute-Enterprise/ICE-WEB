@@ -69,6 +69,7 @@ onMounted(() => {
   width: 150px; /* Adjust size as needed */
   height: 100px;
   padding-left: 50px;
+  padding-bottom: 15px;
 }
 
 .loading-bar {
