@@ -20,7 +20,6 @@ export default defineNuxtConfig({
           useCookie: true,
           cookieKey: 'i18n_redirected',
         },
-      lazy: true,
       strategy: 'prefix_except_default',
       langDir: 'locales/',
       locales: [
