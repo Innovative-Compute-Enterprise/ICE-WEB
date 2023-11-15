@@ -1,12 +1,11 @@
 <template>
   <div>
-  <div class="hero flex items-end justify-start h-[600px] md:h-[700px]">
+  <div class="hero flex items-end justify-start h-[400px] md:h-[800px]">
+      <li class="list-none pl-4">
+            <h1 class="hero-title text-left text-[75px] md:text-[125px] font-bold">{{$t('aboutPage.title')}}</h1>
+      </li>
 
-<li class="list-none pl-4">
-      <h1 class="hero-title text-left text-[75px] md:text-[125px] font-bold">{{$t('aboutPage.title')}}</h1>
-</li>
-
-</div>
+  </div>
   <ContextSection />
   </div>
 </template>
