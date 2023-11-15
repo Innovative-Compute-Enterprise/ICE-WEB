@@ -1,7 +1,5 @@
 <template>
   <div class="hero-video-container">
-    <!-- Commenting out the video to retain the code for future use -->
-  
    
    <img class="hero-image" src="/main.png" alt="main" />
     
@@ -10,18 +8,6 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
-
-const videoRef = ref(null);
-
-onMounted(() => {
-  const videoElement = videoRef.value;
-  if (videoElement) {
-    videoElement.play().catch(error => {
-      console.error("Autoplay was prevented:", error);
-    });
-  }
-});
 </script>
 
 <style scoped>

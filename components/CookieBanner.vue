@@ -1,22 +1,27 @@
 <template>
-  <div v-if="showBanner" class="cookie-banner fixed bottom-0 left-0 w-full z-50 bg-blue-600 text-white px-4 py-2 sm:px-6 sm:py-4">
-    <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between">
+  <div v-if="showBanner" class="cookie-banner fixed inset-x-0 bottom-0 z-50 bg-blue-600 text-white px-4 py-2 sm:px-6 sm:py-3">
+    <div class="container mx-auto flex items-center justify-between flex-col sm:flex-row">
       
-      <div class="flex flex-col sm:flex-row items-center mb-2 sm:mb-0">
-        <div class="text-sm sm:text-lg mb-2 sm:mb-0">
+      <div class="flex items-center mb-4 sm:mb-0">
+        <svg class="mr-2 h-6 w-6 sm:h-8 sm:w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <!-- SVG path for cookie icon -->
+          <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm6,13a1,1,0,1,1,1-1A1,1,0,0,1,18,15Zm-8-4a1,1,0,1,1,1-1A1,1,0,0,1,10,11Zm6-3a1,1,0,1,1,1-1A1,1,0,0,1,16,8Zm-4-2a1,1,0,1,1,1-1A1,1,0,0,1,12,6Z" fill="#FFF"/>
+        </svg>
+        <div class="text-xs sm:text-sm">
           We and selected third parties use cookies or similar technologies for technical purposes and, with your consent, for other purposes as specified in the 
-          <a href="/pages/about.vue" class="underline text-white">cookie policy</a>. Denying consent may make related features unavailable.
+          <a href="/pages/about.vue" class="underline">cookie policy</a>. Denying consent may make related features unavailable.
         </div>
       </div>
 
-      <div class="flex space-x-2 sm:space-x-4">
-        <button @click="declineCookies" class="text-white bg-transparent border border-white px-2 sm:px-4 py-1 sm:py-2 rounded hover:bg-white hover:text-blue-600">Reject</button>
-        <button @click="acceptCookies" class="bg-white text-blue-600 px-2 sm:px-4 py-1 sm:py-2 rounded hover:bg-blue-600 hover:text-white">Accept</button>
+      <div class="flex space-x-2">
+        <button @click="declineCookies" class="reject-button">Reject</button>
+        <button @click="acceptCookies" class="accept-button">Accept</button>
       </div>
 
     </div>
   </div>
 </template>
+
 
 
 
@@ -35,11 +40,57 @@ const declineCookies = () => {
 </script>
 
 <!-- Seus estilos aqui -->
-  <style scoped>
-  button{
-text-align: center;
-font-weight: bold;
-font-size: 21px;
+<style scoped>
+.cookie-banner {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+button {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.reject-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.reject-button:hover {
+  background-color: white;
+  color: #1e40af;
+}
+
+.accept-button {
+  background-color: #4CAF50; /* Green shade */
+  color: white;
+}
+
+.accept-button:hover {
+  background-color: #45a049; /* A slightly darker green for hover effect */
+  color: white;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffeb3b;
+}
+
+@media (max-width: 640px) {
+  .cookie-banner {
+    padding: 1rem;
   }
-  </style>
-  
+
+  .cookie-banner svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+</style>

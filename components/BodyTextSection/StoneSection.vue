@@ -1,5 +1,5 @@
 <template>
-<div class="order-3 md:order-4 px-8 py-12 md:px-12 md:py-16  flex flex-col justify-between items-start bg-[#dfdfdf]">
+<div class="order-3 md:order-4 px-8 py-16 md:px-16 md:py-28 flex flex-col justify-between items-start bg-[#dfdfdf]">
   <!-- Top Section -->
             <div class="flex-grow flex flex-col justify-center items-start pb-2 mt-6">
               <div class="bg-glass rounded-tl-[44px] rounded-tr-[22px] shadow-sm p-4">

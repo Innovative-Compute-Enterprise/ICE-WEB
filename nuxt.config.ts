@@ -1,4 +1,10 @@
 export default defineNuxtConfig({
+  app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
+    },
+  },
   plugins: [  
     '~/plugins/global-state.js',
     

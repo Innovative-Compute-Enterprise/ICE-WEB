@@ -16,6 +16,7 @@ import Header from '~/components/Header/Header.vue';
 import Footer from '~/components/FooterSection/Footer.vue';
 import CookieBanner from '~/components/CookieBanner.vue';
 
+
 const isLoading = ref(true);
 
 onMounted(() => {

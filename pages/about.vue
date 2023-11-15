@@ -1,14 +1,16 @@
 <template>
+  <div>
   <div class="hero flex items-end justify-start h-[600px] md:h-[700px]">
 
-<li class="list-none pl-1">
+<li class="list-none pl-4">
   <NuxtLink to="/" prefetch>
-      <h1 class="hero-title text-left md:text-[10rem] text-[6rem] font-bold">About</h1>
+      <h1 class="hero-title text-left md:text-[10rem] text-[6rem] font-bold">{{$t('aboutPage.title')}}</h1>
   </NuxtLink>
 </li>
 
 </div>
   <ContextSection />
+  </div>
 </template>
 
 <script>
@@ -39,7 +41,7 @@ body {
   background-color: #000000;
 }
 .hero {
-    background-color: #dd1919; /* Light grey background for contrast */
+    background-color: #da3b3b; /* Light grey background for contrast */
     text-align: center;
   }
   

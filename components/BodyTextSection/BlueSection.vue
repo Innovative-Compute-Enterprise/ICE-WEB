@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-[#646464]  order-1 px-12 py-16 md:px-24 md:py-24 flex flex-col justify-between items-start">
-      <h1 class="text-white mb-20 md:mb-0">{{ $t('blueSection.title') }}</h1>
-      <p class="text-white">{{ $t('blueSection.description') }}</p>
+    <div class="bg-[#dfdfdf]  order-1 px-8 py-16 md:px-28 md:py-28 flex flex-col justify-between items-start">
+      <h1 class="text-[#646464] mb-20 md:mb-0">{{ $t('blueSection.title') }}</h1>
+      <p class="text-[#646464]">{{ $t('blueSection.description') }}</p>
     </div>
   </template>
   

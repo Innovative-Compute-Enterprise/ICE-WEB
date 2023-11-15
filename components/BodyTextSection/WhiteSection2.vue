@@ -1,5 +1,5 @@
 <template>
-    <div class="order-4 md:order-3 px-12 py-16 md:px-24 md:py-24 bg-[#dd1919] md:bg-white flex flex-col justify-between items-start">
+    <div class="order-4 md:order-3 px-8 py-16 md:px-28 md:py-28 bg-[#da3b3b] md:bg-white flex flex-col justify-between items-start">
       <h1 class="md:text-[#646464] text-white my-6">{{ $t('whiteSection2.title') }}</h1>
       <p class="text-[#646464]"></p>
     </div>

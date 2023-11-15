@@ -4,8 +4,8 @@
       "home": "Home",
       "about": "About",
       "services": "Services",
-      "contact": "Contact",
-      "polices": "Polices"
+      "polices": "Polices",
+      "contact": "Contact"
 
     },
 
@@ -23,6 +23,14 @@
       "ai": "AI",
       "software": "SOFTWARE",
       "tech": "TECH"
+    },
+
+    "button":{
+      "main": "Amplify"
+    },
+
+    "about":{
+      "title": "About"
     },
 
     "blueSection": {
@@ -50,7 +58,7 @@
       "watch": "Watch",
       "video": "our video",
       "read": "Read more",
-      "key": "Key principles"
+      "key": "Key Principles"
 
     },
 
@@ -94,6 +102,41 @@
       "agreementText": "I agree with the",
       "privacyPolicy": "Privacy Policy",
       "confirmationMessage": "Form has been successfully submitted!"
-    }
+    },
 
+    "services": {
+      "title": "Services",
+      "blacktitle" : "BLACK-BOX",
+      "blacktext" : "We are dedicated to delivering top-notch services tailored to your unique needs. Our team is committed to innovation, excellence, and building lasting partnerships."
+    },
+    "ourPlans": {
+      "title": "Our Plans",
+      "subtitle": "Choose the plan that's right for you.",
+      "services": {
+        "signUp": "Sign-up",
+        "1": {
+          "title": "Basic Free",
+          "description": "MP3 Audio, 100 songs, Ads every ten minutes, Up to 1 user, 1-Device"
+        },
+        "2": {
+          "title": "Basic Free",
+          "description": "MP3 Audio, 100 songs, Ads every ten minutes, Up to 1 user, 1-Device"
+        },
+        "3": {
+          "title": "Basic Free",
+          "description": "MP3 Audio, 100 songs, Ads every ten minutes, Up to 1 user, 1-Device"
+        }
+      }
+    },
+    "policies": {
+      "title": "Policies",
+      "privacyPolicy": "Privacy Policy",
+      "privacyPolicyDesc": "This Privacy Policy outlines how we handle your personal information...",
+      "cookiePolicy": "Cookie Policy",
+      "cookiePolicyDesc": "This Cookie Policy explains what cookies are and how we use them...",
+      "copyrightNotice": "Copyright Notice",
+      "copyrightNoticeDesc": "Copyright information and usage guidelines...",
+      "termsOfService": "Terms of Service",
+      "termsOfServiceDesc": "The terms governing the use of our services..."
+    }
 }

@@ -6,13 +6,14 @@
     <p class="text-white text-left text-[18px] mx-8 md:mx-12 mb-10 w-[40%]">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
-    <button class="bg-black text-white px-10 py-3 rounded-md mb-10 ml-8 md:ml-12 hover:bg-gray-800 transition font-[500]">
-      EXPLORE
-    </button>  
+    <div class=" ml-8 md:ml-12">
+    <ButtonMain />
+  </div>
   </div>
 </template>
 
 <script setup>
+import ButtonMain from '~/components/ButtonMain.vue';
 import { onMounted, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import gsap from "gsap";
@@ -42,8 +43,10 @@ watch(() => t('words.tech'), (newVal) => {
 });
 
 onMounted(() => {
-  animateWord();
-  animateGradient();
+  if (changingWordRef.value) {
+    animateWord();
+    animateGradient();
+  }
 });
 
 function animateWord() {
@@ -51,42 +54,32 @@ function animateWord() {
     duration: 1.5,
     delay: 0.5,
     text: words.value[index],
-    onComplete: function() {
+    onComplete: () => {
       index = (index + 1) % words.value.length;
       animateWord();
     }
   });
-};
-function animateGradient() {
-  gsap.to(changingWordRef.value, {
-    color: "red",
-    duration: 2.5,
+}
 
-    onComplete: function() {
-      gsap.to(changingWordRef.value, {
-        color: "blue",
-        duration: 2.5,
-    
-        onComplete: function() {
-          gsap.to(changingWordRef.value, {
-            color: "green",
-            duration: 2.5,
-        
-            onComplete: function() {
-              gsap.to(changingWordRef.value, {
-                color: "yellow",
-                duration: 2.5,
-            
-                onComplete: animateGradient
-              });
-            }
-          });
-        }
-      });
-    }
-  });
+function animateGradient() {
+  const colors = ["red", "blue", "green", "yellow"];
+  let colorIndex = 0;
+
+  function changeColor() {
+    gsap.to(changingWordRef.value, {
+      color: colors[colorIndex % colors.length],
+      duration: 2.5,
+      onComplete: () => {
+        colorIndex++;
+        changeColor();
+      }
+    });
+  }
+
+  changeColor();
 }
 </script>
+
 
 <style scoped>
 .hero-text-container h1 {

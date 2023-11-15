@@ -1,3 +1,4 @@
+<!-- app.vue -->
 <template>
   <NuxtLayout>
       <NuxtPage />
@@ -12,14 +13,15 @@ console.log('Be the Change.');
 body {
   overflow-x: hidden;
   background-color: #000000;
-  }
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
 }
-.page-enter-from,
-.page-leave-to {
+
+/* Page transition styles */
+.page-enter-active, .page-leave-active {
+  transition: all 0.3s;
+}
+.page-enter-from, .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
 }
+
 </style>
