@@ -9,12 +9,12 @@
   <CookieBanner />
 </template>
 
-<script setup lang="ts">
+<script>
 import { ref, onMounted } from 'vue';
-import Loading from '~/components/Loading.vue'; // Make sure the path is correct
-import Header from '~/components/Header/Header.vue';
-import Footer from '~/components/FooterSection/Footer.vue';
-import CookieBanner from '~/components/CookieBanner.vue';
+import Loading from '@/components/Loading.vue'; 
+import Header from '@/components/Header/Header.vue';
+import Footer from '@/components/FooterSection/Footer.vue';
+import CookieBanner from '@/components/CookieBanner.vue';
 
 
 const isLoading = ref(true);
