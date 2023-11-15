@@ -43,7 +43,7 @@
     </div>
     <!-- Slide-in Menu -->
         <div ref="menu" class=" menu-slide fixed top-0 right-0 w-60 h-screen bg-black text-white p-8 transform" :class="{ 'translate-x-full': !menuOpen }">
-      <ul class="flex flex-col items-start justify-center h-[60%] space-y-10 text-[21px]">
+      <ul class="flex flex-col items-start justify-center h-[60%] space-y-8 text-[21px]">
         <!-- Use NuxtLink for internal routing, add the `to` prop with the route path -->
         <li>
           <NuxtLink :to="localePath('')" @click="closeMenu" prefetch class="hover:text-blue-600">
@@ -90,7 +90,7 @@
       </svg>
       </button>
 
-      <div class="pt-8">
+      <div class="pt-2">
         <h3 class="py-4">{{$t('headerBrand.name')}}</h3>
         <p class="opacity-[70%]">"{{$t('headerBrand.slogan')}}"</p>
       </div>
