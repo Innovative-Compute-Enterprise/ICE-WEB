@@ -1,7 +1,7 @@
 <template>
   <div class="hero-text-container bottom flex flex-col items-start justify-center h-screen">
-    <h1 class="text-white px-8 md:px-12 pb-6 text-[47.09px] sm:text-[65.09px] md:text-[85.09px] leading-none">
-      {{ $t('heroText.title1') }} <br> 
+    <h1 class="text-white px-4 md:px-12 pb-12 text-[55.09px] md:text-[85.09px] leading-none">
+      {{ $t('heroText.title1') }}  AI
       <br> {{ $t('heroText.title2') }}    </h1>
     <p class="text-white text-left text-[18px] mx-8 md:mx-12 mb-10 w-[40%]">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

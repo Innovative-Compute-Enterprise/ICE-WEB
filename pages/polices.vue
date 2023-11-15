@@ -4,7 +4,7 @@
       <!-- Hero Section -->
       <div class="hero flex items-end justify-start h-[600px] md:h-[700px]">
         <li class="list-none pl-4">
-              <h1 class="hero-title text-left md:text-[8rem] text-[4rem] font-bold">{{$t('policies.title')}}</h1>
+              <h1 class="hero-title text-left text-[75px] md:text-[125px] font-bold">{{$t('policies.title')}}</h1>
         </li>
       </div>
   
