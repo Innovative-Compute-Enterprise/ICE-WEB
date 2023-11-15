@@ -10,34 +10,24 @@ export default defineNuxtConfig({
     
   ],
   modules: [
-    [
       '@nuxtjs/i18n',
-      
-      { 
-        fallbackLocale: 'en',
-        defaultLocale: 'en',
-        detectBrowserLanguage: {
-          useCookie: true,
-          cookieKey: 'i18n_redirected',
-        },
-      strategy: 'prefix_and_default',
-      langDir: 'locales/',
-      locales: [
-        
-        {
-          code: 'en',
-          iso: 'en-US',
-          file: 'en-US.json'
-        },
-        {
-          code: 'pt',
-          iso: 'pt-BR',
-          file: 'pt-BR.json'
-        }
-      ],
-        },
-    ]
   ],
+  i18n: {
+    lazy:true,
+    langDir: 'locales', 
+    strategy: 'prefix_except_default',
+    defaultLocale: 'en',
+    locales: [
+      {
+        code: 'en',
+        file: 'en-US.json',
+      },
+      {
+        code: 'pt',
+        file: 'pt-BR.json',
+      },
+    ],
+  },
   css: [
     '~/assets/css/main.css', 
   ],

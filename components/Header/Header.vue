@@ -14,10 +14,10 @@
 
  <!-- Desktop Navigation Links -->
  <nav class="hidden md:flex space-x-8 text-[18px] text-white">
-        <NuxtLink to="/" class="nav-link" active-class="active-link">{{$t('header.home')}}</NuxtLink>
-        <NuxtLink to="/about" class="nav-link" active-class="active-link">{{$t('header.about')}}</NuxtLink>
-        <NuxtLink to="/services" class="nav-link" active-class="active-link">{{$t('header.services')}}</NuxtLink>
-        <NuxtLink to="/polices" class="nav-link" active-class="active-link">{{$t('header.polices')}}</NuxtLink>
+        <NuxtLink :to="localePath('')" class="nav-link" active-class="active-link">{{$t('header.home')}}</NuxtLink>
+        <NuxtLink :to="localePath('about')" class="nav-link" active-class="active-link">{{$t('header.about')}}</NuxtLink>
+        <NuxtLink :to="localePath('services')" class="nav-link" active-class="active-link">{{$t('header.services')}}</NuxtLink>
+        <NuxtLink :to="localePath('polices')" class="nav-link" active-class="active-link">{{$t('header.polices')}}</NuxtLink>
     
     
      <button class="header-button flex items-center">
@@ -44,11 +44,11 @@
       </div>
     </div>
     <!-- Slide-in Menu -->
-        <div ref="menu" class=" menu-slide fixed top-0 right-0 w-60 h-screen bg-black text-white p-4 transform" :class="{ 'translate-x-full': !menuOpen }">
+        <div ref="menu" class=" menu-slide fixed top-0 right-0 w-60 h-screen bg-black text-white p-8 transform" :class="{ 'translate-x-full': !menuOpen }">
       <ul class="flex flex-col items-start justify-center h-[60%] space-y-10 text-[24px]">
         <!-- Use NuxtLink for internal routing, add the `to` prop with the route path -->
         <li>
-          <NuxtLink to="/" @click="closeMenu" prefetch class="hover:text-blue-600">
+          <NuxtLink :to="localePath('')" @click="closeMenu" prefetch class="hover:text-blue-600">
             {{$t('header.home')}}
             <!-- Your SVG icon -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -57,7 +57,7 @@
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/about" @click="closeMenu" prefetch class="hover:text-blue-600">
+          <NuxtLink :to="localePath('about')" @click="closeMenu" prefetch class="hover:text-blue-600">
             {{$t('header.about')}}
             <!-- Your SVG icon -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -66,7 +66,7 @@
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/services" @click="closeMenu" prefetch class="hover:text-blue-600">
+          <NuxtLink :to="localePath('services')" @click="closeMenu" prefetch class="hover:text-blue-600">
             {{$t('header.services')}}
             <!-- Your SVG icon -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -75,7 +75,7 @@
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/polices" @click="closeMenu" prefetch class="hover:text-blue-600">
+          <NuxtLink :to="localePath('polices')" @click="closeMenu" prefetch class="hover:text-blue-600">
             {{$t('header.polices')}}
             <!-- Your SVG icon -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -156,6 +156,10 @@ export default {
     closeMenu() {
       this.menuOpen = false;
     },
+    localePath(routeName) {
+  const locale = this.$i18n.locale;
+  return locale === 'en' ? `/${routeName}` : `/${locale}/${routeName}`;
+},
   },
 };
 
@@ -163,10 +167,9 @@ export default {
 
 <style scoped>
 .menu-slide{
-
   background: rgb(0, 0, 0);
-  backdrop-filter: blur(20px);
-  border-radius: 0px;
+  border-radius: 0.5px;
+  border-color: white;
 }
 .scrolled {
   background: rgba(16 18 27 / 40%);
