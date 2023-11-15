@@ -1,7 +1,7 @@
 <template>
   <div class="hero-text-container bottom flex flex-col items-start justify-center h-screen">
     <h1 class="text-white px-8 md:px-12 pb-6 text-[47.09px] sm:text-[65.09px] md:text-[85.09px] leading-none">
-      {{ $t('heroText.title1') }} <br> <span ref="changingWordRef"></span>
+      {{ $t('heroText.title1') }} <br> 
       <br> {{ $t('heroText.title2') }}    </h1>
     <p class="text-white text-left text-[18px] mx-8 md:mx-12 mb-10 w-[40%]">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -14,70 +14,11 @@
 
 <script setup>
 import ButtonMain from '~/components/ButtonMain.vue';
-import { onMounted, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
-import gsap from "gsap";
-import { TextPlugin } from "gsap/TextPlugin";
 
-gsap.registerPlugin(TextPlugin);
 
 const { t } = useI18n(); // This is the translation function
-const words = ref([
-  t('words.ai'),
-  t('words.software'),
-  t('words.tech')
-]);
 
-let index = 0;
-const changingWordRef = ref(null);
-
-// Watch for language changes and update the words array
-watch(() => t('words.ai'), (newVal) => {
-  words.value[0] = newVal;
-});
-watch(() => t('words.software'), (newVal) => {
-  words.value[1] = newVal;
-});
-watch(() => t('words.tech'), (newVal) => {
-  words.value[2] = newVal;
-});
-
-onMounted(() => {
-  if (changingWordRef.value) {
-    animateWord();
-    animateGradient();
-  }
-});
-
-function animateWord() {
-  gsap.to(changingWordRef.value, {
-    duration: 1.5,
-    delay: 0.5,
-    text: words.value[index],
-    onComplete: () => {
-      index = (index + 1) % words.value.length;
-      animateWord();
-    }
-  });
-}
-
-function animateGradient() {
-  const colors = ["red", "blue", "green", "yellow"];
-  let colorIndex = 0;
-
-  function changeColor() {
-    gsap.to(changingWordRef.value, {
-      color: colors[colorIndex % colors.length],
-      duration: 2.5,
-      onComplete: () => {
-        colorIndex++;
-        changeColor();
-      }
-    });
-  }
-
-  changeColor();
-}
 </script>
 
 
