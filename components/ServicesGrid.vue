@@ -12,7 +12,7 @@
         <ul>
         <li class="service-description text-white text-[17px] mb-4">{{$t(`ourPlans.services.${service.id}.description`)}}</li>
       </ul>
-        <NuxtLink :to="service.link" class="service-link">{{$t('ourPlans.services.signUp')}}</NuxtLink>
+        <p :to="service.link" class="service-link">{{$t('ourPlans.services.signUp')}}</p>
       </div>
     </div>
   </section>

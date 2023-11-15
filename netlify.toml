@@ -1,0 +1,12 @@
+# netlify.toml
+[build]
+  command = "npm run generate" # or "nuxt generate" if you are using Nuxt without npm scripts
+  publish = "dist" # the output directory of your Nuxt build, it could also be ".output" based on your project setup with Nuxt 3
+  functions = "functions" # if you have serverless functions
+
+# Redirects all requests to the main index.html, allowing Vue router to control the routing.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true

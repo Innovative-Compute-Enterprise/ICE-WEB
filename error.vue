@@ -2,7 +2,7 @@
     <div class="error-page-container">
       <h1>{{ error.statusCode }}</h1>
       <p>{{ error.message }}</p>
-      <nuxt-link to="/">Voltar para a página inicial</nuxt-link>
+      <a to="/">Voltar para a página inicial</a>
     </div>
   </template>
   
