@@ -43,13 +43,13 @@
     </div>
     <!-- Slide-in Menu -->
         <div ref="menu" class=" menu-slide fixed top-0 right-0 w-60 h-screen bg-black text-white p-8 transform" :class="{ 'translate-x-full': !menuOpen }">
-      <ul class="flex flex-col items-start justify-center h-[60%] space-y-10 text-[24px]">
+      <ul class="flex flex-col items-start justify-center h-[60%] space-y-10 text-[21px]">
         <!-- Use NuxtLink for internal routing, add the `to` prop with the route path -->
         <li>
           <NuxtLink :to="localePath('')" @click="closeMenu" prefetch class="hover:text-blue-600">
             {{$t('header.home')}}
             <!-- Your SVG icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 19.5l-15-15m0 0v11.25m0-11.25h11.25" />
           </svg>
           </NuxtLink>
@@ -58,7 +58,7 @@
           <NuxtLink :to="localePath('about')" @click="closeMenu" prefetch class="hover:text-blue-600">
             {{$t('header.about')}}
             <!-- Your SVG icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 19.5l-15-15m0 0v11.25m0-11.25h11.25" />
           </svg>
           </NuxtLink>
@@ -67,7 +67,7 @@
           <NuxtLink :to="localePath('services')" @click="closeMenu" prefetch class="hover:text-blue-600">
             {{$t('header.services')}}
             <!-- Your SVG icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 19.5l-15-15m0 0v11.25m0-11.25h11.25" />
           </svg>
           </NuxtLink>
@@ -76,21 +76,21 @@
           <NuxtLink :to="localePath('polices')" @click="closeMenu" prefetch class="hover:text-blue-600">
             {{$t('header.polices')}}
             <!-- Your SVG icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 19.5l-15-15m0 0v11.25m0-11.25h11.25" />
           </svg>
           </NuxtLink>
         </li>
       </ul>
       
-      <button class="header-button flex items-center pt-4" @click="closeMenu">
+      <button class="header-button flex items-center pt-6" @click="closeMenu">
         {{$t('header.contact')}}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="CurrentColor" class="w-5 h-5">
       <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
       </svg>
       </button>
 
-      <div class="pt-10">
+      <div class="pt-8">
         <h3 class="py-4">{{$t('headerBrand.name')}}</h3>
         <p class="opacity-[70%]">"{{$t('headerBrand.slogan')}}"</p>
       </div>
@@ -111,7 +111,7 @@ export default {
   mounted() {
     gsap.set(this.$refs.menu, { x: '100%' });
     this.menuTimeline = gsap.timeline({ paused: true })
-      .to(this.$refs.menu, { x: '0%', duration: 0.5, ease: 'power2.out' });
+      .to(this.$refs.menu, { x: '0%', duration: 0.5, ease: 'power2.in' });
 
     // Add event listener for scroll
     window.addEventListener('scroll', this.handleScroll);
@@ -173,17 +173,10 @@ export default {
   background: rgba(16 18 27 / 40%);
   backdrop-filter: blur(20px);
   border-radius: 0px;
-  transition: background 0.5s ease; /* Smooth transition for background & shadow */
+  transition: background 0.8s ease; /* Smooth transition for background & shadow */
 }
 
-hr {
-    height: 2px;
-    width: 100%;
-    border: none;
-    background-color: white;
-    margin-top: 1rem;
-    transition: transform 0.3s ease-out; /* Animate size changes smoothly */
-}
+
 
 h3 {
     padding: 0.5rem 0;
@@ -251,9 +244,9 @@ p {
     border-color: white;
     color: white;
     border: 1px solid white;
-    padding: 1px 10px;
+    padding: 1px 6px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 17px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
@@ -267,8 +260,8 @@ p {
   @media (max-width: 768px) {
     .header-button {
       /* Adjustments for mobile view */
-      padding: 4px 10px;
-      font-size: 24px;
+      padding: 4px 6px;
+      font-size: 18px;
     }
   }
 </style>

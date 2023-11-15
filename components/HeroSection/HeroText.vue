@@ -1,11 +1,10 @@
 <template>
-  <div class="hero-text-container bottom flex flex-col items-start justify-center h-screen">
-    <h1 class="text-white px-4 md:px-12 pb-12 text-[55.09px] md:text-[85.09px] leading-none">
+  <div class="hero-text-container bottom flex flex-col items-start justify-start md:justify-end h-screen">
+    <h1 class="text-white px-4 md:px-12 pb-4 text-[50.09px] md:text-[85.09px] leading-none">
       {{ $t('heroText.title1') }}  AI
       <br> {{ $t('heroText.title2') }}    </h1>
     <p class="text-white text-left text-[18px] mx-8 md:mx-12 mb-10 w-[40%]">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
     <div class=" ml-8 md:ml-12">
     <ButtonMain />
   </div>
@@ -50,7 +49,7 @@ letter-spacing: 1px;
   right: 0;
   width: 100%;
   text-align: left;
-  padding-bottom: 2rem;
+  padding-bottom: 10rem;
   z-index: 3;
   font-weight: 500;
   word-spacing: normal;
@@ -59,6 +58,7 @@ letter-spacing: 1px;
 @media screen and (max-width: 640px) {
   .hero-text-container {
     bottom: 0;
+    padding-top: 8rem;
     top: auto;
   }
 }
