@@ -42,7 +42,7 @@ const declineCookies = () => {
 <!-- Seus estilos aqui -->
 <style scoped>
 .cookie-banner {
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -0.125rem 0.250rem rgba(0, 0, 0, 0.1);
   font-family: 'Arial', sans-serif;
 }
 
@@ -55,8 +55,9 @@ button {
 }
 
 .reject-button {
+  width: auto;
   background-color: transparent;
-  border: 1px solid white;
+  border: 0.063rem solid white;
   color: white;
 }
 
@@ -68,6 +69,7 @@ button {
 .accept-button {
   background-color: #4CAF50; /* Green shade */
   color: white;
+  width: auto;
 }
 
 .accept-button:hover {
@@ -85,12 +87,12 @@ a:hover {
 
 @media (max-width: 640px) {
   .cookie-banner {
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .cookie-banner svg {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
   }
 }
 </style>

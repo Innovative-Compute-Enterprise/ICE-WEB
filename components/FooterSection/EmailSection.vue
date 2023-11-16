@@ -1,6 +1,6 @@
 <template>
     <div class="p-12 md:p-24 bg-white pt-8 ">
-        <h1 class="md:text-[63px] text-[48px] font-semibold text-gray-800 leading-tight mb-28">{{ $t('footerEmail.title') }}</h1>
+        <h1 class="md:text-[3.938rem] text-[3rem] font-semibold text-gray-800 leading-tight mb-28">{{ $t('footerEmail.title') }}</h1>
         
         <div>
             <div class="space-y-2">
@@ -21,7 +21,7 @@
             <a href="#" class="svg-container">
                 <!-- Inline SVG for X -->
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
-                <path fill="#212121" fill-rule="evenodd" d="M38,42H10c-2.209,0-4-1.791-4-4V10c0-2.209,1.791-4,4-4h28	c2.209,0,4,1.791,4,4v28C42,40.209,40.209,42,38,42z" clip-rule="evenodd"></path><path fill="#fff" d="M34.257,34h-6.437L13.829,14h6.437L34.257,34z M28.587,32.304h2.563L19.499,15.696h-2.563 L28.587,32.304z"></path><polygon fill="#fff" points="15.866,34 23.069,25.656 22.127,24.407 13.823,34"></polygon><polygon fill="#fff" points="24.45,21.721 25.355,23.01 33.136,14 31.136,14"></polygon>
+                <path fill="#212121" fill-rule="evenodd" d="M38,42H10c-2.209,0-4-1.791-4-4V10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28C42,40.209,40.209,42,38,42z" clip-rule="evenodd"></path><path fill="#fff" d="M34.257,34h-6.437L13.829,14h6.437L34.257,34z M28.587,32.304h2.563L19.499,15.696h-2.563 L28.587,32.304z"></path><polygon fill="#fff" points="15.866,34 23.069,25.656 22.127,24.407 13.823,34"></polygon><polygon fill="#fff" points="24.45,21.721 25.355,23.01 33.136,14 31.136,14"></polygon>
                 </svg>
             </a>
             <a href="#" class="svg-container">
@@ -36,7 +36,7 @@
                 </svg>
             </a>
         </div>
-        <p class="text-[17px] p-2">&copy; {{ currentYear }} {{ $t('footerEmail.copyright') }}</p>
+        <p class="text-[1.063rem] p-2">&copy; {{ currentYear }} {{ $t('footerEmail.copyright') }}</p>
     </div>
 </template>
 <script setup>
@@ -46,7 +46,7 @@ const currentYear = ref(new Date().getFullYear());
 <style scoped>
 h1{
   line-height: 95%; 
-  letter-spacing: 1.0px;
+  letter-spacing: 0.063rem;
 }
 .svg-container:hover {
     transform: scale(1.1);

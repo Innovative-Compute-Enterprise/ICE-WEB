@@ -2,9 +2,9 @@
   <div>
     <div class="bg-white">
       <!-- Hero Section -->
-      <div class="hero flex items-end justify-start h-[400px] md:h-[600px]">
+      <div class="hero flex items-end justify-start h-[25rem] md:h-[37.5rem]">
         <li class="list-none pl-4">
-              <h1 class="hero-title text-left text-[75px] md:text-[125px] font-bold">{{$t('policies.title')}}</h1>
+              <h1 class="hero-title text-left text-[4.688rem] md:text-[7.813rem] font-bold">{{$t('policies.title')}}</h1>
         </li>
       </div>
   
@@ -68,12 +68,12 @@
   }
   
   .hero-title {
-    padding-left: 18px;
+    padding-left: 1.125rem;
     color: #ffffff; /* Dark text for readability */
   }
   
   .policies-container {
-    max-width: 850px;
+    max-width: 53.125rem;
     margin: auto;
     padding: 2rem;
     line-height: 1.6;
@@ -83,11 +83,11 @@
   .policies-container h2 {
 
     margin-top: 3rem;
-    font-size: 38px; /* Clear section headings */
+    font-size: 2.375rem; /* Clear section headings */
     font-weight: 600;
   }
     p{
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 1rem;
 

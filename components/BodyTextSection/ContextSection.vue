@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[minmax(500px,1fr)]">
+  <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[minmax(31.25rem,1fr)]">
     <BlueSection />
     <WhiteSection1 />
     <StoneSection />

@@ -3,7 +3,7 @@
     <!-- Coluna Esquerda -->
     <div class="h-full bg-black px-12 py-16 md:px-24 md:py-24 mb-28 ">
       <h2 class="sticky top-24 
-      text-[48px] md:text-[72px] leading-[80.78px] text-white text-left">{{ $t('preFooterSection.title') }}</h2>
+      text-[3rem] md:text-[4.5rem] leading-[5rem] text-white text-left">{{ $t('preFooterSection.title') }}</h2>
     </div>
 
     <!-- Coluna Direita --> 
@@ -27,7 +27,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n()
+const { t } = useI18n();
 </script>
 
 <style scoped>
@@ -36,7 +36,7 @@ h2{
 }
 p {
   font-family: 'Helvetica Neue Medium', sans-serif;
-  font-size: 21.09px;
-  line-height: 23.09px;
+  font-size: 1.313rem;
+  line-height: 1.438rem;
 }
 </style>

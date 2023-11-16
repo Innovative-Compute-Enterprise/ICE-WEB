@@ -1,9 +1,9 @@
 <template>
   <div class="hero-text-container bottom flex flex-col items-start justify-start md:justify-end h-screen">
-    <h1 class="text-white px-4 md:px-12 pb-4 text-[50.09px] md:text-[85.09px] leading-none">
+    <h1 class="text-white px-4 md:px-12 pb-4 text-[3.125rem] md:text-[5.313rem] leading-none">
       {{ $t('heroText.title1') }}  AI
       <br> {{ $t('heroText.title2') }}    </h1>
-    <p class="text-white text-left text-[18px] mx-8 md:mx-12 mb-10 w-[40%]">
+    <p class="text-white text-left text-[1.125rem] mx-8 md:mx-12 mb-10 w-[40%]">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
     <div class=" ml-8 md:ml-12">
     <ButtonMain />
@@ -27,11 +27,11 @@ const { t } = useI18n(); // This is the translation function
   font-weight: 600;
   word-spacing: normal;
   line-height: 1;
-  letter-spacing: -3px;
+  letter-spacing: -0.188rem;
 }
 p{
 line-height: 1.1;
-letter-spacing: 1px;
+letter-spacing: 0.063rem;
 
 }
 
@@ -55,7 +55,7 @@ letter-spacing: 1px;
   word-spacing: normal;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
   .hero-text-container {
     bottom: 0;
     padding-top: 8rem;

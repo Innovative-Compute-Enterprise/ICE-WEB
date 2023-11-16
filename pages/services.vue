@@ -2,9 +2,9 @@
   <div>
     <div class="bg-white">
       <!-- Hero Section -->
-      <div class="hero flex items-end justify-start h-[400px] md:h-[600px]">
+      <div class="hero flex items-end justify-start h-[25rem] md:h-[37.5rem]">
         <li class="list-none pl-4">
-            <h1 class="hero-title text-left text-[75px] md:text-[125px] font-bold">{{$t('services.title')}}</h1>
+            <h1 class="hero-title text-left text-[4.688rem] md:text-[7.813rem] font-bold">{{$t('services.title')}}</h1>
         </li>
       </div>
     </div>
@@ -61,7 +61,7 @@ export default {
 }
 
 .hero-title {
-  padding-left: 18px;
+  padding-left: 1.125rem;
   color: #ffffff;
 }
 

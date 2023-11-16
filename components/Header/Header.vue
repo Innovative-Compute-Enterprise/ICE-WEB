@@ -11,7 +11,7 @@
     </div>
 
  <!-- Desktop Navigation Links -->
- <nav class="hidden md:flex space-x-8 text-[18px] text-white">
+ <nav class="hidden md:flex space-x-8 text-[1.125rem] text-white">
         <NuxtLink :to="localePath('')" class="nav-link" active-class="active-link">{{$t('header.home')}}</NuxtLink>
         <NuxtLink :to="localePath('about')" class="nav-link" active-class="active-link">{{$t('header.about')}}</NuxtLink>
         <NuxtLink :to="localePath('services')" class="nav-link" active-class="active-link">{{$t('header.services')}}</NuxtLink>
@@ -43,7 +43,7 @@
     </div>
     <!-- Slide-in Menu -->
         <div ref="menu" class=" menu-slide fixed top-0 right-0 w-60 h-screen bg-black text-white p-8 transform" :class="{ 'translate-x-full': !menuOpen }">
-      <ul class="flex flex-col items-start justify-center h-[60%] space-y-8 text-[21px]">
+      <ul class="flex flex-col items-start justify-center h-[60%] space-y-8 text-[1.313rem]">
         <!-- Use NuxtLink for internal routing, add the `to` prop with the route path -->
         <li>
           <NuxtLink :to="localePath('')" @click="closeMenu" prefetch class="hover:text-blue-600">
@@ -111,7 +111,7 @@ export default {
   mounted() {
     gsap.set(this.$refs.menu, { x: '100%' });
     this.menuTimeline = gsap.timeline({ paused: true })
-      .to(this.$refs.menu, { x: '0%', duration: 0.5, ease: 'power2.in' });
+      .to(this.$refs.menu, { x: '0%', duration: 0.6, ease: 'power3.out' });
 
     // Add event listener for scroll
     window.addEventListener('scroll', this.handleScroll);
@@ -180,13 +180,13 @@ export default {
 
 h3 {
     padding: 0.5rem 0;
-    font-size: 21px;
+    font-size: 1.313rem;
     font-weight: bold;
     transition: transform 0.3s ease-out; /* Smooth font scaling */
 }
 
 p {
-  font-size: 17px;
+  font-size: 1.063rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
   transition: opacity 0.3s ease-out; /* Fade effect */
 }
@@ -205,9 +205,9 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2px; /* Adjust thickness */
+  height: 0.125rem; /* Adjust thickness */
   background-color: #fefefe; /* Your highlight color */
-  border-radius: 1px;
+  border-radius: 0.075rem;
   transform: scaleX(0);
   transition: transform 0.3s ease; /* Smooth horizontal scaling */
 }
@@ -229,9 +229,9 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2px; /* Adjust thickness */
+  height: 0.125rem; /* Adjust thickness */
   background-color: #fefefe; /* Your highlight color */
-  border-radius: 1px;
+  border-radius: 0.075rem;
   transform: scaleX(1);/* Smooth horizontal scaling */
 }
 
@@ -243,10 +243,10 @@ p {
     padding-bottom: 0.20rem;
     border-color: white;
     color: white;
-    border: 1px solid white;
-    padding: 1px 6px;
-    border-radius: 5px;
-    font-size: 17px;
+    border: 0.075rem solid white;
+    padding: 0.075rem 0.375rem;
+    border-radius: 0.2rem;
+    font-size: 1.063rem;
     cursor: pointer;
     transition: background-color 0.3s;
   }
@@ -257,11 +257,11 @@ p {
   }
 
   /* Responsive styling */
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .header-button {
       /* Adjustments for mobile view */
-      padding: 4px 6px;
-      font-size: 18px;
+      padding: 0.25rem 0.375rem;
+      font-size: 1.125rem;
     }
   }
 </style>

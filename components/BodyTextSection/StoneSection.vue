@@ -2,7 +2,7 @@
 <div class="order-3 md:order-4 px-8 py-16 md:px-16 md:py-28 flex flex-col justify-between items-start bg-[#dfdfdf]">
   <!-- Top Section -->
             <div class="flex-grow flex flex-col justify-center items-start pb-2 mt-6">
-              <div class="bg-glass rounded-tl-[44px] rounded-tr-[22px] shadow-sm p-4">
+              <div class="bg-glass rounded-tl-[2.75rem] rounded-tr-[1.375rem] shadow-sm p-4">
                 <h3 class="text-black p-4">{{ $t('stoneSection.topTitle') }}</h3>
                 <p class="text-black p-4">{{ $t('stoneSection.topDescription') }}</p>
                 <div class="flex items-center p-4">
@@ -17,7 +17,7 @@
             
             <!-- Bottom Section -->
             <div class="flex-grow flex flex-col justify-center items-start mb-6 ">
-              <div class="bg-glass rounded-br-[22px] shadow-sm p-4">
+              <div class="bg-glass rounded-br-[1.375rem] shadow-sm p-4">
                 <h3 class="text-black p-4">{{ $t('stoneSection.bottomTitle') }}</h3>
                 <p class="text-black p-4">{{ $t('stoneSection.bottomDescription') }}</p>
                 <div class="flex items-center p-4">
@@ -34,21 +34,21 @@
 import { useI18n } from 'vue-i18n'
 
 
-const { t } = useI18n()
+const { t } = useI18n();
 </script>
 
 <style scoped>
   p{
     font-family: 'Helvetica Neue Medium', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
-    line-height: 23.17px;
+    line-height: 1.438rem;
    }
    h3{
     font-family: 'Georgia', sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 34.17px;
+    line-height: 2.125rem;
    }
    .bg-glass{
     background: rgba(255, 255, 255, 0.3);

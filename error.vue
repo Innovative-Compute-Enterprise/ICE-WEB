@@ -19,16 +19,17 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     font-family: 'Helvetica Neue Medium', sans-serif;
   }
   
   h1 {
     font-size: 4em;
-    color: #ff0000;
+    color: #da3b3b;
   }
   
   p {
+    color: black;
     font-size: 1.5em;
     margin-bottom: 20px;
   }

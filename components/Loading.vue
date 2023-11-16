@@ -26,7 +26,7 @@ const loadingBar = ref(null);
 onMounted(() => {
   gsap.timeline()
     .to(loadingBar.value, {
-      duration: 0.8, // Duration for the horizontal expansion
+      duration: 0.7, // Duration for the horizontal expansion
       width: '100%',
       ease: 'power2.out'
     })
@@ -37,9 +37,9 @@ onMounted(() => {
       ease: 'power2.in'
     })
     .to(loadingPage.value, {
-      duration: 1, // Duration for the fade-out animation
+      duration: 0.6, // Duration for the fade-out animation
       opacity: 0,
-      ease: 'power2.',
+      ease: 'power2.in',
       onComplete: () => {
         isLoading.value = false; // Hide the loading screen
       }
@@ -66,10 +66,10 @@ onMounted(() => {
 
 .svg-loader {
   position: relative; /* Adjusted from absolute to relative */
-  width: 150px; /* Adjust size as needed */
-  height: 100px;
-  padding-left: 50px;
-  padding-bottom: 15px;
+  width: 9.375rem; /* Adjust size as needed */
+  height: 6.25rem;
+  padding-left: 3.125rem;
+  padding-bottom: 0.938rem;
 }
 
 .loading-bar {
@@ -77,7 +77,7 @@ onMounted(() => {
   bottom: 50%;
   left: 0;
   width: 0;
-  height: 18px;
+  height: 1.125rem;
   background-color: black;
   box-shadow: #fff 0 0 10px 10px;
 }

@@ -60,20 +60,20 @@ h1{
   font-family: 'Georgia', sans-serif;
   color: #ffffff;
   line-height: 90%; 
-  font-size: 32px;
-  letter-spacing: 2.0px;
+  font-size: 2rem;
+  letter-spacing: 0.125rem;
   opacity: 0.85;
 }
 
 .text-input {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: 'Helvetica Neue Medium', sans-serif;
 }
 
 ::placeholder {
   color: #000000;
   opacity: 0.30; 
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 input:focus::placeholder {
@@ -81,7 +81,7 @@ input:focus::placeholder {
 }
 
 button {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: 'Helvetica Neue Medium', sans-serif;
   font-weight: 500;
 }

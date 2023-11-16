@@ -10,21 +10,23 @@
  import { useI18n } from 'vue-i18n'
 
 
-  const { t } = useI18n()
+  const { t } = useI18n();
+
   </script>
+
   <style scoped>
    h1{
     font-family: 'Georgia', sans-serif;
     font-weight: 300;
     line-height: 90%; 
-    font-size: 48px;
-    letter-spacing: 2.0px;
+    font-size: 3rem;
+    letter-spacing: 0.188;
    }
    p{
     font-family: 'Helvetica Neue Medium', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
-    line-height: 23.17px;
+    line-height: 1.438rem;
    }
    
   </style>
