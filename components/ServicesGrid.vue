@@ -26,7 +26,7 @@
       :key="service.id" 
       class="service-card bg-blue-500 hover:bg-blue-600 transition-colors duration-300 py-8 px-6 space-y-6">
       <h3 class="service-title text-xl text-white font-bold">{{$t(`ourPlans.services.${service.id}.title`)}}</h3>
-        <ul class="service-description-list list-none text-white text-xl">
+        <ul class="list-none text-white text-xl">
           <li class="py-2" v-for="feature in service.features" :key="feature"> 
             {{ feature }}
           </li>
