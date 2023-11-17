@@ -109,25 +109,44 @@
       "blacktitle" : "BLACK-BOX",
       "blacktext" : "We are dedicated to delivering top-notch services tailored to your unique needs. Our team is committed to innovation, excellence, and building lasting partnerships."
     },
-    "ourPlans": {
-      "title": "Our Plans",
-      "subtitle": "Choose the plan that's right for you.",
-      "services": {
-        "signUp": "Sign-up",
-        "1": {
-          "title": "Basic Free",
-          "description": "MP3 Audio, 100 songs, Ads every ten minutes, Up to 1 user, 1-Device"
+    
+      "ourPlans": {
+        "title": "Our Plans",
+        "monthly": "Monthly",
+        "annual": "Annual",
+        "subtitle": "Choose the plan that's right for you.",
+        "services": {
+          "signUp": "Sign-up",
+          "1": {
+            "title": "Basic",
+            "features": {
+              "featureA": "Service 1",
+              "featureB": "1",
+              "featureC": "1",  
+              "featureD": " 1"   
+            }
+          },
+          "2": {
+            "title": "Business",
+            "features": {
+              "featureA": "Service 2",
+              "featureB": "2",
+              "featureC": "2",
+              "featureD": "2"   
+          }
         },
-        "2": {
-          "title": "Basic Free",
-          "description": "MP3 Audio, 100 songs, Ads every ten minutes, Up to 1 user, 1-Device"
-        },
-        "3": {
-          "title": "Basic Free",
-          "description": "MP3 Audio, 100 songs, Ads every ten minutes, Up to 1 user, 1-Device"
+          "3": {
+            "title": "Enterprise",
+            "features": {
+              "featureA": "3",
+              "featureB": "3",
+              "featureC": "3",
+              "featureD": "3"
+            }
+          }
         }
-      }
-    },
+      },
+  
     "policies": {
       "title": "Policies",
       "privacyPolicy": "Privacy Policy",

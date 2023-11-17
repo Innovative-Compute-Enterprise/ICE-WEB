@@ -35,13 +35,6 @@ letter-spacing: 0.063rem;
 
 }
 
-#changingWord {
-  -webkit-background-clip: text;
-  background-clip: text; /* Standard property */
-  -webkit-text-fill-color: transparent;
-  color: transparent; /* Standard property */
-}
-
 .hero-text-container {
   font-family: 'Helvetica Neue Medium', sans-serif;
   position: absolute;
