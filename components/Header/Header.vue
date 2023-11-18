@@ -1,6 +1,6 @@
 
 <template>
-  <header ref="header" class="fixed top-0 left-0 w-full bg-transparent z-50 flex justify-between items-center px-6 py-4 md:py-4 md:px-12">   
+  <header ref="header" class="fixed top-0 left-0 w-full bg-transparent z-50 flex justify-between items-center px-6 py-2 md:py-4 md:px-12">   
      <div class="text-left">
       <div class="logo flex">
           <svg width="206" height="30" viewBox="0 0 206 31" fill="none" xmlns="http://www.w3.org/2000/svg">

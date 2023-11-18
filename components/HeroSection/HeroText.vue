@@ -1,14 +1,14 @@
 <template>
      <div class="hero-text-container bottom flex flex-col items-start justify-start md:justify-end h-screen">
-    <h1 class="text-white shadow-sm px-4 md:px-12 pb-4 text-[3.125rem] md:text-[4.6rem] leading-none">
+    <h1 class="text-white px-4 md:px-12 pb-6 text-[3.125rem] md:text-[4.6rem] leading-none">
       {{ $t('heroText.title1') }}
       <br>
       <span class="animated-text">{{ animatedText }}<span class="cursor"></span></span>
       <br> {{ $t('heroText.title2') }}   
     </h1>
-    <p class="text-white shadow-sm text-left text-[1.125rem] mx-8 md:mx-12 mb-10 w-[40%]">
+    <p class="text-white text-left text-[1.125rem] mx-4 md:mx-12 pb-6 w-[40%]">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-    <div class=" ml-8 md:ml-12">
+    <div class=" px-4 md:px-12">
     <ButtonMain />
   </div>
   </div>
