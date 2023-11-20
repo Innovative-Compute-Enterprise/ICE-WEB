@@ -94,13 +94,13 @@ letter-spacing: 0.063rem;
 @media screen and (max-width: 767px) {
   .hero-text-container {
     bottom: 0;
-    padding-top: 8rem;
+    padding-top: 10rem;
     top: auto;
   }
 }
 .animated-text {
   display: inline-block;
-  background-image: linear-gradient(90deg, rgb(48, 22, 216), rgb(48, 22, 216));
+  background-image: linear-gradient(90deg,#da3b3b, #02BDFF, #13D601 );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

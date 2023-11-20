@@ -56,7 +56,7 @@ export default {
 
 <style scoped>
 .hero {
-  background-color: rgb(14, 169, 40);
+  background-color: #02BDFF;
   text-align: center;
 }
 

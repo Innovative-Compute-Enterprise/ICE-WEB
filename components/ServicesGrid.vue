@@ -140,6 +140,7 @@ export default {
   position: relative;
   border-radius: 0.5rem;
   text-align: center;
+  background-color: #0129CD;
 }
 
 @media (max-width: 640px) {

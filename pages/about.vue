@@ -36,7 +36,6 @@ export default {
 <style scoped>
 body {
   overflow-x: hidden;
-  background-color: #000000;
 }
 .hero {
     background-color: #da3b3b; /* Light grey background for contrast */
