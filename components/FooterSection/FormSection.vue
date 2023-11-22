@@ -24,7 +24,7 @@
         <label class="inline-flex items-center">
           <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" required>
 
-          <li class="list-none pl-1 underline">
+          <li class="list-none text-white pl-1 underline">
             <NuxtLink to="/polices">
               {{ $t('footerForm.privacyPolicy') }}
             </NuxtLink>
@@ -46,15 +46,24 @@ export default {
     };
   },
   computed: {
-    backgroundColorClass() {
-      switch (this.$route.path) {
-        case 'about': return 'bg-color-2';
-        case 'services': return 'bg-color-3';
-        case 'polices': return 'bg-color-4';
-        default: return 'bg-color-1'; // Assuming 'bg-color-1' is your default background color
-      }
+  backgroundColorClass() {
+    let bgColorClass;
+
+    if (this.$route.name.startsWith('about')) {
+      bgColorClass = 'bg-color-2';
+    } else if (this.$route.name.startsWith('services')) {
+      bgColorClass = 'bg-color-3';
+    } else if (this.$route.name.startsWith('polices')) {
+      bgColorClass = 'bg-color-4';
+    } else {
+      bgColorClass = 'bg-color-1'; // Default color
     }
-  },
+
+    console.log("Current route:", this.$route.name, "Background class:", bgColorClass);
+
+    return bgColorClass;
+  }
+},
 
   methods: {
     handleSubmit() {
@@ -66,7 +75,7 @@ export default {
 
 
 <style scoped>
-.bg-color-1 { background-color: #0c7924; }
+.bg-color-1 { background-color: #000000; }
 .bg-color-2 { background-color: #da3b3b; }
 .bg-color-3 { background-color: #02BDFF; }
 .bg-color-4 { background-color: #fe5420; }

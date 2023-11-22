@@ -23,7 +23,7 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 const animatedText = ref(''); // Inicializa vazio
 const cursorVisible = ref(true); // Estado do cursor
-const words = ['AI', 'TECH', 'AUTOMATION'];
+const words = ['AI', 'TECHNOLOGY', 'AUTOMATION'];
 let wordIndex = 0;
 
 const typeText = async (text) => {
