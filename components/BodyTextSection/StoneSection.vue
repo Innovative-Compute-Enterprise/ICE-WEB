@@ -1,5 +1,5 @@
 <template>
-<div class="main_about bg-[#da3b3b] order-3 md:order-4 px-8 py-16 md:px-16 md:py-28 flex flex-col justify-between items-start">
+<div class=" bg-[#cbc8c8] order-3 md:order-4 px-8 py-16 md:px-16 md:py-28 flex flex-col justify-between items-start">
   <!-- Top Section -->
             <div class="flex-grow flex flex-col justify-center items-start pb-2 mt-6">
               <div class="bg-glass rounded-tl-[2.75rem] rounded-tr-[1.375rem] shadow-sm p-4">
@@ -56,10 +56,5 @@ const { t } = useI18n();
     backdrop-filter: blur( 18.5px );
     -webkit-backdrop-filter: blur( 18.5px );
    }
-   .main_about {
-    background-image: url('main_bout.jpg'); /* Replace with your image path */
-    background-size: cover; /* Cover the entire area of the div */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-position: center; /* Center the image in the div */
-  }
+  
 </style>

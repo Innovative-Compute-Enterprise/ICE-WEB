@@ -1,5 +1,5 @@
 <template >
-  <div class="px-12 py-16 md:px-24 md:py-24 bg-blue-500 text-black space-y-6">
+    <div :class="[backgroundColorClass]" class="px-12 py-16 md:px-24 md:py-24 text-black space-y-6">
     <h1>{{ $t('footerForm.title') }}</h1>
     <form 
     @submit.prevent="handleSubmit"
@@ -45,17 +45,33 @@ export default {
       isSubmitted: false
     };
   },
+  computed: {
+    backgroundColorClass() {
+      switch (this.$route.path) {
+        case 'about': return 'bg-color-2';
+        case 'services': return 'bg-color-3';
+        case 'polices': return 'bg-color-4';
+        default: return 'bg-color-1'; // Assuming 'bg-color-1' is your default background color
+      }
+    }
+  },
+
   methods: {
     handleSubmit() {
-      // After successful submission:
       this.isSubmitted = true;
     }
   }
 };
-
 </script>
 
+
 <style scoped>
+.bg-color-1 { background-color: #0c7924; }
+.bg-color-2 { background-color: #da3b3b; }
+.bg-color-3 { background-color: #02BDFF; }
+.bg-color-4 { background-color: #fe5420; }
+
+
 h1{
   font-family: 'Georgia', sans-serif;
   color: #ffffff;

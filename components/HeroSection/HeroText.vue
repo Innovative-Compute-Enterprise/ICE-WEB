@@ -1,14 +1,14 @@
 <template>
      <div class="hero-text-container bottom flex flex-col items-start justify-start md:justify-end h-screen">
-    <h1 class="text-white px-4 md:px-12 pb-6 text-[3.125rem] md:text-[4.6rem] leading-none">
+    <h1 class="text-white px-6 md:px-12 pb-6 text-[3.125rem] md:text-[4.6rem] leading-none">
       {{ $t('heroText.title1') }}
       <br>
-      <span class="animated-text">{{ animatedText }}<span class="cursor"></span></span>
+      <span class="animated-text ">{{ animatedText }}<span class="cursor"></span></span>
       <br> {{ $t('heroText.title2') }}   
     </h1>
-    <p class="text-white text-left text-[1.125rem] mx-4 md:mx-12 pb-6 w-[40%]">
+    <p class="text-white text-left text-[1.125rem] mx-6 md:mx-12 pb-6 w-[40%]">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-    <div class=" px-4 md:px-12">
+    <div class=" px-6 md:px-12">
     <ButtonMain />
   </div>
   </div>
@@ -53,8 +53,8 @@ const blinkCursor = () => {
 let intervalId, cursorInterval;
 onMounted(() => {
   typeText(words[0]);
-  intervalId = setInterval(updateText, 3500); // Ajuste conforme necessário
-  cursorInterval = setInterval(blinkCursor, 350); // Velocidade do piscar do cursor
+  intervalId = setInterval(updateText, 4500); // Ajuste conforme necessário
+  cursorInterval = setInterval(blinkCursor, 300); // Velocidade do piscar do cursor
 });
 
 onUnmounted(() => {
@@ -98,13 +98,21 @@ letter-spacing: 0.063rem;
     top: auto;
   }
 }
-.animated-text {
-  display: inline-block;
-  background-image: linear-gradient(90deg,#da3b3b, #02BDFF, #13D601 );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: blinkCursor 1s step-end infinite;
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animated-text {
+    display: inline-block;
+    background-image: linear-gradient(90deg, #02BDFF, #9316b4, #da3b3b, #fff40f, #fe5420);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 8s ease infinite;
+    animation: blinkCursor 1s step-end infinite;
 }
 .cursor {
   display: inline-block;

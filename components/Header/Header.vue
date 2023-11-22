@@ -1,6 +1,6 @@
 
 <template>
-  <header ref="header" class="fixed top-0 left-0 w-full bg-transparent z-50 flex justify-between items-center px-6 py-2 md:py-4 md:px-12">   
+  <header ref="header" class="fixed top-0 left-0 w-full bg-transparent z-50 flex justify-between items-center px-4 py-2 md:py-4 md:px-8">   
      <div class="text-left">
       <div class="logo flex">
           <svg width="206" height="30" viewBox="0 0 206 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,8 +170,10 @@ export default {
   border-color: white;
 }
 .scrolled {
-  background: rgba(16 18 27 / 40%);
+  z-index: 888;
+  background: rgba(67, 67, 67, 0.192);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 0px;
   transition: background 0.8s ease; /* Smooth transition for background & shadow */
 }

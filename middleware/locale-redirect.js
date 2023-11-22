@@ -5,7 +5,6 @@ export default function ({ app, redirect, route }) {
     const path = route.path;
     const isDefaultLocale = currentLocale === defaultLocale;
   
-  
     if (isDefaultLocale && locales.some(code => path.startsWith(`/${code}`))) {
       const newPath = path.replace(new RegExp(`^/(${locales.join('|')})/`), '/');
       return redirect(newPath);

@@ -63,7 +63,7 @@
   background-color: #000000;
   }
   .hero {
-    background-color: #13D601; /* Light grey background for contrast */
+    background-color: #fe5420; /* Light grey background for contrast */
     text-align: center;
   }
   
