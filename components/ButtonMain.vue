@@ -1,9 +1,11 @@
 <template>
 
-<button class="custom-button rounded-md">{{$t('button.main')}}</button>
+<button class="custom-button rounded-md">{{ $t('button.main') }}</button>
 
 
 </template>
+<script>
+</script>
 
 
 <style>
@@ -13,7 +15,7 @@
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border: none;
-  font-size: 1.125rem;
+  font-size: 1.35rem;
   font-weight: 600;
   border-radius: 0.313rem;
   cursor: pointer;

@@ -19,8 +19,9 @@
       <div class="flex flex-col">
         <input type="email" id="inputemail" name="email" :placeholder="$t('footerForm.emailPlaceholder')" minlength="5" required class="text-input p-6 rounded-md">
       </div>
-      <button type="submit" class="bg-black text-white p-6 w-full rounded-md hover:bg-gray-800">{{ $t('footerForm.buttonText') }}</button>
-      <div>
+      <button type="submit" :class="{'custom-main-page-style': isMainPage}" class="bg-black text-white p-6 w-full rounded-md hover:bg-gray-800">
+    {{ $t('footerForm.buttonText') }}
+  </button>      <div>
         <label class="inline-flex items-center">
           <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" required>
 
@@ -46,6 +47,9 @@ export default {
     };
   },
   computed: {
+    isMainPage() {
+      return this.$route.name.startsWith('index'); // Assuming 'index' is the route name for your main page
+    },
   backgroundColorClass() {
     let bgColorClass;
 
@@ -75,11 +79,27 @@ export default {
 
 
 <style scoped>
-.bg-color-1 { background-color: #000000; }
+.bg-color-1 { background-color: #000000;}
 .bg-color-2 { background-color: #da3b3b; }
 .bg-color-3 { background-color: #02BDFF; }
 .bg-color-4 { background-color: #fe5420; }
 
+.custom-main-page-style {
+  background-image: linear-gradient(120deg, #02BDFF, #9316b4, #da3b3b, #fff40f, #fe5420);
+  background-size: 180% 180%; /* Increased to allow for vertical movement */
+  animation: gradientAnimation 8s linear infinite;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .custom-main-page-style:hover {
+    background-image: none;
+background-color: #ffffff;
+color: #000000;
+  }
 
 h1{
   font-family: 'Georgia', sans-serif;
@@ -87,9 +107,8 @@ h1{
   line-height: 90%; 
   font-size: 2rem;
   letter-spacing: 0.125rem;
-  opacity: 0.85;
+  opacity: 0.9;
 }
-
 .text-input {
   font-size: 1.25rem;
   font-family: 'Helvetica Neue Medium', sans-serif;
@@ -106,13 +125,19 @@ input:focus::placeholder {
 }
 
 button {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-family: 'Helvetica Neue Medium', sans-serif;
   font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 .confirmation-message {
   animation-duration: 2s;
   color: green;
   margin-top: 1rem;
 }
+
 </style>

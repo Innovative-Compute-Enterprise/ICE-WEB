@@ -1,6 +1,6 @@
 <template>
      <div class="hero-text-container bottom flex flex-col items-start justify-start md:justify-end h-screen">
-    <h1 class="text-white px-6 md:px-12 pb-6 text-[3.125rem] md:text-[4.6rem] leading-none">
+    <h1 class="text-white px-6 md:px-12 pb-6 text-[3rem] md:text-[4.6rem] leading-none">
       {{ $t('heroText.title1') }}
       <br>
       <span class="animated-text ">{{ animatedText }}<span class="cursor"></span></span>
@@ -111,7 +111,7 @@ letter-spacing: 0.063rem;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: gradientAnimation 8s ease infinite;
+    animation: gradientAnimation 4s linear infinite;
     animation: blinkCursor 1s step-end infinite;
 }
 .cursor {
