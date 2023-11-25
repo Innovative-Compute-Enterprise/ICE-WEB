@@ -1,7 +1,7 @@
 <template>
   <div class="hero-video-container">
    
-   <img class="hero-image " src="/main.jpg" alt="main" />
+   <img class="hero-image " src="/main.png" alt="main" />
     
     <div class="overlay"></div>
   </div>

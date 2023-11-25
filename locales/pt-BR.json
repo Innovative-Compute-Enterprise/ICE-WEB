@@ -12,7 +12,8 @@
   },
   "heroText": {
       "title1": "NÓS DEFENDEMOS",
-      "title2": "INOVAÇÃO"
+      "title2": "INOVAÇÃO",
+      "title3": "Benefiting the present, shaping the future with technology."
   },
   "words": {
       "ai": "IA",
@@ -20,7 +21,7 @@
       "tech": "TECNOLOGIA"
   },
   "button": {
-      "main": "Amplifique"
+    "main": "Buy now"
   },
   "aboutPage": {
       "title": "Sobre"

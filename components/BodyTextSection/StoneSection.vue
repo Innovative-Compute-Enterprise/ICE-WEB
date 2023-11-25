@@ -1,5 +1,5 @@
 <template>
-<div class=" bg-[#dfdfdf] order-3 md:order-4 px-8 py-16 md:px-16 md:py-28 flex flex-col justify-between items-start">
+<div class="bg-[#646464] order-3 md:order-4 px-8 py-16 md:px-16 md:py-28 flex flex-col justify-between items-start">
   <!-- Top Section -->
             <div class="flex-grow flex flex-col justify-center items-start pb-2 mt-6">
               <div class="bg-glass rounded-tl-[2.75rem] rounded-tr-[1.375rem] shadow-sm p-4">
@@ -40,13 +40,13 @@ const { t } = useI18n();
 <style scoped>
   p{
     font-family: 'Helvetica Neue Medium', sans-serif;
-    font-size: 1.125rem;
+    font-size: 1.250rem;
     font-weight: 300;
     line-height: 1.438rem;
    }
    h3{
     font-family: 'Georgia', sans-serif;
-    font-size: 2rem;
+    font-size: 2.125rem;
     font-weight: 500;
     line-height: 2.125rem;
    }

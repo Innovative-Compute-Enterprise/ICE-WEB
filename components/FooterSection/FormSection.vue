@@ -19,7 +19,7 @@
       <div class="flex flex-col">
         <input type="email" id="inputemail" name="email" :placeholder="$t('footerForm.emailPlaceholder')" minlength="5" required class="text-input p-6 rounded-md">
       </div>
-      <button type="submit" :class="{'custom-main-page-style': isMainPage}" class="bg-black text-white p-6 w-full rounded-md hover:bg-gray-800">
+      <button type="submit" :class="{'custom-main-page-style': isMainPage}" class="bg-black text-white p-6 w-full rounded-md hover:bg-gray-800 shadow-md shadow-transparent">
     {{ $t('footerForm.buttonText') }}
   </button>      <div>
         <label class="inline-flex items-center">
@@ -85,16 +85,20 @@ export default {
 .bg-color-4 { background-color: #fe5420; }
 
 .custom-main-page-style {
-  background-image: linear-gradient(120deg, #02BDFF, #9316b4, #da3b3b, #fff40f, #fe5420);
-  background-size: 180% 180%; /* Increased to allow for vertical movement */
+  background-image: 
+    linear-gradient(120deg, rgba(243, 245, 246, 0.2), transparent), 
+    linear-gradient(140deg, #02BDFF, #9316b4, #da3b3b, #fff40f, #fe5420);
+  background-size: 180% 180%;
   animation: gradientAnimation 8s linear infinite;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 @keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
+  0% { background-position: 0% 50%, 0% 50%; }
+  50% { background-position: 100% 50%, 50% 50%; }
+  100% { background-position: 0% 50%, 0% 50%; }
+}
+
   .custom-main-page-style:hover {
     background-image: none;
 background-color: #ffffff;

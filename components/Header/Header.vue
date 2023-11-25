@@ -1,6 +1,6 @@
 
 <template>
-  <header ref="header" class="fixed top-0 left-0 w-full bg-transparent z-50 flex justify-between items-center px-4 py-2 md:py-4 md:px-8">   
+  <header ref="header" class="fixed top-0 left-0 w-full bg-transparent z-50 flex justify-between items-center px-4 py-4 md:py-4 md:px-8">   
      <div class="text-left">
       <div class="logo flex">
           <svg width="206" height="30" viewBox="0 0 206 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,8 +13,8 @@
  <!-- Desktop Navigation Links -->
  <nav class="hidden md:flex space-x-8 text-[1.125rem] text-white">
         <NuxtLink :to="localePath('')" class="nav-link" active-class="active-link">{{$t('header.home')}}</NuxtLink>
-        <NuxtLink :to="localePath('about')" class="nav-link" active-class="active-link">{{$t('header.about')}}</NuxtLink>
         <NuxtLink :to="localePath('services')" class="nav-link" active-class="active-link">{{$t('header.services')}}</NuxtLink>
+        <NuxtLink :to="localePath('about')" class="nav-link" active-class="active-link">{{$t('header.about')}}</NuxtLink>
         <NuxtLink :to="localePath('polices')" class="nav-link" active-class="active-link">{{$t('header.polices')}}</NuxtLink>
     
     
@@ -55,8 +55,8 @@
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink :to="localePath('about')" @click="closeMenu" prefetch class="hover:text-blue-600">
-            {{$t('header.about')}}
+          <NuxtLink :to="localePath('services')" @click="closeMenu" prefetch class="hover:text-blue-600">
+            {{$t('header.services')}}
             <!-- Your SVG icon -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 19.5l-15-15m0 0v11.25m0-11.25h11.25" />
@@ -64,8 +64,8 @@
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink :to="localePath('services')" @click="closeMenu" prefetch class="hover:text-blue-600">
-            {{$t('header.services')}}
+          <NuxtLink :to="localePath('about')" @click="closeMenu" prefetch class="hover:text-blue-600">
+            {{$t('header.about')}}
             <!-- Your SVG icon -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 19.5l-15-15m0 0v11.25m0-11.25h11.25" />
@@ -171,7 +171,7 @@ export default {
 }
 .scrolled {
   z-index: 888;
-  background: rgba(67, 67, 67, 0.192);
+  background: rgba(133, 133, 133, 0.383);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 0px;
@@ -208,7 +208,7 @@ p {
   left: 0;
   width: 100%;
   height: 0.125rem; /* Adjust thickness */
-  background-color: #fefefe; /* Your highlight color */
+  background-color: #ffffff; /* Your highlight color */
   border-radius: 0.075rem;
   transform: scaleX(0);
   transition: transform 0.3s ease; /* Smooth horizontal scaling */
@@ -232,7 +232,7 @@ p {
   left: 0;
   width: 100%;
   height: 0.125rem; /* Adjust thickness */
-  background-color: #fefefe; /* Your highlight color */
+  background-color: #ffffff; /* Your highlight color */
   border-radius: 0.075rem;
   transform: scaleX(1);/* Smooth horizontal scaling */
 }
@@ -243,7 +243,7 @@ p {
 .header-button {
     font-weight: 600;
     padding-bottom: 0.20rem;
-    border-color: white;
+    border-color: rgb(0, 0, 0);
     color: white;
     border: 0.075rem solid white;
     padding: 0.075rem 0.375rem;

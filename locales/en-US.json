@@ -15,14 +15,10 @@
     },
 
     "heroText":{
-      "title1": "WE STAND FOR",
-      "title2": "INNOVATION"
-    },
+      "title1": "We stand for",
+      "title2": "AI innovation",
+      "title3": "Benefiting the present, shaping the future with technology."
 
-    "words":{
-      "ai": "AI",
-      "software": "SOFTWARE",
-      "tech": "TECH"
     },
 
     "button":{
@@ -55,10 +51,10 @@
     },
 
     "keySection": {
-      "watch": "Watch",
-      "video": "our video",
-      "read": "Read more",
-      "key": "Key Principles"
+      "watch": "Choose the",
+      "video": "best for you",
+      "read": "About Us",
+      "key": "Key Ideas"
 
     },
 
@@ -71,8 +67,8 @@
     },
    
     "bookSection":{
-     "titleMobile": "Neural",
-     "titlePC": "Neural Network"
+     "titleMobile": "BUILD.",
+     "titlePC": "BUILD WEALTH."
     },
 
     "preFooterSection":{
