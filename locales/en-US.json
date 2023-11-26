@@ -16,8 +16,8 @@
 
     "heroText":{
       "title1": "We stand for",
-      "title2": "AI innovation",
-      "title3": "Benefiting the present, shaping the future with technology."
+      "title2": "Technology",
+      "title3": "Benefiting the present, shaping the future with AI."
 
     },
 
@@ -54,7 +54,8 @@
       "watch": "Choose the",
       "video": "best for you",
       "read": "About Us",
-      "key": "Key Ideas"
+      "key": "Key Ideas",
+      "policies": "See our policies"
 
     },
 
@@ -67,8 +68,8 @@
     },
    
     "bookSection":{
-     "titleMobile": "BUILD.",
-     "titlePC": "BUILD WEALTH."
+     "titleMobile": "BUILD",
+     "titlePC": "BUILD WEALTH"
     },
 
     "preFooterSection":{

@@ -3,7 +3,7 @@
     <!-- Coluna Esquerda -->
     <div class="h-full bg-black px-12 py-16 md:px-24 md:py-24 mb-28 ">
       <h2 class="sticky top-24 
-      text-[3rem] md:text-[4.5rem] leading-[5rem] text-white text-left">{{ $t('preFooterSection.title') }}</h2>
+      text-[4rem] md:text-[5rem] leading-[5rem] text-white text-left">{{ $t('preFooterSection.title') }}</h2>
     </div>
 
     <!-- Coluna Direita --> 

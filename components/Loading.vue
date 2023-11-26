@@ -26,18 +26,18 @@ const loadingBar = ref(null);
 onMounted(() => {
   gsap.timeline()
     .to(loadingBar.value, {
-      duration: 0.7, // Duration for the horizontal expansion
+      duration: 0.5, // Duration for the horizontal expansion
       width: '100%',
       ease: 'power2.out'
     })
     .to(loadingBar.value, {
-      duration: 0.5, // Duration for the vertical expansion
+      duration: 0.3, // Duration for the vertical expansion
       height: '100vh',
       top: '0%',
       ease: 'power2.in'
     })
     .to(loadingPage.value, {
-      duration: 0.6, // Duration for the fade-out animation
+      duration: 0.2, // Duration for the fade-out animation
       opacity: 0,
       ease: 'power2.in',
       onComplete: () => {

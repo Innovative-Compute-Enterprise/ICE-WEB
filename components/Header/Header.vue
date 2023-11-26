@@ -109,6 +109,10 @@ export default {
     };
   },
   mounted() {
+    const timeline = gsap.timeline({ defaults: { duration: 1, opacity: 0, ease: 'power2.out' } });
+
+timeline
+  .from('header', { y: -30 }, '<0.5');
     gsap.set(this.$refs.menu, { x: '100%' });
     this.menuTimeline = gsap.timeline({ paused: true })
       .to(this.$refs.menu, { x: '0%', duration: 0.6, ease: 'power3.out' });

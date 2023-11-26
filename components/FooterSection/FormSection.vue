@@ -79,30 +79,19 @@ export default {
 
 
 <style scoped>
-.bg-color-1 { background-color: #000000;}
+.bg-color-1 { background-color: #646464;}
 .bg-color-2 { background-color: #da3b3b; }
 .bg-color-3 { background-color: #02BDFF; }
 .bg-color-4 { background-color: #fe5420; }
 
 .custom-main-page-style {
-  background-image: 
-    linear-gradient(120deg, rgba(243, 245, 246, 0.2), transparent), 
-    linear-gradient(140deg, #02BDFF, #9316b4, #da3b3b, #fff40f, #fe5420);
-  background-size: 180% 180%;
-  animation: gradientAnimation 8s linear infinite;
+background-color: #000000;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%, 0% 50%; }
-  50% { background-position: 100% 50%, 50% 50%; }
-  100% { background-position: 0% 50%, 0% 50%; }
-}
-
   .custom-main-page-style:hover {
-    background-image: none;
-background-color: #ffffff;
-color: #000000;
+    background-color: #ffffff;
+    color: #000000;
   }
 
 h1{

@@ -1,7 +1,7 @@
 <template>
   <div class="hero-text-container flex flex-col items-center justify-center h-screen px-2 md:px-0">
     <div>
-      <h1 class="text-white pb-6 sm:text-[2.8rem] text-[3.8rem] md:text-[5.8rem] lg:text-[6.4rem]">
+      <h1 class="text-white pb-6 sm:text-[2.8rem] text-[3.8rem] md:text-[6.2rem] lg:text-[7.2rem]">
         {{ $t('heroText.title1') }} <br class="md:hidden" />
         <span class="animated-text-wrapper">
           <span class="animated-text">{{ $t('heroText.title2') }}</span>.
@@ -23,9 +23,21 @@
 <script setup>
 import ButtonMain from '~/components/ButtonMain.vue';
 import { useI18n } from 'vue-i18n';
+import { onMounted } from 'vue';
+import gsap from 'gsap';
 
 const { t } = useI18n();
+
+onMounted(() => {
+  const timeline = gsap.timeline({ defaults: { duration: 1, opacity: 0, ease: 'power2.out' } });
+
+  timeline
+    .from('.hero-text-container h1', { y: -30 })
+    .from('.animated-text', { y: 30 }, '<0.8') // slight delay for text animation
+    .from('.hero-text-container p', { x: -100 }, '<');
+});
 </script>
+
 
 
 
@@ -78,26 +90,5 @@ letter-spacing: 0.063rem;
   }
 }
 
-@keyframes background-pan {
-  from {
-    background-position: 0% center;
-  }
-  to {
-    background-position: -200% center;
-  }
-}
-.animated-text {
-  display: inline;
-  background: linear-gradient(
-    to right, 
-    #02BDFF, #9316b4, #da3b3b, #fff40f, #fe5420, #02BDFF
-  );
-  background-size: 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  animation: background-pan 3s linear infinite;
-  white-space: nowrap;
-}
+
 </style>
