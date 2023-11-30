@@ -1,9 +1,7 @@
 <template>
-  <div class=" custom-text py-16 md:py-28 flex flex-col items-center justify-center">
-    <a href="#" class="cursor-pointer ">
+  <div class=" custom-text py-20 md:py-32 my-12 flex flex-col items-center justify-center">
       <h2 class="block md:hidden text-white tracking-wider font-medium text-[4.875rem] lg:text-[6.7rem] xl:text-[7rem]">{{ $t('bookSection.titleMobile') }}</h2>
       <h2 class="hidden md:block text-white  tracking-wider font-medium text-[4.875rem] lg:text-[6.7rem] xl:text-[7rem]">{{ $t('bookSection.titlePC') }}</h2>
-    </a>
   </div>
 </template>
 
@@ -23,14 +21,14 @@ const { t } = useI18n();
 
   background-image: url('/second.png'); /* Update with the actual path to your image */
   background-position: center; /* This will center the image in the div */
-  background-size:350%;
+  background-size:50%;
   background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 @media screen and (max-width: 767px) {
   .custom-text {
     background-position: center; /* This will center the image in the div */
-  background-size:500%;
+  background-size:140%;
   background-repeat: no-repeat; /* Prevents the image from repeating */
   }
 }

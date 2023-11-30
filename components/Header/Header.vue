@@ -1,6 +1,6 @@
 
 <template>
-  <header ref="header" class="fixed top-0 left-0 w-full bg-transparent z-50 flex justify-between items-center px-4 py-4 md:py-4 md:px-8">   
+  <header ref="header" class="fixed top-0 left-0 w-full bg-transparent z-50 flex justify-between items-center px-4 py-4 md:py-6 md:px-4">   
      <div class="text-left">
       <div class="logo flex">
           <svg width="206" height="30" viewBox="0 0 206 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -12,13 +12,13 @@
 
  <!-- Desktop Navigation Links -->
  <nav class="hidden md:flex space-x-8 text-[1.125rem] text-white">
-        <NuxtLink :to="localePath('')" class="nav-link" active-class="active-link">{{$t('header.home')}}</NuxtLink>
-        <NuxtLink :to="localePath('services')" class="nav-link" active-class="active-link">{{$t('header.services')}}</NuxtLink>
-        <NuxtLink :to="localePath('about')" class="nav-link" active-class="active-link">{{$t('header.about')}}</NuxtLink>
-        <NuxtLink :to="localePath('polices')" class="nav-link" active-class="active-link">{{$t('header.polices')}}</NuxtLink>
+        <NuxtLink :to="localePath('')" class="nav-link cursor-pointer" active-class="active-link">{{$t('header.home')}}</NuxtLink>
+        <NuxtLink :to="localePath('services')" class="nav-link cursor-pointer" active-class="active-link">{{$t('header.services')}}</NuxtLink>
+        <NuxtLink :to="localePath('about')" class="nav-link cursor-pointer" active-class="active-link">{{$t('header.about')}}</NuxtLink>
+        <NuxtLink :to="localePath('polices')" class="nav-link cursor-pointer" active-class="active-link">{{$t('header.polices')}}</NuxtLink>
     
     
-     <button class="header-button flex items-center">
+     <button class="header-button flex items-center cursor-pointer">
       {{$t('header.contact')}}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="CurrentColor" class="w-5 h-5">
       <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -175,7 +175,7 @@ timeline
 }
 .scrolled {
   z-index: 888;
-  background: rgba(133, 133, 133, 0.383);
+  background: rgba(158, 158, 158, 0.383);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 0px;
