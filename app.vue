@@ -11,8 +11,9 @@ console.log('Be the Change.');
 
 <style>
 body {
+  -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 /* Page transition styles */

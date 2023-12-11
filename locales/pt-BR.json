@@ -11,8 +11,8 @@
       "slogan": "Alcance inovação impulsionada pela IA"
   },
   "heroText": {
-      "title1": "NÓS DEFENDEMOS",
-      "title2": "INOVAÇÃO",
+      "title1": "Alcance inovação",
+      "title2": "com AI",
       "title3": "Benefiting the present, shaping the future with technology."
   },
   "words": {
@@ -47,7 +47,8 @@
       "watch": "Watch",
       "video": "our video",
       "read": "Read more",
-      "key": "Key Principles"
+      "key": "Key Principles",
+      "policies": "See our policies"
   },
   "principles": {
       "principle1": "Companies cannot access genetic data held by other partner companies",

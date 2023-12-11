@@ -1,9 +1,9 @@
 <template>
-  <div v-if="showBanner" class="cookie-banner fixed inset-x-0 bottom-0 z-50 bg-blue-600 text-white px-4 py-2 sm:px-6 sm:py-3">
+  <div v-if="showBanner" class="cookie-banner fixed inset-x-0 bottom-0 z-50 bg-white text-black px-4 py-2 sm:px-6 sm:py-3">
     <div class="container mx-auto flex items-center justify-between flex-col sm:flex-row">
       
       <div class="flex items-center mb-4 sm:mb-0">
-        <svg class="mr-2 h-6 w-6 sm:h-8 sm:w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <svg class="mr-2 h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="black">
           <!-- SVG path for cookie icon -->
           <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm6,13a1,1,0,1,1,1-1A1,1,0,0,1,18,15Zm-8-4a1,1,0,1,1,1-1A1,1,0,0,1,10,11Zm6-3a1,1,0,1,1,1-1A1,1,0,0,1,16,8Zm-4-2a1,1,0,1,1,1-1A1,1,0,0,1,12,6Z" fill="#FFF"/>
         </svg>

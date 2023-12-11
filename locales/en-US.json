@@ -15,14 +15,14 @@
     },
 
     "heroText":{
-      "title1": "We stand for",
-      "title2": "Technology",
+      "title1": "Achieve innovation",
+      "title2": "with AI",
       "title3": "Benefiting the present, shaping the future with AI."
 
     },
 
     "button":{
-      "main": "Amplify"
+      "main": "Amplify Business"
     },
 
     "aboutPage":{
@@ -68,8 +68,8 @@
     },
    
     "bookSection":{
-     "titleMobile": "BUILD",
-     "titlePC": "BUILD WEALTH"
+     "titleMobile": "Amplify",
+     "titlePC": "Amplify, accelarate"
     },
 
     "preFooterSection":{

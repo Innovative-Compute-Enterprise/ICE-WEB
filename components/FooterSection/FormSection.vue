@@ -1,6 +1,6 @@
 <template >
-    <div :class="[backgroundColorClass]" class="px-12 py-16 md:px-24 md:py-24 text-black space-y-6">
-    <h1>{{ $t('footerForm.title') }}</h1>
+    <div :class="[backgroundColorClass]" class="px-12 py-20 md:px-24 md:py-28 space-y-6 ">
+    <h1 :class="{'custom-main-page-title': isMainPage}">{{ $t('footerForm.title') }}</h1>
     <form 
     @submit.prevent="handleSubmit"
     name="contact"
@@ -11,13 +11,13 @@
     >
       <input class="hidden" name="bot-field">
       <div class="flex flex-col">
-        <input type="text" id="inputname" name="name" :placeholder="$t('footerForm.namePlaceholder')" minlength="5" required class="text-input p-6 rounded-md">
+        <input type="text" id="inputname" name="name" :class="{'custom-main-placeholder': isMainPage}" :placeholder="$t('footerForm.namePlaceholder')" minlength="5" required class="text-input p-6 rounded-md">
       </div>
       <div class="flex flex-col">
-        <input type="text" id="inputcompany" name="company" :placeholder="$t('footerForm.companyPlaceholder')" required class="text-input p-6 rounded-md">
+        <input type="text" id="inputcompany" name="company" :class="{'custom-main-placeholder': isMainPage}" :placeholder="$t('footerForm.companyPlaceholder')" required class="text-input p-6 rounded-md">
       </div>
       <div class="flex flex-col">
-        <input type="email" id="inputemail" name="email" :placeholder="$t('footerForm.emailPlaceholder')" minlength="5" required class="text-input p-6 rounded-md">
+        <input type="email" id="inputemail" name="email" :class="{'custom-main-placeholder': isMainPage}" :placeholder="$t('footerForm.emailPlaceholder')" minlength="5" required class="text-input p-6 rounded-md">
       </div>
       <button type="submit" :class="{'custom-main-page-style': isMainPage}" class="bg-black text-white p-6 w-full rounded-md hover:bg-gray-800 shadow-md shadow-transparent">
     {{ $t('footerForm.buttonText') }}
@@ -25,7 +25,7 @@
         <label class="inline-flex items-center">
           <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" required>
 
-          <li class="list-none text-white pl-1 underline">
+          <li :class="{'custom-main-policy': isMainPage}" class="list-none text-white pl-1 underline">
             <NuxtLink to="/polices">
               {{ $t('footerForm.privacyPolicy') }}
             </NuxtLink>
@@ -79,13 +79,14 @@ export default {
 
 
 <style scoped>
-.bg-color-1 { background-color: #646464;}
+.bg-color-1 { background-color: #ffffff;}
 .bg-color-2 { background-color: #da3b3b; }
 .bg-color-3 { background-color: #02BDFF; }
 .bg-color-4 { background-color: #fe5420; }
 
 .custom-main-page-style {
-background-color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -93,6 +94,20 @@ background-color: #000000;
     background-color: #ffffff;
     color: #000000;
   }
+
+
+.custom-main-page-title{
+color: #000000;
+
+}
+.custom-main-policy{
+  color: #65686a;
+}
+.custom-main-placeholder{
+border-color: #000000;
+border-width: 0.6px;
+}
+
 
 h1{
   font-family: 'Georgia', sans-serif;
@@ -118,7 +133,7 @@ input:focus::placeholder {
 }
 
 button {
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-family: 'Helvetica Neue Medium', sans-serif;
   font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -129,7 +144,7 @@ button:hover {
 }
 .confirmation-message {
   animation-duration: 2s;
-  color: green;
+  color: rgb(0, 255, 0);
   margin-top: 1rem;
 }
 

@@ -1,7 +1,7 @@
 <template>
-  <div class=" custom-text py-20 md:py-32 my-12 flex flex-col items-center justify-center">
-      <h2 class="block md:hidden text-white tracking-wider font-medium text-[4.875rem] lg:text-[6.7rem] xl:text-[7rem]">{{ $t('bookSection.titleMobile') }}</h2>
-      <h2 class="hidden md:block text-white  tracking-wider font-medium text-[4.875rem] lg:text-[6.7rem] xl:text-[7rem]">{{ $t('bookSection.titlePC') }}</h2>
+  <div class=" custom-text p-4 py-20 md:py-32 my-20 flex flex-col items-center justify-center">
+      <h2 class="block md:hidden text-black tracking-wider font-medium text-[4.2rem] lg:text-[5.8rem] ">{{ $t('bookSection.titleMobile') }}</h2>
+      <h2 class="hidden md:block text-black tracking-wider font-medium text-[4.2rem] lg:text-[5.8rem] ">{{ $t('bookSection.titlePC') }}</h2>
   </div>
 </template>
 

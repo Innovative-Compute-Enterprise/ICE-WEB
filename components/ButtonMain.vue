@@ -9,61 +9,40 @@
 
 </template>
 
-<script>
+<script scoped>
 </script>
 
 <style>
+
 .custom-button {
 	position: absolute;
-  padding: 1rem 1.5rem;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  border: none;
-  font-size: 1.2rem;
+  padding: 1rem 1rem;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  border-radius: 0.313rem;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  overflow: hidden; /* Added to contain the gradient within the button */
 }
 
 .custom-button:hover {
-  background-color: #000000;
+  background-color: #2c2c2c;
   color: #ffffff;
-  box-shadow: 0 0 0 0.1rem rgba(255, 255, 255, 0.872)
-}
-.custom-button svg {
-  transition: transform 0.3s ease-in-out;
-}
-
-.custom-button:hover svg {
-  animation: slideRight 1s linear infinite;
-}
-
-@keyframes slideRight {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(18.5px); /* Adjust the value as needed */
-  }
 }
 @media screen and (max-width: 767px) {
 
   .custom-button {
 	position: absolute;
-  padding: 0.8rem 1.2rem;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  padding: 0.7rem 1.7rem;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   border: none;
-  font-size: 1rem;
+  font-size: 4vw;
   font-weight: 600;
   letter-spacing: 0.1rem;
   border-radius: 0.313rem;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
-  overflow: hidden; /* Added to contain the gradient within the button */
 }
 }
 

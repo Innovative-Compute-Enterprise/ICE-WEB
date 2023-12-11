@@ -5,13 +5,16 @@ export default defineNuxtConfig({
       mode: 'out-in'
     },
   },
+
   plugins: [  
     '~/plugins/global-state.js',
     
   ],
+
   modules: [
       '@nuxtjs/i18n',
   ],
+
   i18n: {
     lazy:true,
     langDir: 'locales', 
@@ -28,13 +31,21 @@ export default defineNuxtConfig({
       },
     ],
   },
+
   css: [
     '~/assets/css/main.css', 
   ],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
+    },
+  },
+
+  devtools: {
+    timeline: {
+      enabled: true,
     },
   },
 })
