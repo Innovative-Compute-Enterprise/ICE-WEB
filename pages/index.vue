@@ -11,6 +11,8 @@
 </template>
 
 <script setup>
+import { defineAsyncComponent } from 'vue';
+
 const CardSection = defineAsyncComponent(() => import('@/components/HeroSection/CardSection.vue'));
 const HeroSection = defineAsyncComponent(() => import('@/components/HeroSection/HeroSection.vue'));
 const KeySection = defineAsyncComponent(() => import('@/components/HeroSection/KeySection.vue'));

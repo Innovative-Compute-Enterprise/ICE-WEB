@@ -13,6 +13,8 @@
 </template>
 
 <script setup>
+import { defineAsyncComponent } from 'vue';
+
 const ContextSection = defineAsyncComponent(() => import('@/components/About/ContextSection.vue'));
 </script>
 

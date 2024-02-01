@@ -17,20 +17,22 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import Loading from '@/components/Loading.vue';
-import Header from '@/components/Header/Header.vue';
-import Footer from '@/components/FooterSection/Footer.vue';
-import CookieBanner from '@/components/CookieBanner.vue';
+import { ref, onMounted, defineAsyncComponent } from 'vue';
+
+// Asynchronous components
+const Header = defineAsyncComponent(() => import('@/components/Header/Header.vue'));
+const Footer = defineAsyncComponent(() => import('@/components/FooterSection/Footer.vue'));
+const CookieBanner = defineAsyncComponent(() => import('@/components/CookieBanner.vue'));
+const Loading = defineAsyncComponent(() => import('@/components/Loading.vue'));
 
 const isLoading = ref(true);
 
-onMounted(() => {
-  setTimeout(() => {
-    isLoading.value = false;
-  }, 1500); // Corrected comment to reflect the 1.5 seconds delay
+onMounted(async () => {
+  // Your data fetching or component loading logic
+  isLoading.value = false;
 });
 </script>
+
 
 <style scoped>
 /* Ensure the body takes up at least the height of the viewport */
