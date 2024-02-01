@@ -10,7 +10,7 @@ export default {
   head() {
     return {
       link: [
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
+        { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com', crossorigin: true },
       ],
       title: 'Continuum Glow',
     }

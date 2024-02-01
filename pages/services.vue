@@ -36,19 +36,32 @@ const BlackBoxSection = defineAsyncComponent(() => import('~/components/Services
 </script>
 
 <script>
-export default {
-  head() {
-    return {
-      title: 'Services - Your Website Name',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Read our policies regarding privacy, cookies, and more.',
-        },
-      ],
-    };
+useSeoMeta({
+  title: '[title]',
+  description: '[description]',
+  ogTitle: '[og:title]',
+  ogDescription: '[og:description]',
+  ogImage: '[og:image]',
+  ogUrl: '[og:url]',
+  twitterTitle: '[twitter:title]',
+  twitterDescription: '[twitter:description]',
+  twitterImage: '[twitter:image]',
+  twitterCard: 'summary'
+})
+
+useHead({
+  htmlAttrs: {
+    lang: 'en'
   },
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: '/favicon.png'
+    }
+  ]
+});
+export default {
   methods: {
     localePath(routeName) {
       const locale = this.$i18n.locale;
