@@ -37,12 +37,12 @@
       </div>
 
     <!-- Key Principles Section -->
-    <div class="h-full w-auto p-12 order-1 md:order-1 md:col-start-2 md:mb-0 border md:border-0 lg:border-0 border-[#000]/[0.1] dark:border-[#fff]/[0.1] shadow-sm md:shadow-none focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+    <div class="h-full w-auto p-12 order-1 md:order-1 md:col-start-2 md:mb-0 border-y md:border-0 lg:border-0 border-[#000]/[0.1] dark:border-[#fff]/[0.1] shadow-sm md:shadow-none focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
       <div class="tittle-text sticky uppercase md:top-64 text-[#09090B] dark:text-[#FAFAFA] md:text-center text-left py-4 text-4xl md:text-5xl lg:text-[54px] font-normal leading-tight tracking-tight">{{ $t('keySection.key') }}</div>
     </div>
 
     <!-- List of Principles -->
-    <div  class="md:col-start-3 order-2 h-[66rem] md:order-3 dark:bg-[#09090B] bg-[#FAFAFA] border border-r-0 border-[#000]/[0.1] dark:border-[#fff]/[0.1] shadow-sm focus-visible:ring-1 md:rounded-bl-[40px] md:rounded-tl-[40px] z-30 overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+    <div  class="md:col-start-3 order-2 h-[66rem] md:order-3 dark:bg-[#09090B] bg-[#FAFAFA] border-y border-r-0 border-[#000]/[0.1] dark:border-[#fff]/[0.1] shadow-sm focus-visible:ring-1 md:rounded-bl-[40px] md:rounded-tl-[40px] z-30 overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
     <ul>
       <li v-for="item in principles" :key="item" class="flex flex-col items-start py-10 px-12 space-y-6">
         <div class="w-8 h-8 bg-[#27272A] opacity-85 rounded-lg rounded-br-xl"></div>

@@ -5,7 +5,21 @@
   </NuxtLayout>
 </template>
 
-<script lang="ts" setup>
+<script>
+export default {
+  head() {
+    return {
+      link: [
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
+      ],
+      title: 'Continuum Glow',
+    }
+  }
+}
+</script>
+
+
+<script setup>
 import { ref } from 'vue';
 
 const darkMode = ref(false);
@@ -13,7 +27,9 @@ const darkMode = ref(false);
 function toggleDarkMode() {
   darkMode.value = !darkMode.value;
 }
+
 </script>
+
 
 <style>
 :root {

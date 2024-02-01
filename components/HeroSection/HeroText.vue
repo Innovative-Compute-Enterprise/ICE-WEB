@@ -46,7 +46,7 @@
  const { t } = useI18n();
  
  onMounted(() => {
- const timeline = gsap.timeline({ defaults: { duration: 1.2, opacity: 0, ease: 'power3.out', delay: 0.9} });
+ const timeline = gsap.timeline({ defaults: { duration: 1.2, opacity: 0, ease: 'power3.out', delay: 0.5} });
  
  timeline
    .from('.hero-text-container h1', { y: -30 })
@@ -58,6 +58,9 @@
  
  
  <style scoped>
+ .hero-text-container h1, .hero-text-container p {
+  will-change: transform, opacity;
+}
  h1 {  font-family: 'Work Sans', sans-serif;
 
   }

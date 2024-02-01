@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container mx-auto px-6 my-16 md:my-8 lg:my-12 pb-16">
+    <div class="container mx-auto px-6 my-2 md:my-8 lg:my-12 pb-4 md:pb-10">
       <!-- Title and Subtitle -->
 
     <div class="justify-center">
