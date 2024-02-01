@@ -1,7 +1,7 @@
 <template>
     <div class="error-page-container">
       <div class="text-center">
-      <p class="text-base font-semibold text-red-600 mb-4">{{ error.statusCode }}</p>
+      <p class="text-base font-semibold text-red-600 mb-6">{{ error.statusCode }}</p>
       <h1 class="mt-4 text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl mb-8">{{ error.message }}</h1>
       <p class="mt-8 text-base leading-7 text-gray-600 mb-6">{{ error.description }}</p>
       <div class="mt-10 flex items-center justify-center gap-6">

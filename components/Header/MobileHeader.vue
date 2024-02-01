@@ -1,5 +1,5 @@
 <template>
-    <header ref="headermobile" class="fixed mx-auto top-0 left-0 right-0 w-full z-50 py-4 px-8 flex justify-between items-center dark:bg-[#09090B]/[75%] bg-[#FAFAFA]/[75%] border-b border-[#000]/[0.1] dark:border-[#fff]/[0.1] backdrop-blur-[8px] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+    <header ref="headermobile" class="fixed mx-auto top-0 left-0 right-0 w-full z-50 py-4 px-4 flex justify-between items-center dark:bg-[#09090B]/[75%] bg-[#FAFAFA]/[75%] border-b border-[#000]/[0.1] dark:border-[#fff]/[0.1] backdrop-blur-[8px] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
       
       <div class="flex justify-start flex-1">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 dark:stroke-white stroke-black" >

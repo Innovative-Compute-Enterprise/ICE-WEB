@@ -1,7 +1,7 @@
 <template>
   <div class="md:px-20 lg:px-32 my-8 px-4">
     <div class="flex flex-col md:flex-row space-y-8 items-center justify-between rounded-[40px] p-8 md:px-20 md:py-28 dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.1] dark:border-[#fff]/[0.1] shadow-sm focus-visible:ring-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white color">
-      <h2 class="text-[#09090B] dark:text-[#FAFAFA] text-5xl font-semibold mb-6 md:mb-0 md:mr-8 md:w-[40%] w-full pb-16 md:pb-0">
+      <h2 class="text-[#09090B] dark:text-[#FAFAFA] text-5xl font-semibold mb-6 md:mb-0 md:mr-8 md:w-[40%] w-full pb-8 md:pb-0">
         Get notified when we’re launching.
       </h2>
       <form @submit.prevent="handleSubmit" class="w-full md:w-auto">

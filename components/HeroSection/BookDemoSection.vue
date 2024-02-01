@@ -23,7 +23,6 @@ const { t } = useI18n();
 }
 
 .image-custom{
-  background-image: url('/second.png'); /* Update with the actual path to your image */
   background-position: center; /* This will center the image in the div */
   background-size:60%;
   background-repeat: no-repeat; /* Prevents the image from repeating */
