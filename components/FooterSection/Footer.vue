@@ -6,8 +6,10 @@
 </template>
 
 <script setup>
-import EmailSection from './EmailSection.vue';
-import FormSection from './FormSection.vue';
+
+const EmailSection = defineAsyncComponent(() => import('@/components/FooterSection/EmailSection.vue'));
+const FormSection = defineAsyncComponent(() => import('@/components/FooterSection/FormSection.vue'));
+
 </script>
 
 <style scoped>

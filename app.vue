@@ -47,6 +47,7 @@ body {
 /* Page transition styles */
 .page-enter-active, .page-leave-active {
   transition: all 0.3s;
+  z-index: 999;
 }
 .page-enter-from, .page-leave-to {
   opacity: 0;

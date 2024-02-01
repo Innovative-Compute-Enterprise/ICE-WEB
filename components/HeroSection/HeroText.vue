@@ -9,8 +9,8 @@
             </a>
           </div>
       </div>
-    <div class="w-[100%] md:w-full">
-        <h1 class="text-[#09090B] dark:text-[#FAFAFA] uppercase pb-2 2xl:text-7xl md:text-6xl sm:text-[3.4rem] text-5xl mx-[20px] md:mx-[0] leading-tight tracking-tight font-bold w-auto md:text-center text-left">
+    <div class="w-[100%] md:w-full ">
+        <h1 class="text-[#09090B] dark:text-[#FAFAFA] uppercase pb-2 2xl:text-7xl md:text-6xl sm:text-[3.4rem] text-5xl mx-[20px] md:mx-[20px] leading-tight tracking-tight font-bold w-auto md:text-center text-left">
           {{ $t('heroText.title1') }}
         </h1>
    </div>
