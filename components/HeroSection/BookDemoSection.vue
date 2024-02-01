@@ -1,8 +1,10 @@
 <template>
-  <div class=" custom-text p-4 py-20 md:py-32 my-20 flex flex-col items-center justify-center">
-      <h2 class="block md:hidden text-black tracking-wider font-medium text-[4.2rem] lg:text-[5.8rem] ">{{ $t('bookSection.titleMobile') }}</h2>
-      <h2 class="hidden md:block text-black tracking-wider font-medium text-[4.2rem] lg:text-[5.8rem] ">{{ $t('bookSection.titlePC') }}</h2>
+  <section class="my-48 py-44 md:py-60 image-custom">
+  <div class=" custom-text flex flex-col items-center justify-center">
+      <h2 class="block md:hidden  text-[#09090B] dark:text-[#FAFAFA] tracking-wider font-[600] text-5xl lg:text-6xl ">{{ $t('bookSection.titleMobile') }}</h2>
+      <h2 class="hidden md:block  text-[#09090B] dark:text-[#FAFAFA] tracking-wider font-[600] text-5xl lg:text-6xl ">{{ $t('bookSection.titlePC') }}</h2>
   </div>
+  </section>
 </template>
 
 <script setup>
@@ -18,20 +20,20 @@ const { t } = useI18n();
   line-height: 9.25rem; /* 111.731% */
   letter-spacing: 1.5rem;
   font-family: 'Helvetica Neue Medium', sans-serif;
-
-  background-image: url('/second.png'); /* Update with the actual path to your image */
-  background-position: center; /* This will center the image in the div */
-  background-size:50%;
-  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
+.image-custom{
+  background-image: url('/second.png'); /* Update with the actual path to your image */
+  background-position: center; /* This will center the image in the div */
+  background-size:60%;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
 @media screen and (max-width: 767px) {
-  .custom-text {
-    background-position: center; /* This will center the image in the div */
-  background-size:140%;
+  .image-custom {
+  background-position: center; /* This will center the image in the div */
+  background-size:150%;
   background-repeat: no-repeat; /* Prevents the image from repeating */
   }
 }
-
 
 </style>

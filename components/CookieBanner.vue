@@ -57,8 +57,8 @@ button {
 .reject-button {
   width: auto;
   background-color: transparent;
-  border: 0.063rem solid white;
-  color: white;
+  border: 0.063rem solid #646464;
+  color: #646464;
 }
 
 .reject-button:hover {
@@ -87,12 +87,12 @@ a:hover {
 
 @media (max-width: 640px) {
   .cookie-banner {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .cookie-banner svg {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 }
 </style>

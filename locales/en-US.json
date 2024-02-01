@@ -11,28 +11,30 @@
 
     "headerBrand":{
       "name": "Continuum Glow",
-      "slogan": "Achieve inovation fueled by AI"
+      "slogan": "Achieve inovation powered by AI"
     },
 
     "heroText":{
-      "title1": "Achieve innovation",
-      "title2": "with AI",
-      "title3": "Benefiting the present, shaping the future with AI."
-
+      "title1": "Achieve innovation with AI",
+      "title2": "Empowering Today, Shaping Tomorrow with Artificial Intelligence"
     },
 
     "button":{
-      "main": "Amplify Business"
+      "main": "Amplify"
     },
 
     "aboutPage":{
-      "title": "About"
+      "title": "ABOUT"
     },
 
-    "blueSection": {
-      "title": "Blue Section Title",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    },
+      "blueSection": {
+        "title": "We love creators",
+        "subtitle": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+        "paragraph1": "Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.",
+        "paragraph2": "Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim eget. Est augue maecenas risus nulla ultrices congue nunc tortor. Enim et nesciunt doloremque nesciunt voluptate."
+      },
+    
+    
 
     "stoneSection": {
       "topTitle": "Top",
@@ -102,7 +104,7 @@
     },
 
     "services": {
-      "title": "Services",
+      "title": "SERVICES",
       "blacktitle" : "BLACK-BOX",
       "blacktext" : "We are dedicated to delivering top-notch services tailored to your unique needs. Our team is committed to innovation, excellence, and building lasting partnerships."
     },
@@ -145,7 +147,7 @@
       },
   
     "policies": {
-      "title": "Policies",
+      "title": "POLICIES",
       "privacyPolicy": "Privacy Policy",
       "privacyPolicyDesc": "This Privacy Policy outlines how we handle your personal information...",
       "cookiePolicy": "Cookie Policy",

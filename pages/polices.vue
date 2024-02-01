@@ -2,9 +2,9 @@
   <div>
     <div class="bg-white">
       <!-- Hero Section -->
-      <div class="hero flex items-end justify-start h-[27.5rem] md:h-[37.5rem]">
-        <li class="list-none pl-4">
-              <h1 class="hero-title text-left md:pl-[1.15rem] text-[18.488vw] md:text-[9vw] font-medium">{{$t('policies.title')}}</h1>
+      <div class="hero flex items-center justify-center h-[28.5rem] md:h-[38.5rem]">
+        <li class="list-none">
+              <h1 class="hero-title leading-tight  max-w-screen-2xl tracking-wide text-center text-[#FAFAFA] text-6xl md:text-7xl lg:text-8xl font-bold mx-auto my-auto">{{$t('policies.title')}}</h1>
         </li>
       </div>
   

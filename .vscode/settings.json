@@ -1,7 +1,27 @@
 {
-    "cSpell.words": [
-        "gsap",
-        "helveticaneue",
-        "Nuxt"
-    ]
+    "editor.lineHeight": 1.8,
+    "editor.fontSize": 14,
+    "editor.rulers": [80, 120],
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.renderLineHighlight": "gutter",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Jetbrains Mono",
+    "workbench.editor.labelFormat": "short",
+    "explorer.compactFolders": false,
+    "editor.semanticHighlighting.enabled": false,
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*",
+        "tailwind.config.js": "tailwind.config*, postcss.config*",
+        ".env.local": ".env*",
+        ".env": ".env*"
+      },
+      "terminal.integrated.fontSize": 14,
+      "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+      "javascript.updateImportsOnFileMove.enabled": "always",
+      "typescript.updateImportsOnFileMove.enabled": "always",
 }

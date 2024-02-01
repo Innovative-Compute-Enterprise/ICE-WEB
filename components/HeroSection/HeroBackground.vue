@@ -1,37 +1,49 @@
 <template>
-  <div class="hero-video-container">
-   
-   <img class="hero-image" loading="lazy" src="/main.png" alt="main" />
-    
-    <div class="overlay"></div>
+  <div class="m-auto absolute w-[100%] max-w-[600px] aspect-square">
+    <canvas ref="canvasEl" class="w-full h-full cursor-grab rounded-full" style="transition: opacity 1s ease-in-out; opacity: 1;" width="1050" height="1050"></canvas>
   </div>
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
+import createGlobe from 'cobe';
+
+const canvasEl = ref(null);
+let phi = 0;
+let width = 0;
+
+const updateSize = () => {
+  if (canvasEl.value) {
+    width = canvasEl.value.offsetWidth;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('resize', updateSize);
+  updateSize();
+
+  const globe = createGlobe(canvasEl.value, {
+    devicePixelRatio: 2,
+    width: width * 2,
+    height: width * 2,
+    phi: 0,
+    theta: 0.2,
+    dark: 0,
+    diffuse: 3,
+    mapSamples: 16000,
+    mapBrightness: 1.8,
+    mapBaseBrightness: .05,
+    baseColor: [186,186,186],
+    markerColor: [251 / 255, 100 / 255, 21 / 255],
+    glowColor: [1.1, 1.1, 1.1],
+    markers: [],
+    opacity: .7,
+    onRender: (state) => {
+      state.phi = phi;
+      phi += 0.005;
+      state.width = width * 2;
+      state.height = width * 2;
+    },
+  });
+});
 </script>
-
-<style scoped>
-.hero-video-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-video, .hero-image {
-  display: inline;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  position: relative;
-  z-index: 1;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  cursor: default; /* Optional, to show that it's not clickable */
-}
-</style>

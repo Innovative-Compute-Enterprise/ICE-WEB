@@ -1,24 +1,23 @@
 <template>
   <div>
-  <section>
-    <HeroSection id="home"/>
-    <KeySection />
-    <BookDemoSection  />
-    <PreFooter id="faq" />
-  </section>
+    <section class="bg-[#FAFAFA] dark:bg-[#09090B]">
+      <HeroSection id="home"/>  
+      <CardSection />
+      <KeySection />
+      <BookDemoSection />
+      <OurProcess id="faq" />
+    </section>
   </div>
 </template>
 
 <script setup>
-import HeroSection from '@/components/HeroSection/HeroSection.vue';
-import KeySection from '@/components/KeySection/KeySection.vue';
-import BookDemoSection from '@/components/KeySection/BookDemoSection.vue'; 
-import PreFooter from '@/components/FooterSection/PreFooter.vue';
+const CardSection = defineAsyncComponent(() => import('@/components/HeroSection/CardSection.vue'));
+const HeroSection = defineAsyncComponent(() => import('@/components/HeroSection/HeroSection.vue'));
+const KeySection = defineAsyncComponent(() => import('@/components/HeroSection/KeySection.vue'));
+const BookDemoSection = defineAsyncComponent(() => import('@/components/HeroSection/BookDemoSection.vue')); 
+const OurProcess = defineAsyncComponent(() => import('@/components/HeroSection/OurProcess.vue'));
 </script>
 
 <style scoped>
-body {
-  overflow-x: hidden;
-  background-color: #000000;
-  }
+/* Adjust the z-index for subsequent sections if necessary */
 </style>

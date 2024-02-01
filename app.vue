@@ -1,19 +1,31 @@
 <!-- app.vue -->
 <template>
-  <NuxtLayout>
+  <NuxtLayout :class="{ 'dark': darkMode }">
       <NuxtPage />
   </NuxtLayout>
 </template>
 
 <script lang="ts" setup>
-console.log('Be the Change.');
+import { ref } from 'vue';
+
+const darkMode = ref(false);
+
+function toggleDarkMode() {
+  darkMode.value = !darkMode.value;
+}
 </script>
 
 <style>
+:root {
+  background: #FAFAFA; 
+}
+
+.dark {
+  background: #09090B; 
+}
+
 body {
-  -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  background-color: #ffffff;
 }
 
 /* Page transition styles */
@@ -22,7 +34,7 @@ body {
 }
 .page-enter-from, .page-leave-to {
   opacity: 0;
+  z-index: 999;
   filter: blur(1rem);
 }
-
 </style>

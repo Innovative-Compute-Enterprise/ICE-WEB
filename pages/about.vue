@@ -1,23 +1,24 @@
 <template>
   <div>
-  <div class="hero flex items-end justify-start h-[27.5rem] md:h-[37.5rem]">
-      <li class="list-none pl-4">
-            <h1 class="hero-title text-left md:pl-[1.15rem] text-[18.488vw] md:text-[9vw] font-medium">{{$t('aboutPage.title')}}</h1>
+  <div class="hero bg-red-600  flex items-center justify-center h-[28.5rem] md:h-[38.5rem]">
+      <li class="list-none">
+            <h1 class="hero-title leading-tight  max-w-screen-2xl tracking-wide text-center text-[#FAFAFA] text-6xl md:text-7xl lg:text-8xl font-bold mx-auto my-auto">{{$t('aboutPage.title')}}</h1>
       </li>
 
   </div>
+  <div class="my-8">
   <ContextSection />
+  </div>
   </div>
 </template>
 
+<script setup>
+const ContextSection = defineAsyncComponent(() => import('@/components/About/ContextSection.vue'));
+</script>
+
 <script>
 
-import ContextSection from '~/components/BodyTextSection/ContextSection.vue';
-
 export default {
-  components: {
-    ContextSection
-  },
   head() {
     return {
       title: 'About - Your Website Name',
@@ -38,12 +39,11 @@ body {
   overflow-x: hidden;
 }
 .hero {
-    background-color: #da3b3b; /* Light grey background for contrast */
-    text-align: center;
-  }
-  
-  .hero-title {
-    color: #ffffff; /* Dark text for readability */
-  }
+  text-align: center;
+}
+
+.hero-title {
+  font-family: 'Work Sans', sans-serif;
+}
   
 </style>
