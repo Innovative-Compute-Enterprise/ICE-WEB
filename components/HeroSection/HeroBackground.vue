@@ -28,19 +28,19 @@ onMounted(() => {
     height: width * 2,
     phi: 0,
     theta: 0.2,
-    dark: -2,
-    diffuse: 3,
+    dark: 0.20,
+    diffuse: 1.1,
     mapSamples: 16000,
-    mapBrightness: 1.8,
-    mapBaseBrightness: .05,
-    baseColor: [186,186,186],
+    mapBrightness: 12,
+    mapBaseBrightness: 0,
+    baseColor: [1.1, 1.1, 1.1],
     markerColor: [251 / 255, 100 / 255, 21 / 255],
     glowColor: [1.1, 1.1, 1.1],
     markers: [],
-    opacity: .7,
+    opacity: .8,
     onRender: (state) => {
       state.phi = phi;
-      phi += 0.005;
+      phi += 0.003;
       state.width = width * 2;
       state.height = width * 2;
     },
