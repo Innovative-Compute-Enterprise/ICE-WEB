@@ -16,9 +16,6 @@
 import { defineAsyncComponent } from 'vue';
 
 const ContextSection = defineAsyncComponent(() => import('@/components/About/ContextSection.vue'));
-</script>
-
-<script>
 useSeoMeta({
   title: '[title]',
   description: '[description]',

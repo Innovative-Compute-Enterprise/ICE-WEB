@@ -33,9 +33,7 @@ import { defineAsyncComponent } from 'vue';
 const ServicesGrid = defineAsyncComponent(() => import('~/components/Services/ServicesGrid.vue'));
 const FaqSection = defineAsyncComponent(() => import('~/components/Services/FaqSection.vue'));
 const BlackBoxSection = defineAsyncComponent(() => import('~/components/Services/BlackBoxSection.vue'));
-</script>
 
-<script>
 useSeoMeta({
   title: '[title]',
   description: '[description]',
@@ -61,6 +59,10 @@ useHead({
     }
   ]
 });
+
+</script>
+
+<script>
 export default {
   methods: {
     localePath(routeName) {

@@ -28,7 +28,7 @@ onMounted(() => {
     height: width * 2,
     phi: 0,
     theta: 0.2,
-    dark: 0,
+    dark: -2,
     diffuse: 3,
     mapSamples: 16000,
     mapBrightness: 1.8,

@@ -5,6 +5,7 @@ export default defineNuxtConfig({
       mode: 'out-in'
     },
   },
+
   build: {
     analyze: true,
   },
@@ -41,6 +42,12 @@ export default defineNuxtConfig({
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
+    },
+  },
+
+  devtools: {
+    timeline: {
+      enabled: true,
     },
   },
 })

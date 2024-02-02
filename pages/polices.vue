@@ -39,7 +39,7 @@
 </template>
 
   
-  <script>
+  <script setup>
   useSeoMeta({
   title: '[title]',
   description: '[description]',
