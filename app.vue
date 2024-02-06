@@ -1,9 +1,19 @@
-<!-- app.vue -->
 <template>
   <NuxtLayout :class="{ 'dark': darkMode }">
-      <NuxtPage />
+    <NuxtPage />
   </NuxtLayout>
 </template>
+
+<script setup>
+import { ref, onMounted } from 'vue';
+
+
+const darkMode = ref(false);
+
+function toggleDarkMode() {
+  darkMode.value = !darkMode.value;
+}
+</script>
 
 <script>
 export default {
@@ -19,16 +29,6 @@ export default {
 </script>
 
 
-<script setup>
-import { ref } from 'vue';
-
-const darkMode = ref(false);
-
-function toggleDarkMode() {
-  darkMode.value = !darkMode.value;
-}
-
-</script>
 
 
 <style>
@@ -46,12 +46,12 @@ body {
 
 /* Page transition styles */
 .page-enter-active, .page-leave-active {
-  transition: all 0.3s;
+  transition: all 0.2s;
   z-index: 999;
 }
 .page-enter-from, .page-leave-to {
   opacity: 0;
   z-index: 999;
-  filter: blur(1rem);
+  filter: blur(0.9rem);
 }
 </style>

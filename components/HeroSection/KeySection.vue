@@ -42,7 +42,7 @@
     </div>
 
     <!-- List of Principles -->
-    <div  class="md:col-start-3 order-2 h-[66rem] md:order-3 dark:bg-[#09090B] bg-[#FAFAFA] border-y border-r-0 border-[#000]/[0.1] dark:border-[#fff]/[0.1] shadow-sm focus-visible:ring-1 md:rounded-bl-[40px] md:rounded-tl-[40px] z-30 overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+    <div  class="md:col-start-3 order-2 h-[66rem] md:order-3 dark:bg-[#09090B] bg-[#FAFAFA] border border-r-0 border-[#000]/[0.1] dark:border-[#fff]/[0.1] shadow-sm focus-visible:ring-1 md:rounded-bl-[40px] md:rounded-tl-[40px] z-30 overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
     <ul>
       <li v-for="item in principles" :key="item" class="flex flex-col items-start py-10 px-12 space-y-6">
         <div class="w-8 h-8 bg-[#27272A] opacity-85 rounded-lg rounded-br-xl"></div>

@@ -1,11 +1,12 @@
 <template>
   <section class="hero-section bg-[#FAFAFA] dark:bg-[#09090B]">
     <HeroText />
+    <HeroBackground />
     <template v-if="isDarkMode">
       <HeroBackgroundDark />
     </template>
     <template v-else>
-      <HeroBackground />
+      
     </template>
   </section>
 </template>
@@ -19,7 +20,8 @@ import HeroText from './HeroText.vue';
 const isDarkMode = ref(false);
 
 const updateDarkMode = () => {
-  isDarkMode.value = document.documentElement.classList.contains('light') === false;
+  // Assuming the 'dark' class represents dark mode
+  isDarkMode.value = document.documentElement.classList.contains('dark');
 };
 
 let observer;
@@ -47,7 +49,6 @@ onUnmounted(() => {
     observer.disconnect();
   }
 });
-
 </script>
 
 

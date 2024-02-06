@@ -1,11 +1,11 @@
 <template>
   <div>
     <section class="bg-[#FAFAFA] dark:bg-[#09090B]">
-      <HeroSection id="home"/>  
+      <HeroSection />  
       <CardSection />
       <KeySection />
       <BookDemoSection />
-      <OurProcess id="faq" />
+      <OurProcess />
     </section>
   </div>
 </template>
@@ -20,13 +20,13 @@ const BookDemoSection = defineAsyncComponent(() => import('@/components/HeroSect
 const OurProcess = defineAsyncComponent(() => import('@/components/HeroSection/OurProcess.vue'));
 
 useSeoMeta({
-  title: '[title]',
+  title: 'Home',
   description: '[description]',
   ogTitle: '[og:title]',
   ogDescription: '[og:description]',
   ogImage: '[og:image]',
   ogUrl: '[og:url]',
-  twitterTitle: '[twitter:title]',
+  twitterTitle: 'Continuum Glow - Home',
   twitterDescription: '[twitter:description]',
   twitterImage: '[twitter:image]',
   twitterCard: 'summary'
@@ -38,9 +38,10 @@ useHead({
   },
   link: [
     {
+      hid: 'icon',
       rel: 'icon',
       type: 'image/png',
-      href: '/favicon.png'
+      href: '/faviconblack.png'
     }
   ]
 });

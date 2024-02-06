@@ -121,11 +121,14 @@
 export default {
   data() {
     return {
-      chartData: this.generateChartData(),
+      chartData: [], // Initialize as empty array
     };
   },
-  created() {
-    this.animateBars();
+  mounted() {
+    if (process.client) {
+      this.chartData = this.generateChartData(); // Generate chart data on the client side
+      this.setupClientSpecificFeatures();
+    }
   },
   methods: {
     generateRandomHeight() {
@@ -133,25 +136,31 @@ export default {
       return Math.random() * (0.9 - 0.6) + 0.5;
     },
     generateChartData() {
-      return Array.from({ length: 7 }, () => ({ height: this.generateRandomHeight() }));
+      return Array.from({ length: 8 }, () => ({ height: this.generateRandomHeight() }));
+    },
+    setupClientSpecificFeatures() {
+      this.animateBars();
+      // Any other client-specific code can be initialized here
     },
     animateBars() {
       const animate = () => {
         this.chartData = this.chartData.map(() => ({
-          height: this.generateRandomHeight()
+          height: this.generateRandomHeight(),
         }));
 
         // Run the animation at a set interval, e.g., every 500ms
         setTimeout(() => {
-          requestAnimationFrame(animate);
+          if (process.client) {
+            requestAnimationFrame(animate);
+          }
         }, 600); // Adjust time as needed for faster or slower animations
       };
       animate();
-    }
-  }
+    },
+  },
 };
-
 </script>
+
 
 <style scoped>
 .bar-animation {

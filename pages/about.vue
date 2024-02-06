@@ -1,8 +1,8 @@
 <template>
   <div>
-  <div class="hero bg-red-600  flex items-center justify-center h-[28.5rem] md:h-[38.5rem]">
+  <div class="hero bg-gradient-to-r from-red-700 to-red-500 flex items-center justify-center h-[28.5rem] md:h-[38.5rem]">
       <li class="list-none">
-            <h1 class="hero-title leading-tight  max-w-screen-2xl tracking-wide text-center text-[#FAFAFA] text-6xl md:text-7xl lg:text-8xl font-bold mx-auto my-auto">{{$t('aboutPage.title')}}</h1>
+            <h1 class="hero-title leading-tight  max-w-screen-2xl tracking-wide text-center text-[#FAFAFA] text-5xl md:text-6xl lg:text-7xl font-bold mx-auto my-auto">{{$t('aboutPage.title')}}</h1>
       </li>
 
   </div>
@@ -17,7 +17,7 @@ import { defineAsyncComponent } from 'vue';
 
 const ContextSection = defineAsyncComponent(() => import('@/components/About/ContextSection.vue'));
 useSeoMeta({
-  title: '[title]',
+  title: 'About Us',
   description: '[description]',
   ogTitle: '[og:title]',
   ogDescription: '[og:description]',
@@ -35,9 +35,11 @@ useHead({
   },
   link: [
     {
+      hid: 'icon',
+      sizes: '64x64',
       rel: 'icon',
-      type: 'image/png',
-      href: '/favicon.png'
+      type: 'image/x-icon',
+      href: '/faviconred.png'
     }
   ]
 });

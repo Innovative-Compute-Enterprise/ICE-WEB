@@ -2,8 +2,8 @@
   <div>
     <div>
       <!-- Hero Section -->
-      <div class="hero bg-blue-700 flex items-center justify-center h-[28.5rem] md:h-[38.5rem]">
-        <h1 class="hero-title leading-tight  max-w-screen-2xl tracking-wide text-center text-[#FAFAFA] text-6xl md:text-7xl lg:text-8xl font-bold mx-auto my-auto">
+      <div class="hero bg-gradient-to-r from-blue-700 to-blue-600 flex items-center justify-center h-[28.5rem] md:h-[38.5rem]">
+        <h1 class="hero-title leading-tight  max-w-screen-2xl tracking-wide text-center text-[#FAFAFA] text-5xl md:text-6xl lg:text-7xl font-bold mx-auto my-auto">
           {{$t('services.title')}}
         </h1>
       </div>
