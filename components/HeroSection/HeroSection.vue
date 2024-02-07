@@ -1,12 +1,10 @@
 <template>
   <section class="hero-section bg-[#FAFAFA] dark:bg-[#09090B]">
     <HeroText />
-    <template v-if="isDarkMode">
-      <HeroBackgroundDark />
-    </template>
-    <template v-else>
-      <HeroBackground />
-    </template>
+    
+    <HeroBackgroundDark v-if="isDarkMode" />
+    <HeroBackground v-else />
+    
   </section>
 </template>
 
@@ -17,13 +15,12 @@ import HeroBackgroundDark from './HeroBackgroundDark.vue';
 import HeroText from './HeroText.vue';
 
 const isDarkMode = ref(false);
+let observer;
 
 const updateDarkMode = () => {
   // Assuming the 'dark' class represents dark mode
   isDarkMode.value = document.documentElement.classList.contains('dark');
 };
-
-let observer;
 
 onMounted(() => {
   updateDarkMode(); // Initial check
@@ -48,8 +45,19 @@ onUnmounted(() => {
     observer.disconnect();
   }
 });
-</script>
 
+// Destroy WebGL context when the component is unmounted
+const destroyWebGLContext = (component) => {
+  if (component && typeof component.destroyWebGLContext === 'function') {
+    component.destroyWebGLContext();
+  }
+};
+
+onUnmounted(() => {
+  destroyWebGLContext(HeroBackground);
+  destroyWebGLContext(HeroBackgroundDark);
+});
+</script>
 
 <style scoped>
 .hero-section {

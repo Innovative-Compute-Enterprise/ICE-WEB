@@ -48,6 +48,21 @@
               <span>{{ item.label }}</span>
             </NuxtLink>
 
+
+            <button @click="toggleTheme" class="min-h-[100px] min-w-[100px] grid-item p-4 space-y-3 dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.1] dark:border-[#fff]/[0.1] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+             focus-visible:outline-white rounded-md text-sm 
+             font-bold"
+              >
+              <svg v-if="!darkMode"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-[1.2rem] h-[1.2rem]">
+              <path d="M10 2a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 10 2ZM10 15a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 10 15ZM10 7a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM15.657 5.404a.75.75 0 1 0-1.06-1.06l-1.061 1.06a.75.75 0 0 0 1.06 1.06l1.06-1.06ZM6.464 14.596a.75.75 0 1 0-1.06-1.06l-1.06 1.06a.75.75 0 0 0 1.06 1.06l1.06-1.06ZM18 10a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 18 10ZM5 10a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 5 10ZM14.596 15.657a.75.75 0 0 0 1.06-1.06l-1.06-1.061a.75.75 0 1 0-1.06 1.06l1.06 1.06ZM5.404 6.464a.75.75 0 0 0 1.06-1.06l-1.06-1.06a.75.75 0 1 0-1.061 1.06l1.06 1.06Z" />
+            </svg>
+
+            <svg v-else xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-[1.2rem] h-[1.2rem]">
+            <path fill-rule="evenodd" d="M7.455 2.004a.75.75 0 0 1 .26.77 7 7 0 0 0 9.958 7.967.75.75 0 0 1 1.067.853A8.5 8.5 0 1 1 6.647 1.921a.75.75 0 0 1 .808.083Z" clip-rule="evenodd" />
+            </svg>
+              <span>Theme</span>
+          </button>
+
           </div> 
         
         </div> 
@@ -69,20 +84,17 @@
         { id: 3, label: 'About', to: '/about', svgPath: "M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" },
         { id: 4, label: 'Polices', to: '/polices', svgPath: "M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" },
         { id: 5, label: 'Contact', svgPath: "M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" },
-        { id: 7, label: 'Account', svgPath: "M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" },
+        { id: 7, label: 'Soon', svgPath: "M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" },
           ],
         };
       },
-      mounted() {
-  this.darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    this.darkMode = e.matches;
-  });
-  gsap.set(this.$refs.menu, { autoAlpha: 0 }); 
-  this.menuTimeline = gsap.timeline({ paused: true })
-    .to(this.$refs.menu, { autoAlpha: 1, duration: 0.2, ease: 'power3.in' });
-  this.toggleBodyScroll(this.menuOpen);
-},
+   mounted() {
+        this.initTheme(); // Initialize theme based on system preference or stored preference
+    gsap.set(this.$refs.menu, { autoAlpha: 0 }); 
+    this.menuTimeline = gsap.timeline({ paused: true })
+      .to(this.$refs.menu, { autoAlpha: 1, duration: 0.2, ease: 'power3.in' });
+    this.toggleBodyScroll(this.menuOpen);
+  },
   methods: {
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
@@ -94,6 +106,29 @@
       this.menuTimeline.reverse();
     }
   },
+  toggleTheme() {
+      this.darkMode = !this.darkMode;
+      document.documentElement.classList.toggle('dark', this.darkMode);
+      // Optionally, save the darkMode state to localStorage to remember the user's choice
+      localStorage.setItem('darkMode', this.darkMode ? 'true' : 'false');
+    },
+    initTheme() {
+      // Check if a theme preference is saved in localStorage
+      const savedTheme = localStorage.getItem('darkMode');
+      if (savedTheme !== null) {
+        this.darkMode = savedTheme === 'true';
+      } else {
+        // If not, use the system preference
+        this.darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+      document.documentElement.classList.toggle('dark', this.darkMode);
+      
+      // Listen for changes in the system theme preference
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        this.darkMode = e.matches;
+        document.documentElement.classList.toggle('dark', this.darkMode);
+      });
+    },
   closeMenu() {
     this.menuOpen = false;
     this.toggleBodyScroll(this.menuOpen);

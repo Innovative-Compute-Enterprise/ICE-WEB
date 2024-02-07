@@ -57,13 +57,13 @@
              
              <div class="w-full flex justify-center gap-4 mt-auto" style="height: calc(100% - 2rem);"> <!-- Adjust the calc() value to control the space at the bottom -->
                 <!-- v-for to render each bar -->
-                <div v-for="(value, index) in chartData" :key="index" class="w-12 relative" style="height: 100%;">
+                <div v-for="(value, index) in chartData" :key="index" class="w-10 md:w-12 xl:w-14 relative" style="height: 100%;">
                   <div :style="{ transform: `scaleY(${value.height})` }" class="bar-animation absolute bottom-0 w-full bg-gradient-to-b from-[#09090B] to-transparent rounded-t-xl dark:bg-gradient-to-b dark:from-[#FAFAFA] dark:to-transparent"></div>
                 </div>
               </div>
 
               <div>
-              <div class="absolute top-10 right-5 text-green-500 dark:bg-[#09090B]/75 bg-[#FAFAFA]/75 text-md p-3 rounded-3xl border border-[#000]/[0.1] dark:border-[#fff]/[0.1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">+11%</div>
+              <div class="numberGreen absolute top-10 right-5 text-green-500 dark:bg-[#09090B]/75 bg-[#FAFAFA]/75 text-2xl font-bold p-2 rounded-3xl border border-[#000]/[0.1] dark:border-[#fff]/[0.1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">+11%</div>
              </div>
             </div>
           </div>
