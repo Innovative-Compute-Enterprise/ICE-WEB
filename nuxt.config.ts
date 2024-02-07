@@ -15,6 +15,13 @@ export default defineNuxtConfig({
     
   ],
 
+  image:{
+
+    inject: true,
+
+  
+  },
+
   
   modules: ['@nuxtjs/i18n', '@nuxtjs/robots', "@nuxt/image"],
 

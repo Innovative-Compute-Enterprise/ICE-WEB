@@ -58,7 +58,6 @@
 </template>
 
 <script>
-import { gsap } from 'gsap';
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 export default {
