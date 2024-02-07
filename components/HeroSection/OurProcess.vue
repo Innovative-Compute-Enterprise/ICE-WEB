@@ -34,6 +34,7 @@ h2{
   font-family: 'Work Sans', sans-serif;
 }
 p {
-  font-family: 'Helvetica Neue Medium', sans-serif;
+  font-family: 'Hedvig Letters Sans', sans-serif;
+
 }
 </style>

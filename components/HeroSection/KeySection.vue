@@ -77,6 +77,6 @@ const principles = ref([
 }
 
 ul {
-  font-family: 'Helvetica Neue Medium', sans-serif;
+  font-family: 'Hedvig Letters Sans', sans-serif;
 }
 </style>

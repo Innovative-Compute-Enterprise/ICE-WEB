@@ -14,8 +14,7 @@
             @click="togglePlanType(type)"
             :class="{
               'border-2 border-[#09090B]/[0.4] dark:border-[#FAFAFA]/[0.4] text-[#09090B]  dark:text-[#FAFAFA] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white': planType === type, 
-              'border-[#71717A]/[0.1] dark:border-[#A1A1AA]/[0.1] text-[#71717A] border-2 dark:text-[#A1A1AA] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white': planType !== type
-            }"
+              'border-[#71717A]/[0.1] dark:border-[#A1A1AA]/[0.1] text-[#71717A] border-2 dark:text-[#A1A1AA] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white': planType !== type }"
             class="mx-2 py-2 px-3 rounded-md font-semibold transition-colors duration-200 hover:border-gray-400 hover:text-gray-500">
             {{$t(`ourPlans.${type}`)}}
          </button>
