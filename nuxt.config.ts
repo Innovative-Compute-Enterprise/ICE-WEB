@@ -1,9 +1,21 @@
 export default defineNuxtConfig({
   app: {
+    head: {
+      htmlAttrs: { lang: 'en' },
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'robots', content: 'noindex, noarchive, nofollow' },
+      ],
+    },
     pageTransition: {
       name: 'page',
       mode: 'out-in'
     },
+  
+  },
+  experimental: {
+    componentIslands: true,
   },
 
   build: {
@@ -14,16 +26,8 @@ export default defineNuxtConfig({
     '~/plugins/global-state.js',
     
   ],
-
-  image:{
-
-    inject: true,
-
   
-  },
-
-  
-  modules: ['@nuxtjs/i18n', '@nuxtjs/robots', "@nuxt/image"],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/robots'],
 
   i18n: {
     langDir: 'locales', 

@@ -48,7 +48,7 @@
 
           <div class="card-large rounded-2xl overflow-hidden relative dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/10 dark:border-[#fff]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
             <!-- Large Card Content -->
-            <div class="p-4 h-full">
+            <div class="p-2 md:p-4 h-full">
 
               <div class="mt-5 ml-4">
               <h2 class="text-2xl lg:text-3xl font-bold text-[#09090B] dark:text-[#FAFAFA] mb-2 w-[70%] text-left">Insert major feature name</h2>
@@ -57,13 +57,13 @@
              
              <div class="w-full flex justify-center gap-4 mt-auto" style="height: calc(100% - 2rem);"> <!-- Adjust the calc() value to control the space at the bottom -->
                 <!-- v-for to render each bar -->
-                <div v-for="(value, index) in chartData" :key="index" class="w-8 relative" style="height: 100%;">
-                  <div :style="{ transform: `scaleY(${value.height})` }" class="bar-animation absolute bottom-0 w-full bg-gradient-to-b from-[#09090B] to-transparent rounded-t-lg dark:bg-gradient-to-b dark:from-[#FAFAFA] dark:to-transparent"></div>
+                <div v-for="(value, index) in chartData" :key="index" class="w-12 relative" style="height: 100%;">
+                  <div :style="{ transform: `scaleY(${value.height})` }" class="bar-animation absolute bottom-0 w-full bg-gradient-to-b from-[#09090B] to-transparent rounded-t-xl dark:bg-gradient-to-b dark:from-[#FAFAFA] dark:to-transparent"></div>
                 </div>
               </div>
 
               <div>
-              <div class="absolute top-10 right-5 text-green-500 bg-[#09090B] dark:bg-[#FAFAFA] text-md p-2 rounded-3xl">+11%</div>
+              <div class="absolute top-10 right-5 text-green-500 dark:bg-[#09090B]/75 bg-[#FAFAFA]/75 text-md p-3 rounded-3xl border border-[#000]/[0.1] dark:border-[#fff]/[0.1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">+11%</div>
              </div>
             </div>
           </div>
@@ -136,7 +136,7 @@ export default {
       return Math.random() * (0.9 - 0.6) + 0.5;
     },
     generateChartData() {
-      return Array.from({ length: 8 }, () => ({ height: this.generateRandomHeight() }));
+      return Array.from({ length: 6 }, () => ({ height: this.generateRandomHeight() }));
     },
     setupClientSpecificFeatures() {
       this.animateBars();
