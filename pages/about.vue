@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="scroll-smooth">
   <div class="hero bg-gradient-to-r from-red-700 to-red-500 flex items-center justify-center h-[28.5rem] md:h-[38.5rem]">
       <li class="list-none">
             <h1 class="hero-title leading-tight  max-w-screen-2xl tracking-wide text-center text-[#FAFAFA] text-5xl md:text-6xl lg:text-7xl font-bold mx-auto my-auto">{{$t('aboutPage.title')}}</h1>

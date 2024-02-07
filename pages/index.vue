@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="bg-[#FAFAFA] dark:bg-[#09090B]">
+    <section class="bg-[#FAFAFA] dark:bg-[#09090B] scroll-smooth">
       <HeroSection />  
       <CardSection />
       <KeySection />

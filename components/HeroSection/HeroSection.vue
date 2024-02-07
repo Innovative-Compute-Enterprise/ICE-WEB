@@ -1,12 +1,11 @@
 <template>
   <section class="hero-section bg-[#FAFAFA] dark:bg-[#09090B]">
     <HeroText />
-    <HeroBackground />
     <template v-if="isDarkMode">
       <HeroBackgroundDark />
     </template>
     <template v-else>
-      
+      <HeroBackground />
     </template>
   </section>
 </template>

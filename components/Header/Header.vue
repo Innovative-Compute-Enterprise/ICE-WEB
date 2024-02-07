@@ -7,16 +7,12 @@
   </div>
 </template>
 
-<script>
-import MobileHeader from './MobileHeader.vue'; // Adjust the path as necessary
-import DesktopHeader from './DesktopHeader.vue'; // Adjust the path as necessary
+<script setup>
+import { defineAsyncComponent } from 'vue';
 
-export default {
-  components: {
-    MobileHeader,
-    DesktopHeader
-  }
-};
+const MobileHeader = defineAsyncComponent(() => import('@/components/Header/MobileHeader.vue'));
+const DesktopHeader = defineAsyncComponent(() => import('@/components/Header/DesktopHeader.vue'));
+
 </script>
 
 <style>

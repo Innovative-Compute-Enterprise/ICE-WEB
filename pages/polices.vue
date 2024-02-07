@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="scroll-smooth">
     <div class="bg-white">
       <!-- Hero Section -->
       <div class="hero flex items-center justify-center h-[28.5rem] md:h-[38.5rem]">

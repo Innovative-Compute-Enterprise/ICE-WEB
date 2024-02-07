@@ -1,10 +1,10 @@
 <template>
   <div class="hero-text-container flex flex-col items-center lg:pb-20 my-10 md:my-12 lg:my-20 pb-20">
-        <div class=" sm:mb-8 mb-4 sm:flex sm:justify-center justify-start">
+        <div class=" sm:mb-2 mb-1 sm:flex sm:justify-center justify-start">
           <div class=" dark:bg-[#09090B] bg-[#FAFAFA] relative rounded-full px-3 py-1 text-xs sm:text-sm leading-6 text-gray-600 dark:text-gray-300 ring-1 ring-gray-900/10 hover:ring-[#27272A]/30 dark:ring-gray-700/50 dark:hover:ring-[#e2e2e2]/70 border border-[#E4E4E7]/[100%] dark:border-[#27272a]/[100%]">
             Announcing our next product.
             
-            <NuxtLink :to="localePath('services')" class="font-semibold text-indigo-600 dark:text-indigo-400">
+            <NuxtLink :to="localePath('services')" class="font-semibold text-blue-600 dark:text-blue-400">
               <span class="absolute inset-0" aria-hidden="true"></span>
               Read more <span aria-hidden="true">&rarr;</span>
             </NuxtLink>

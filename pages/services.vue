@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="scroll-smooth">
     <div>
       <!-- Hero Section -->
       <div class="hero bg-gradient-to-r from-blue-700 to-blue-600 flex items-center justify-center h-[28.5rem] md:h-[38.5rem]">
