@@ -1,7 +1,7 @@
 <template>
     <footer class="dark:bg-[#09090B] bg-[#FAFAFA] mb-16">
       <div class="max-w-7xl mx-auto py-12 px-4 sm:px-2 lg:px-8 md:space-y-10 space-y-5">
-        <div class="flex justify-center md:space-x-12 space-x-6">
+        <div class="nav-items flex justify-center md:space-x-12 space-x-6">
           <!-- Add your navigation links here -->
           <NuxtLink :to="localePath('services')" class="text-[#71717A] dark:text-[#A1A1AA] hover:text-[#09090B] hover:dark:text-[#FAFAFA]">Services</NuxtLink>
           <NuxtLink :to="localePath('polices')" class="text-[#71717A] dark:text-[#A1A1AA] hover:text-[#09090B] hover:dark:text-[#FAFAFA]">Polices</NuxtLink>
@@ -40,4 +40,10 @@
   </script>
   
   <style scoped>
+  .nav-items {
+    font-family: "Open Sans", sans-serif;
+  }
+  span{
+    font-family: "Open Sans", sans-serif;
+  }
  </style>

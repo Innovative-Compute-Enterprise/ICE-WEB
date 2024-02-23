@@ -30,4 +30,9 @@ export default defineEventHandler((event) => {
     console.log('Redirecting to:', newPath); // Debugging line to track redirects.
     return event.res.writeHead(302, { Location: newPath }).end();
   }
+  
+  if (path.startsWith('/api/')) {
+    // Skip middleware for API routes
+    return;
+  }
 });

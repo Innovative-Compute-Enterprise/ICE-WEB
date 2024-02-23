@@ -54,7 +54,7 @@ body {
 }
 
 .hero-title {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Source Code Pro", monospace;
 }
   
 </style>

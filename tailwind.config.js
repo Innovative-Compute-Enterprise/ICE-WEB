@@ -10,11 +10,15 @@ module.exports = {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'card-brain': "url('/images/test.jpg')", // Ensure this path is correct
+      },
+      // Other theme extensions here
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
 }
-

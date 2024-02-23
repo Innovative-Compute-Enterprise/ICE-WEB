@@ -24,7 +24,7 @@
           </button>
         </dt>
         <dd v-if="isOpened(faq.id)" class="mt-2">
-          <p class="text-base text-gray-500 dark:text-gray-400">{{ faq.answer }}</p>
+          <p class="text-base font-semibold text-gray-500 dark:text-gray-400">{{ faq.answer }}</p>
         </dd>
       </div>
     </dl>
@@ -57,3 +57,15 @@ export default {
   }
 };
 </script>
+
+<style scoped> 
+h2 {
+  font-family: "Source Code Pro", monospace;
+} 
+button{
+  font-family: "Open Sans", sans-serif;
+}
+dd{
+  font-family: "Montserrat", sans-serif;
+}
+</style>

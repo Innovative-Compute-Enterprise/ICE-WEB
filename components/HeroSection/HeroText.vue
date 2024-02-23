@@ -1,10 +1,10 @@
 <template>
-  <div class="hero-text-container flex flex-col items-center lg:pb-20 my-10 md:my-12 lg:my-20 pb-20">
-        <div class=" sm:mb-2 mb-1 sm:flex sm:justify-center justify-start">
+  <div ref="heroContainer" class="hero-text-container flex flex-col items-center lg:pb-20 md:my-12 lg:my-20 pb-20">
+        <div class=" sm:mb-2 mb-1 sm:flex sm:justify-center justify-start news-text">
           <div class=" dark:bg-[#09090B] bg-[#FAFAFA] relative rounded-full px-3 py-1 text-xs sm:text-sm leading-6 text-gray-600 dark:text-gray-300 ring-1 ring-gray-900/10 hover:ring-[#27272A]/30 dark:ring-gray-700/50 dark:hover:ring-[#e2e2e2]/70 border border-[#E4E4E7]/[100%] dark:border-[#27272a]/[100%]">
             Announcing our next product.
             
-            <NuxtLink :to="localePath('services')" class="font-semibold text-blue-600 dark:text-blue-400">
+            <NuxtLink :to="localePath('services')" class="font-semibold text-blue-600">
               <span class="absolute inset-0" aria-hidden="true"></span>
               Read more <span aria-hidden="true">&rarr;</span>
             </NuxtLink>
@@ -17,11 +17,11 @@
    </div>
 
       <div>
-        <p class="text-[#09090B] dark:text-[#FAFAFA] text-left md:text-center text-lg md:text-xl font-medium pb-2 mx-[20px] md:mx-auto w-[80%] md:leading-loose leading-relaxed">
+        <p class="text-[#09090B] dark:text-[#FAFAFA] text-left md:text-center text-lg md:text-xl pb-2 mx-[20px] md:mx-auto w-[80%] md:leading-loose leading-relaxed">
           {{ $t('heroText.title2') }}
         </p>
 
-        <div class="flex justify-start md:justify-center gap-4 mx-[20px] md:mx-auto py-4">
+        <div class="flex justify-start md:justify-center gap-4 mx-[20px] md:mx-auto py-4 button-text">
           <NuxtLink :to="localePath('services')">
             <button class="text-base font-semibold rounded-md whitespace-nowrap bg-black dark:bg-white py-2.5 px-3.5 h-9 justify-center items-center dark:text-black text-white dark:hover:bg-[#e2e2e2] hover:bg-[#27272A] inline-flex border-[1px]  focus-visible:ring-1 transition-colors shadow-sm shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
               Get Started
@@ -44,38 +44,39 @@
  
  
  <script setup>
- import { useI18n } from 'vue-i18n';
- import { onMounted } from 'vue';
- import gsap from 'gsap';
- 
- const { t } = useI18n();
- 
- onMounted(() => {
- const timeline = gsap.timeline({ defaults: { duration: 1.2, opacity: 0, ease: 'power3.out', delay: 0.5} });
- 
- timeline
-   .from('.hero-text-container h1', { y: -30 })
-   .from('.hero-text-container p', { x: -100 }, '<');
- });
+import { onMounted, ref } from 'vue';
+import gsap from 'gsap';
+
+const heroContainer = ref(null);
+
+onMounted(() => {
+  gsap.from(heroContainer.value.querySelector('h1'), { duration: 1, opacity: 0, y: -30 });
+  gsap.from(heroContainer.value.querySelector('p'), { duration: 1, opacity: 0, x: -100 });
+});
+
  </script>
  
  
  
  
  <style scoped>
+ .button-text {
+  font-family: "Montserrat", sans-serif;
+ }
  .hero-text-container h1, .hero-text-container p {
   will-change: transform, opacity;
 }
- h1 {  font-family: 'Work Sans', sans-serif;
-
-  }
  .hero-text-container h1 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Source Code Pro", monospace;
  }
  p{
  letter-spacing: 0.063rem;
- font-family: 'Hedvig Letters Sans', sans-serif;
- }
+ font-family: "Open Sans", sans-serif;
+ font-weight: 500;
+}
+.news-text {
+  font-family: "Open Sans", sans-serif;
+}
  
  .hero-text-container {
  width: 100%;

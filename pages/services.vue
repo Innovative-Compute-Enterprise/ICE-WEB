@@ -35,7 +35,7 @@ const FaqSection = defineAsyncComponent(() => import('~/components/Services/FaqS
 const BlackBoxSection = defineAsyncComponent(() => import('~/components/Services/BlackBoxSection.vue'));
 
 useSeoMeta({
-  title: '[title]',
+  title: 'Services',
   description: '[description]',
   ogTitle: '[og:title]',
   ogDescription: '[og:description]',
@@ -53,9 +53,10 @@ useHead({
   },
   link: [
     {
+      hid: 'icon',
       rel: 'icon',
       type: 'image/png',
-      href: '/favicon.png'
+      href: '/faviconblue.png'
     }
   ]
 });
@@ -79,7 +80,7 @@ export default {
 }
 
 .hero-title {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Source Code Pro", monospace;
 }
 
 .black-section {

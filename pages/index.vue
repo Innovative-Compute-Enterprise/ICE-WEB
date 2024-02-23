@@ -38,6 +38,7 @@ useHead({
   },
   link: [
     {
+      sizes: '64x64',
       hid: 'icon',
       rel: 'icon',
       type: 'image/png',

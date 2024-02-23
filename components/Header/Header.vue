@@ -8,11 +8,8 @@
 </template>
 
 <script setup>
-import { defineAsyncComponent } from 'vue';
-
-const MobileHeader = defineAsyncComponent(() => import('@/components/Header/MobileHeader.vue'));
-const DesktopHeader = defineAsyncComponent(() => import('@/components/Header/DesktopHeader.vue'));
-
+import MobileHeader from '@/components/Header/MobileHeader.vue';
+import DesktopHeader from '@/components/Header/DesktopHeader.vue';
 </script>
 
 <style>

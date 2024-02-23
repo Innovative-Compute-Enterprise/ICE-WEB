@@ -1,18 +1,11 @@
 <template>
-  <NuxtLayout :class="{ 'dark': darkMode }">
+  <NuxtLoadingIndicator/>
+  <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-
-
-const darkMode = ref(false);
-
-function toggleDarkMode() {
-  darkMode.value = !darkMode.value;
-}
 </script>
 
 <script>

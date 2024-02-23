@@ -16,5 +16,10 @@ const { t } = useI18n();
 </script>
 
 <style scoped>
-
+h1 {
+  font-family: "Source Code Pro", monospace;
+}
+p{
+  font-family: "Open Sans", sans-serif;
+}
 </style>

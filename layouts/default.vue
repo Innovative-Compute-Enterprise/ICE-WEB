@@ -4,6 +4,7 @@
       <Header />
       <div class="flex-grow">
         <NuxtPage />
+        <LoadingScreen />
       </div>
       <Footer />
       <CookieBanner />
@@ -13,10 +14,12 @@
 <script setup>
 import { defineAsyncComponent } from 'vue';
 
+
 // Asynchronous components
 const Header = defineAsyncComponent(() => import('@/components/Header/Header.vue'));
 const Footer = defineAsyncComponent(() => import('@/components/FooterSection/Footer.vue'));
 const CookieBanner = defineAsyncComponent(() => import('@/components/CookieBanner.vue'));
+const LoadingScreen = defineAsyncComponent(() => import('@/components/LoadingScreen'));
 
 </script>
 

@@ -22,6 +22,14 @@
   color: #fff;
 }
 
+.black-section h1{
+  font-family: "Source Code Pro", monospace;
+}
+
+.black-section p{
+  font-family: "Open Sans", sans-serif;
+}
+
 @media (max-width: 768px) {
   .black-section {
     flex-direction: column;

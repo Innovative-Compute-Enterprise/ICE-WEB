@@ -23,12 +23,11 @@
     "cobe": "^0.6.3",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "gsap": "^3.12.2",
+    "gsap": "^3.12.5",
     "lodash-es": "^4.17.21",
     "lodash.pick": "^4.4.0",
     "lottie-web": "^5.12.2",
     "netlify": "^13.1.10",
-    "stripe": "^14.14.0",
     "swiper": "^11.0.5",
     "vite": "^5.0.12",
     "vue-composable": "^1.0.0-beta.24"

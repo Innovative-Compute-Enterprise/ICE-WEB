@@ -48,7 +48,6 @@ export default {
             text: 'Read documentation'
           }
         },
-        // ... more events
       ]
     };
   }
@@ -56,5 +55,13 @@ export default {
 </script>
 
 <style scoped>
-/* Add any additional styling here */
+h3{
+  font-family: "Source Code Pro", monospace;
+}
+p{
+  font-family: "Open Sans", sans-serif;
+}
+a{
+  font-family: "Montserrat", sans-serif;
+}
 </style>

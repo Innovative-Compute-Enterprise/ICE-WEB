@@ -61,12 +61,19 @@ export default {
 </script>
 
 <style scoped>
-/* Adjustments for whitespace and alignment */
+h2{
+  font-family: "Source Code Pro", monospace;
+}
+p{
+  font-family: "Open Sans", sans-serif;
+}
+h3{
+  font-family: "Source Code Pro", monospace;
+}
 .feature-item {
   /* Larger gap between items for more whitespace */
   gap: 2rem;
 }
-
 
 .icon-size {
   width: 2rem; /* 48px */

@@ -1,17 +1,15 @@
 <template>
-  <section class="hero-section bg-[#FAFAFA] dark:bg-[#09090B]">
+  <section class="hero-section bg-[#FAFAFA] dark:bg-[#09090B] md:mt-[1.6rem] mt-0">
     <HeroText />
-    
     <HeroBackgroundDark v-if="isDarkMode" />
     <HeroBackground v-else />
-    
   </section>
 </template>
 
 <script setup>
 import { onMounted, onUnmounted, ref } from 'vue';
-import HeroBackground from './HeroBackground.vue';
-import HeroBackgroundDark from './HeroBackgroundDark.vue';
+import HeroBackground from './GlobeBG/HeroBackground.vue';
+import HeroBackgroundDark from './GlobeBG/HeroBackgroundDark.vue';
 import HeroText from './HeroText.vue';
 
 const isDarkMode = ref(false);

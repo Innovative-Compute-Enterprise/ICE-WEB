@@ -1,33 +1,7 @@
 export default defineNuxtConfig({
-  app: {
-    head: {
-      htmlAttrs: { lang: 'en' },
-      meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'robots', content: 'noindex, noarchive, nofollow' },
-      ],
-    },
-    pageTransition: {
-      name: 'page',
-      mode: 'out-in'
-    },
-  
-  },
-  experimental: {
-    componentIslands: true,
-  },
-
-  build: {
-    analyze: false,
-  },
-
-  plugins: [  
-    '~/plugins/global-state.js',
-    
-  ],
-  
   modules: ['@nuxtjs/i18n', '@nuxtjs/robots'],
+  
+  ssr: true,
 
   i18n: {
     langDir: 'locales', 
@@ -46,6 +20,12 @@ export default defineNuxtConfig({
     
   },
 
+  plugins: [  
+    '~/plugins/global-state.js',
+    
+  ],
+  
+
   css: [
     '~/assets/css/main.css',
     'tailwindcss/tailwind.css'
@@ -56,6 +36,26 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+
+  app: {
+    head: {
+      htmlAttrs: { lang: 'en' },
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'robots', content: 'noindex, noarchive, nofollow' },
+      ],
+    },
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
+    },
+  
+  },
+
+  build: {
+    analyze: false,
   },
 
   devtools: {
