@@ -1,7 +1,9 @@
 <template>
-  <div class="flex flex-col">
+  <div class="md:justify-center md:flex">
+  <div class="flex flex-col max-w-[1024px]">
     <FormSection />
     <EmailSection />
+  </div>
   </div>
 </template>
 

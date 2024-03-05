@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col my-8">
+  <div class="flex flex-col my-12 space-y-4">
     <WhiteSection2 /> 
     <BlueSection />
     <WhiteSection1 />

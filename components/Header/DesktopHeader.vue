@@ -1,15 +1,15 @@
 <template>
   <header ref="header" class="fixed top-0 w-full z-50 py-2 px-8 flex justify-between items-center dark:bg-[#09090B]/[75%] bg-[#FAFAFA]/[75%]  border-[#000]/[0.1] dark:border-[#fff]/[0.1] backdrop-blur-[8px] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-    <div class="max-w-screen-2xl mx-auto flex justify-between w-full">
+    <div class="max-w-[1440px] mx-auto flex justify-between w-full">
      <div class="flex justify-start items-center flex-1">
 
-      <LogoIcon class="w-10 h-9 fill-black dark:fill-white"/>
+      <LogoIcon class="w-[40px] h-[40px] fill-black dark:fill-white"/>
 
-        <span class="ml-[8px] logo-text font-bold text-xl text-[#09090B] dark:text-[#FAFAFA]">ICE</span>
+        <span class="ml-[6px] logo-text font-[900] text-[24px] text-[#09090B] dark:text-[#FAFAFA]">ICE</span>
       </div>
 
       <div class="flex items-center justify-center flex-1">
-        <nav class="text-sm w-full rounded-2xl px-[6px] py-[8px] bg-[#000]/[0.1] dark:bg-[#fff]/[0.1] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+        <nav class="text-[14px] w-full rounded-2xl space-y-[6px] px-[4px] py-[6px] bg-[#000]/[0.2] dark:bg-[#fff]/[0.2] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white backdrop-blur-[4px]">
           <!-- Navigation Links in the middle -->
           <div class="relative flex justify-center gap-2">
             <!-- Button wrappers for NuxtLink to utilize hover functionality -->
@@ -130,14 +130,16 @@ export default {
 
     // Compute activeLinkIndex based on the current route
     const routeIndex = computed(() => {
-      switch (route.path) {
-        case '/': return 0;
-        case '/services': return 1;
-        case '/about': return 2;
-        case '/polices': return 3;
-        default: return 0; 
-      }
-    });
+    const path = route.path.startsWith('/pt') ? route.path.substring(3) : route.path; // Remove the 'pt' prefix if it exists
+    switch (path) {
+      case '/': return 0;
+      case '/services': return 1;
+      case '/about': return 2;
+      case '/polices': return 3; // Also, make sure this is the correct route, it might be a typo for '/policies'
+      default: return 0;
+    }
+  });
+
 
     // Determine which index to display based on hover state
     const activeLinkIndex = computed(() => {
@@ -166,7 +168,8 @@ export default {
 }
 
 .logo-text{
-  font-family: "Source Code Pro", monospace;
+  font-family: "Mona Sans";
+  font-stretch: 125%;
 }
 .theme-menu {
   position: absolute;

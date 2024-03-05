@@ -1,6 +1,6 @@
 <template>
-  <section class="my-28 py-28 md:py-40">
-    <div class="custom-text flex flex-col items-center justify-center pb-12">
+  <section class="my-[128px] py-[84px] md:py-[128px]">
+    <div class="custom-text flex flex-col items-center justify-center pb-[48px] m-[24px]">
       <h2 class="block uppercase font-bold md:hidden text-[#09090B] dark:text-[#FAFAFA] tracking-wider text-4xl lg:text-5xl w-[50%] space-y-4 justify-center">{{ $t('bookSection.titleMobile') }}</h2>
       <h2 class="hidden uppercase font-bold md:block text-[#09090B] dark:text-[#FAFAFA] tracking-wider text-4xl lg:text-5xl">{{ $t('bookSection.titlePC') }}</h2>
     </div> 
@@ -40,8 +40,8 @@ h2{
 .book-section-lottie-container {
   /* ... your existing styles ... */
   z-index: 88;
-  width: 40%; /* Adjust the width to make the animation smaller */
-  height: 40%; /* Adjust the height to maintain aspect ratio */
+  width: 50%; /* Adjust the width to make the animation smaller */
+  height: 50%; /* Adjust the height to maintain aspect ratio */
   margin: auto; /* This will center the animation in the container */
 }
 

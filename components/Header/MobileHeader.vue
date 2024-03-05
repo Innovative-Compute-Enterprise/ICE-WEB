@@ -2,8 +2,8 @@
     <header ref="headermobile" class="fixed mx-auto top-0 left-0 right-0 w-full z-50 py-2 px-4 flex justify-between items-center dark:bg-[#09090B]/[75%] bg-[#FAFAFA]/[75%] border-[#000]/[0.1] dark:border-[#fff]/[0.1] backdrop-blur-[8px] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
       
       <div class="flex justify-start items-center flex-1">
-        <LogoIcon class="w-10 h-9 fill-black dark:fill-white"/>
-        <span class="ml-[8px] logo-text font-bold text-xl text-[#09090B] dark:text-[#FAFAFA]">ICE</span>
+        <LogoIcon class="w-[40px] h-[40px] fill-black dark:fill-white"/>
+        <span class="ml-[8px] logo-text font-bold text-[24px] text-[#09090B] dark:text-[#FAFAFA]">ICE</span>
       </div>
       
         <!-- Hamburger Menu -->
@@ -25,20 +25,20 @@
          :class="{ 'translate-x-full': !menuOpen }">
 
          <div class="flex justify-start items-center flex-1">
-          <LogoIcon class="w-10 h-9 fill-black dark:fill-white"/>
-        <span class="ml-[8px] logo-text font-bold text-xl text-[#09090B] dark:text-[#FAFAFA]">ICE</span>
+          <LogoIcon class="w-[36px] h-[36px] fill-black dark:fill-white"/>
+        <span class="ml-[8px] logo-text font-bold text-[24px] text-[#09090B] dark:text-[#FAFAFA]">ICE</span>
         </div>
           
-            <div class="grid-container py-8 gap-4 ">
+            <div class="grid-container py-8 gap-4">
 
-            <NuxtLink @click="closeMenu" class="min-h-[100px] min-w-[100px] grid-item p-4 space-y-3 dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.1] dark:border-[#fff]/[0.1] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
-             focus-visible:outline-white rounded-md text-sm 
+            <NuxtLink @click="closeMenu" class="min-h-[100px] min-w-[100px] grid-item p-2 space-y-2 dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.1] dark:border-[#fff]/[0.1] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+             focus-visible:outline-white rounded-md text-[18px] 
              font-bold"
               v-for="item in menuItems"
                :key="item.id"
                :to="item.to"
               >
-              <component :is="item.iconComponent" class="w-[30px] h-[30px] fill-black dark:fill-white" />
+              <component :is="item.iconComponent" class="w-[1.7rem] h-[1.7rem] fill-black dark:fill-white" />
               <span>{{ item.label }}</span>
             </NuxtLink>
 
@@ -47,9 +47,9 @@
              focus-visible:outline-white rounded-md text-sm 
              font-bold"
               >    
-            <ThemeIcon v-if="!darkMode" class="w-[1.2rem] h-[1.2rem] fill-black"/>
+            <ThemeIcon v-if="!darkMode" class="w-[1.7rem] h-[1.7rem] fill-black"/>
 
-            <ThemeDarkIcon v-else class="w-[1.2rem] h-[1.2rem] fill-white"/>
+            <ThemeDarkIcon v-else class="w-[1.7rem] h-[1.7rem] fill-white"/>
            
               <span>Theme</span>
           </button>

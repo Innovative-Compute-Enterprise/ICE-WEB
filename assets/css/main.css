@@ -1,16 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/assets/fonts/MonaSans.woff2') format('woff2 supports variations'),
+       url('/assets/fonts/MonaSans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
 
-
-
-:root {
+html {
+  font-family: 'Mona Sans', sans-serif; /* Fallback to sans-serif */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
   -webkit-text-size-adjust: 100%; 
   text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+}
+
+.custom-border {
+  background: linear-gradient(135deg, rgba(250, 250, 250, 0.5) 0%, rgba(9, 9, 11, 0.5) 100%);
+  position: relative;
+  background: transparent; /* Ensure the main div has no unwanted background */
+
+}
+
+.custom-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 3px solid transparent;
+  border-radius: inherit; /* Match the border-radius of the parent if necessary */
+  background: linear-gradient(135deg, rgba(216, 216, 216, 0.499), rgba(121, 121, 121, 0.661)) border-box;
+  mask: 
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+          mask-composite: exclude;
+}
+
+.custom-border-dark {
+  background: linear-gradient(135deg, rgba(119, 119, 119, 0.5) 0%, rgba(150, 150, 150, 0.4) 100%);
+  position: relative; /* Allows absolute positioning relative to this container */
+  background: transparent; /* Ensure the main div has no unwanted background */
+}
+
+.custom-border-dark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid transparent;
+  border-radius: inherit; /* Match the border-radius of the parent if necessary */
+  background: linear-gradient(135deg, rgba(121, 121, 121, 0.4), rgba(250, 250, 250, 0.4)) 
+  border-box;
+  mask: 
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+          mask-composite: exclude;
 }

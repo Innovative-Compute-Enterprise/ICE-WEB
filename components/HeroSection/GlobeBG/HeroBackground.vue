@@ -1,49 +1,98 @@
 <template>
-  <div class="m-auto absolute w-[100%] max-w-[600px] aspect-square">
-    <canvas ref="canvasEl" class="w-full h-full cursor-grab rounded-full" style="transition: opacity 1s ease-in-out; opacity: 1;" width="1050" height="1050"></canvas>
+  <div class="m-auto absolute md:top-[38%] top-[40%] w-[100%] max-w-[600px] aspect-square">
+    <canvas ref="canvasEl" class="w-full h-full cursor-grab rounded-full" :style="{ transition: 'opacity 1s ease-in-out', opacity: canvasOpacity }" width="1050" height="1050" 
+            @pointerdown="handlePointerDown"
+            @pointerup="handlePointerUp"
+            @pointerout="handlePointerOut"
+            @mousemove="handleMouseMove"
+            @touchmove.passive="handleTouchMove" >
+     </canvas>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 import createGlobe from 'cobe';
 
 const canvasEl = ref(null);
 let phi = 0;
-let width = 0;
+let width = ref(0);
+let canvasOpacity = ref(0); // Initial opacity set to 0 for transition effect
 
-const updateSize = () => {
-  if (canvasEl.value) {
-    width = canvasEl.value.offsetWidth;
-  }
-};
+// New variables for handling drag
+const pointerInteracting = ref(false);
+const pointerInteractionStart = ref(0);
+const pointerInteractionMovement = ref(0);
 
 onMounted(() => {
-  window.addEventListener('resize', updateSize);
-  updateSize();
+  const updateSize = () => {
+    if (canvasEl.value) {
+      width.value = canvasEl.value.offsetWidth;
+      canvasEl.value.width = width.value * 2; // Adjust for devicePixelRatio if needed
+      canvasEl.value.height = width.value * 2;
+    }
+  };
+  updateSize(); // Initial size update
+  window.addEventListener('resize', updateSize); // Adjust size on window resize
 
   const globe = createGlobe(canvasEl.value, {
     devicePixelRatio: 2,
-    width: width * 2,
-    height: width * 2,
+    width: width.value * 2,
+    height: width.value * 2,
     phi: 0,
     theta: 0.2,
-    dark: 0.20,
-    diffuse: 1.1,
+    dark: 1.1,
+    diffuse: 3,
     mapSamples: 16000,
-    mapBrightness: 12,
+    mapBrightness: 1.8,
     mapBaseBrightness: 0,
     baseColor: [1.1, 1.1, 1.1],
     markerColor: [251 / 255, 100 / 255, 21 / 255],
     glowColor: [1.1, 1.1, 1.1],
     markers: [],
-    opacity: .8,
+    opacity: .7,
     onRender: (state) => {
-      state.phi = phi;
-      phi += 0.003;
-      state.width = width * 2;
-      state.height = width * 2;
+      state.phi = phi + pointerInteractionMovement.value;
+      phi += 0.005;
     },
   });
+
+  // Animate opacity for the canvas after globe initialization
+  canvasOpacity.value = 1;
+
+  // Cleanup on unmount
+  onUnmounted(() => {
+    globe.destroy();
+    window.removeEventListener('resize', updateSize);
+  });
 });
+
+const handlePointerDown = (e) => {
+  pointerInteracting.value = true;
+  pointerInteractionStart.value = e.clientX;
+};
+
+const handlePointerUp = () => {
+  pointerInteracting.value = false;
+};
+
+const handlePointerOut = () => {
+  pointerInteracting.value = false;
+};
+
+const handleMouseMove = (e) => {
+  if (pointerInteracting.value) {
+    const delta = (e.clientX - pointerInteractionStart.value) / 200; // Change 200 to adjust sensitivity
+    pointerInteractionMovement.value += delta;
+    pointerInteractionStart.value = e.clientX; // Reset start position for smooth dragging
+  }
+};
+
+const handleTouchMove = (e) => {
+  if (pointerInteracting.value && e.touches.length > 0) {
+    const delta = (e.touches[0].clientX - pointerInteractionStart.value) / 200; // Change 200 to adjust sensitivity
+    pointerInteractionMovement.value += delta;
+    pointerInteractionStart.value = e.touches[0].clientX; // Reset start position for smooth dragging
+  }
+};
 </script>

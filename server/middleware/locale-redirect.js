@@ -9,7 +9,7 @@ const localeRegExp = new RegExp(`^/(${localeCodes.join('|')})/`);
 
 // Middleware to handle locale-based redirects.
 export default defineEventHandler((event) => {
-  const path = event.req.url; // The URL path of the request.
+  const path = event.node.req.url; // The URL path of the request.
   
   // Determine the current locale by splitting the path or using the default.
   const currentLocale = path.split('/')[1] || defaultLocale;
@@ -21,14 +21,14 @@ export default defineEventHandler((event) => {
   if (isDefaultLocale && localeRegExp.test(path)) {
     const newPath = path.replace(localeRegExp, '/');
     console.log('Redirecting to:', newPath); // Debugging line to track redirects.
-    return event.res.writeHead(302, { Location: newPath }).end();
+    return event.node.res.writeHead(302, { Location: newPath }).end();
   }
 
   // If the URL does not start with the current locale, prepend the locale and redirect.
   if (!isDefaultLocale && !path.startsWith(`/${currentLocale}`)) {
     const newPath = `/${currentLocale}${path}`;
     console.log('Redirecting to:', newPath); // Debugging line to track redirects.
-    return event.res.writeHead(302, { Location: newPath }).end();
+    return event.node.res.writeHead(302, { Location: newPath }).end();
   }
   
   if (path.startsWith('/api/')) {

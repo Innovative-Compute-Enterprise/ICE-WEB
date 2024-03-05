@@ -15,8 +15,7 @@
     },
 
     "heroText":{
-      "title1": "Innovation with AI",
-      "title2": "Empowering Today, Shaping Tomorrow with Artificial Intelligence"
+      "title1": "Amplifying AI integration, delivering innovation."
     },
 
     "button":{
@@ -24,7 +23,7 @@
     },
 
     "aboutPage":{
-      "title": "ABOUT"
+      "title": "About"
     },
 
       "blueSection": {
@@ -104,7 +103,7 @@
     },
 
     "services": {
-      "title": "SERVICES",
+      "title": "Services",
       "blacktitle" : "BLACK-BOX",
       "blacktext" : "We are dedicated to delivering top-notch services tailored to your unique needs. Our team is committed to innovation, excellence, and building lasting partnerships."
     },
@@ -147,7 +146,7 @@
       },
   
     "policies": {
-      "title": "POLICIES",
+      "title": "Policies",
       "privacyPolicy": "Privacy Policy",
       "privacyPolicyDesc": "This Privacy Policy outlines how we handle your personal information...",
       "cookiePolicy": "Cookie Policy",

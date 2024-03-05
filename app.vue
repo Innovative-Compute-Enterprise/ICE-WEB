@@ -14,6 +14,8 @@ export default {
     return {
       link: [
         { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com', crossorigin: true },
+        { rel: 'preload', href: '/assets/fonts/MonaSans.woff2', as: 'font', type: 'font/woff2', crossorigin: true },
+        // Add more fonts as needed
       ],
       title: 'Continuum Glow',
     }

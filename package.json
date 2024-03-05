@@ -9,6 +9,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/i18n": "^8.0.0-rc.5",
     "@nuxtjs/robots": "^3.0.0",
     "nuxt": "^3.9.3",
@@ -19,6 +20,7 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.11.4",
     "@vueuse/head": "^2.0.0",
     "cobe": "^0.6.3",
     "cors": "^2.8.5",

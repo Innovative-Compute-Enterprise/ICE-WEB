@@ -1,14 +1,14 @@
 <template>
-    <footer class="dark:bg-[#09090B] bg-[#FAFAFA] mb-16">
-      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-2 lg:px-8 md:space-y-10 space-y-5">
-        <div class="nav-items flex justify-center md:space-x-12 space-x-6">
+    <footer class="dark:bg-[#09090B] bg-[#FAFAFA] py-[24px] my-[64px]">
+      <div class="space-y-[36px]">
+        <div class="nav-items flex justify-center md:space-x-12 space-x-6 text-[16px]">
           <!-- Add your navigation links here -->
           <NuxtLink :to="localePath('services')" class="text-[#71717A] dark:text-[#A1A1AA] hover:text-[#09090B] hover:dark:text-[#FAFAFA]">Services</NuxtLink>
           <NuxtLink :to="localePath('polices')" class="text-[#71717A] dark:text-[#A1A1AA] hover:text-[#09090B] hover:dark:text-[#FAFAFA]">Polices</NuxtLink>
           <NuxtLink :to="localePath('about')" class="text-[#71717A] dark:text-[#A1A1AA] hover:text-[#09090B] hover:dark:text-[#FAFAFA]">About</NuxtLink>
           <NuxtLink href="#" class="text-[#71717A] dark:text-[#A1A1AA] hover:text-[#09090B] hover:dark:text-[#FAFAFA]">Contact</NuxtLink>
         </div>
-        <div class="flex justify-center md:space-x-12 space-x-6">
+        <div class="flex justify-center md:space-x-12 space-x-6 ">
           <!-- Add your social media links here -->
           <a href="#" class="text-[#71717A] dark:text-[#A1A1AA] hover:text-[#09090B] hover:dark:text-[#FAFAFA]">
             <span class="sr-only">X</span>
@@ -27,7 +27,7 @@
           </a>
         </div>
         <div class="flex justify-center">
-          <p class="text-center text-sm text-[#71717A] dark:text-[#A1A1AA]">
+          <p class="text-center text-[16px] text-[#71717A] dark:text-[#A1A1AA]">
             &copy; {{ currentYear }} {{ $t('footerEmail.copyright') }}
           </p>
         </div>

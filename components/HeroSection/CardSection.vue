@@ -1,12 +1,13 @@
 <template>
   <section>
-    <div class="container mx-auto px-6 my-2 md:my-8 lg:my-12 pb-4 md:pb-10">
+    <div class="container mx-auto px-6 my-[124px] py-[48px] md:mb-12 lg:mb-16 pb-4 md:pb-10 max-w-[1440px]">
       <!-- Title and Subtitle -->
+      <h1 class="md:text-[48px] text-[40px] tracking-[-2.16px] md:leading-[48px] leading-[40px] font-bold mb-6 text-[#09090B] dark:text-[#FAFAFA] text-center">Why AI ?</h1>
 
     <div class="justify-center">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 text-grid rounded-[40px]">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-6 text-grid rounded-[40px]">
        <div class="flex flex-col space-y-6">
-        <div class="card-medium shadow overflow-hidden rounded-md relative p-4 dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.1] dark:border-[#fff]/[0.1] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+        <div class="card-medium  overflow-hidden relative p-4 dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.2] dark:border-[#fff]/[0.2] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
           <!-- SVG positioned absolutely to be in the center of the card -->
           <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             
@@ -23,7 +24,7 @@
           </div>
          </div>
 
-        <div class="card-medium shadow rounded-[40px] overflow-hidden relative p-4 dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.1] dark:border-[#fff]/[0.1] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+        <div class="card-medium  rounded-[40px] overflow-hidden relative p-4 dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.2] dark:border-[#fff]/[0.2] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
           <!-- SVG positioned absolutely to be in the center of the card -->
           <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           
@@ -46,9 +47,7 @@
 
           <CardLarge />
 
-          <div class="card-small-mid shadow rounded-[40px] overflow-hidden relative dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.1] dark:border-[#fff]/[0.1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white flex items-center justify-center">
-            <CardGrid />
-          </div>
+  
 
 
         </div>
@@ -57,7 +56,7 @@
         
         <div class="flex flex-col space-y-6">
 
-          <div class="card-small shadow rounded-[40px] overflow-hidden relative dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.1] dark:border-[#fff]/[0.1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+          <div class="card-small  rounded-[40px] overflow-hidden relative dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.2] dark:border-[#fff]/[0.2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
             <!-- Card Content -->
             <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#09090B] dark:text-[#FAFAFA]  pt-8">
               <h2 class="text-5xl font-bold">9</h2>
@@ -67,7 +66,7 @@
             </div>
           </div>
 
-          <div class="card-small shadow rounded-[40px] overflow-hidden relative dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.1] dark:border-[#fff]/[0.1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+          <div class="card-small  rounded-[40px] overflow-hidden relative dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.2] dark:border-[#fff]/[0.2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
             <!-- Card Content -->
             <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#09090B] dark:text-[#FAFAFA] pt-8">
               <h2 class="text-5xl font-bold">13</h2>
@@ -77,7 +76,7 @@
             </div>
           </div>
 
-          <div class="card-small shadow rounded-[40px] overflow-hidden relative dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.1] dark:border-[#fff]/[0.1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+          <div class="card-small  rounded-[40px] overflow-hidden relative dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.2] dark:border-[#fff]/[0.2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
             <!-- Card Content -->
             <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#09090B] dark:text-[#FAFAFA] pt-8">
               <h2 class="text-5xl font-bold">210</h2>

@@ -37,11 +37,11 @@
     </div>
 
     <!-- List of Principles -->
-    <div  class="md:col-start-3 order-2 md:h-[66rem] h-[60rem] md:order-3 dark:bg-[#09090B] bg-[#FAFAFA] md:border md:border-r-0 border-y border-[#000]/[0.1] dark:border-[#fff]/[0.1] shadow focus-visible:ring-1 md:rounded-bl-[40px] md:rounded-tl-[40px] z-30 overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+    <div  class="md:col-start-3 space-y-4 py-4 order-2 md:h-[66rem] h-full md:order-3 dark:bg-[#09090B] bg-[#FAFAFA] md:border md:border-r-0 border-y border-[#000]/[0.1] dark:border-[#fff]/[0.1] shadow focus-visible:ring-1 md:rounded-bl-[40px] md:rounded-tl-[40px] z-30 overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
     <ul>
       <li v-for="item in principles" :key="item" class="flex flex-col items-start py-6 md:py-10 px-8 space-y-6 lg:space-y-8">
         <div class="w-8 h-8 bg-[#27272A] opacity-85 rounded-lg rounded-br-xl"></div>
-        <div class="text-[#09090B] dark:text-[#FAFAFA] md:text-lg text-xl leading-6 font-normal">{{ t(item) }}</div>
+        <div class="text-[#09090B] dark:text-[#FAFAFA] text-base md:text-sm lg:text-lg leading-loose font-normal">{{ t(item) }}</div>
       </li>
     </ul>
    </div>

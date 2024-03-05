@@ -2,7 +2,7 @@
   <div class="scroll-smooth">
   <div class="hero bg-gradient-to-r from-red-700 to-red-500 flex items-center justify-center h-[28.5rem] md:h-[38.5rem]">
       <li class="list-none">
-            <h1 class="hero-title leading-tight  max-w-screen-2xl tracking-wide text-center text-[#FAFAFA] text-5xl md:text-6xl lg:text-7xl font-bold mx-auto my-auto">{{$t('aboutPage.title')}}</h1>
+            <h1 class="hero-title max-w-screen-2xl text-center text-[#FAFAFA] lg:text-[72px] md:text-[48px] text-[40px]  tracking-[-2.16px] lg:leading-[72px] md:leading-[48px] leading-[36px] font-[700] mx-auto my-auto">{{$t('aboutPage.title')}}</h1>
       </li>
 
   </div>
@@ -54,7 +54,8 @@ body {
 }
 
 .hero-title {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Mona Sans";
+  font-stretch: 100%;
 }
   
 </style>
