@@ -1,7 +1,7 @@
 <template>
     <section>
       <div class="flex flex-col items-center dark:bg-[#09090B] bg-[#FAFAFA]  py-[72px] my-[128px] mx-auto max-w-[1440px]">
-        <h1 class="md:text-[48px] text-[40px] tracking-[-2.16px] md:leading-[48px] leading-[40px] font-bold mb-6 text-[#09090B] dark:text-[#FAFAFA] text-center">Our Company's Foundations</h1>
+        <h1 class="md:text-[48px] text-[40px] tracking-[-2.16px] md:leading-[48px] leading-[40px] font-[700] mb-6 text-[#09090B] dark:text-[#FAFAFA] text-center">Our Company's Foundations</h1>
         <div class="grid md:grid-cols-3 grid-cols-1 md:gap-6 gap-8  relative md:w-[85%] w-[90%] my-[24px]">
           <!-- Using TopicCard component -->
           <!-- Corrected TopicCard with GradientCircles -->

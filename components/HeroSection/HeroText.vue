@@ -10,11 +10,9 @@
         </NuxtLink>
       </div>
     </div>
-    <div class="md:mx-[64px] mx-[24px]">
-      <h1 class="text-[#09090B] dark:text-[#FAFAFA] lg:text-[72px] md:text-[48px] text-[40px] break-words tracking-[-2.16px] lg:leading-[72px] md:leading-[48px] leading-[40px] font-[700] lg:max-w-[875.9px] md:max-w-[635.9px] text-center py-[24px]">
+      <h1 class="text-[#09090B] md:mx-[48x] mx-[36px] dark:text-[#FAFAFA] lg:text-[72px] md:text-[48px] text-[40px] break-words tracking-[-2.16px] lg:leading-[72px] md:leading-[48px] leading-[40px] font-[700] lg:max-w-[875.9px] md:max-w-[635.9px] w-full text-center py-[24px]">
         {{ $t('heroText.title1') }}
       </h1>
-    </div>
 
     <div>
       <div ref="button-container" class="flex justify-start md:justify-center gap-4 mx-[20px] md:mx-auto py-4 button-text">

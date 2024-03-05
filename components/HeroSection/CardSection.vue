@@ -2,7 +2,7 @@
   <section>
     <div class="container mx-auto px-6 my-[124px] py-[48px] md:mb-12 lg:mb-16 pb-4 md:pb-10 max-w-[1440px]">
       <!-- Title and Subtitle -->
-      <h1 class="md:text-[48px] text-[40px] tracking-[-2.16px] md:leading-[48px] leading-[40px] font-bold mb-6 text-[#09090B] dark:text-[#FAFAFA] text-center">Why AI ?</h1>
+      <h1 class="md:text-[48px] text-[40px] tracking-[-2.16px] md:leading-[48px] leading-[40px] font-[700] mb-6 text-[#09090B] dark:text-[#FAFAFA] text-center">Why AI ?</h1>
 
     <div class="justify-center">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-6 text-grid rounded-[40px]">
