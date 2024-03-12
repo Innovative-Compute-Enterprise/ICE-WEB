@@ -87,35 +87,23 @@
   },
   "ourPlans": {
     "title": "Our Plans",
+    "subtitle": "Choose the plan that's right for you.",
     "monthly": "Monthly",
     "annual": "Annual",
-    "subtitle": "Choose the plan that's right for you.",
-    "services": {
-      "signUp": "Sign-up",
-      "1": {
-        "title": "Basic",
-        "features": {
-          "featureA": "Description for Feature A of Service 1",
-          "featureB": "Description for Feature B of Service 1"
-        }
-      },
-      "2": {
-        "title": "Business",
-        "features": {
-          "featureA": "Description for Feature A of Service 2",
-          "featureB": "Description for Feature B of Service 2",
-          "featureC": "Description for Feature C of Service 2"
-        }
-      },
-      "3": {
-        "title": "Enterprise",
-        "features": {
-          "featureA": "Description for Feature A of Service 3",
-          "featureB": "Description for Feature B of Service 3",
-          "featureC": "Description for Feature C of Service 3",
-          "featureD": "Description for Feature D of Service 3"
-        }
-      }
+    "basic": {
+      "monthly": "Free",
+      "annual": "Free",
+      "features": ["Free Black-Box tier", "Basic Support"]
+    },
+    "business": {
+      "monthly": "$25",
+      "annual": "$250",
+      "features": ["50GB Storage", "Priority Support", "CRM Integration"]
+    },
+    "enterprise": {
+      "monthly": "$40",
+      "annual": "$400",
+      "features": ["Unlimited Storage", "24/7 Support", "Dedicated Manager", "Advanced Analytics"]
     }
   },
   "policies": {

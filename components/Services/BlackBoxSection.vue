@@ -1,19 +1,20 @@
 <template>
-  <div class="black-section flex flex-col items-center justify-center py-28 my-4">
-    <div class="flex flex-col items-center gap-y-6 mx-10 md:mx-22">
-      <img src="/images/bb.jpg" alt="Your Logo" class="logo w-36 h-36 rounded-full" /> 
-      <h1 class="text-[#FAFAFA] mb-4 text-4xl font-bold">{{$t('services.blacktitle')}}</h1>
-      <p class="text-[#FAFAFA] text-xl text-center md:w-[60%] w-[80%] mb-12">
+  <div class="black-section flex flex-col items-center justify-center h-screen my-[60px]">
+    <div class="flex flex-col items-center mt-[64px]">      
+      <h1 class="text-[#FAFAFA] mb-[48px] text-[48px] leading-[48px] font-bold">{{$t('services.blacktitle')}}</h1>
+      <img src="/images/bb.jpg" alt="Your Logo" class=" w-[150px] h-[150px] rounded-full mb-[48px]" /> 
+      <p class="text-[#FAFAFA] text-[18px] text-center md:w-[60%] w-[80%] mb-[48px]">
         {{$t('services.blacktext')}}
       </p>
     </div>
-    <div class="flex justify-center py-4">
-      
+    <div class="flex justify-center py-4 mb-[60px]">
+      <BlackBoxButton />
     </div>
   </div>
 </template>
 
 <script setup>
+import BlackBoxButton from './BlackBoxButton.vue';
 </script>
 
 <style scoped>
@@ -23,7 +24,11 @@
 }
 
 .black-section h1{
-  font-family: "Source Code Pro", monospace;
+
+  font-family: 'Mona Sans', sans-serif;
+  font-stretch: 125%;
+  font-weight: 900;
+  
 }
 
 .black-section p{

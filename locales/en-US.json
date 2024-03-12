@@ -88,7 +88,7 @@
       "address1": "AB318, Biodata Innovation Centre,",
       "address2": "Wellcome Genome Campus,",
       "address3": "Hinxton, Cambridgeshire, United",
-      "copyright": "Continuum Glow. All rights reserved."
+      "copyright": "ICE. All rights reserved."
      },
 
      "footerForm":{
@@ -121,7 +121,7 @@
               "featureA": "Service 1",
               "featureB": "1",
               "featureC": "1",  
-              "featureD": " 1"   
+              "featureD": "1"   
             }
           },
           "2": {
@@ -144,6 +144,20 @@
           }
         }
       },
+      
+        "features": {
+          "freeBlackBoxTier": "Free Black-Box tier",
+          "basicSupport": "Basic Support",
+          "prioritySupport": "Priority Support",
+          "crmIntegration": "CRM Integration",
+          "unlimitedStorage": "Everything from Business",
+          "247Support": "24/7 Support",
+          "dedicatedManager": "Dedicated Manager",
+          "advancedAnalytics": "Advanced Analytics"
+        },
+      
+
+      
   
     "policies": {
       "title": "Policies",

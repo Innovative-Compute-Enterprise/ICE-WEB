@@ -6,7 +6,6 @@
       <CardSection /> 
       <ModelBrands />     
       <OurProcess />
-      <BookDemoSection />
     </section>
   </div>
 </template>
@@ -17,7 +16,6 @@ const KeyList = defineAsyncComponent(() => import('@/components/HeroSection/KeyL
 const ModelBrands = defineAsyncComponent(() => import('@/components/HeroSection/ModelBrands.vue'));
 const CardSection = defineAsyncComponent(() => import('@/components/HeroSection/CardSection.vue'));
 const HeroSection = defineAsyncComponent(() => import('@/components/HeroSection/HeroSection.vue'));
-const BookDemoSection = defineAsyncComponent(() => import('@/components/HeroSection/BookDemoSection.vue')); 
 const OurProcess = defineAsyncComponent(() => import('@/components/HeroSection/OurProcess.vue'));
 
 useSeoMeta({

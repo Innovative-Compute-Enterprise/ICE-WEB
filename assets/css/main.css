@@ -26,7 +26,6 @@ html {
   background: linear-gradient(135deg, rgba(250, 250, 250, 0.5) 0%, rgba(9, 9, 11, 0.5) 100%);
   position: relative;
   background: transparent; /* Ensure the main div has no unwanted background */
-
 }
 
 .custom-border::after {
@@ -36,13 +35,13 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   border-radius: inherit; /* Match the border-radius of the parent if necessary */
-  background: linear-gradient(135deg, rgba(216, 216, 216, 0.499), rgba(121, 121, 121, 0.661)) border-box;
-  mask: 
-    linear-gradient(#fff 0 0) padding-box, 
+  background: linear-gradient(135deg, rgba(216, 216, 216, 0.35), rgba(121, 121, 121, 0.35)) border-box;
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
-          mask-composite: exclude;
+  mask-composite: exclude;
 }
 
 .custom-border-dark {
@@ -60,10 +59,9 @@ html {
   left: 0;
   border: 2px solid transparent;
   border-radius: inherit; /* Match the border-radius of the parent if necessary */
-  background: linear-gradient(135deg, rgba(121, 121, 121, 0.4), rgba(250, 250, 250, 0.4)) 
-  border-box;
-  mask: 
-    linear-gradient(#fff 0 0) padding-box, 
+  background: linear-gradient(135deg, rgba(121, 121, 121, 0.4), rgba(250, 250, 250, 0.4)) border-box;
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
-          mask-composite: exclude;
+  mask-composite: exclude;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative md:p-[48px] p-[24px] h-full rounded-[40px] dark:custom-border-dark custom-border focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+  <div class="relative md:p-[48px] p-[24px] h-full rounded-[40px] overflow-hidden dark:custom-border-dark custom-border focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
       <div class="relative z-10 justify-between">
           <div class="text-start justify-between">
               <h2 class="text-[32px] leading-[32px] font-[600] text-[#09090B] md:mb-[128px] mb-[256px] dark:text-[#FAFAFA]">Primary Topic</h2>

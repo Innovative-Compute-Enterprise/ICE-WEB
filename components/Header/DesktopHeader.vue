@@ -3,9 +3,8 @@
     <div class="max-w-[1440px] mx-auto flex justify-between w-full">
      <div class="flex justify-start items-center flex-1">
 
-      <LogoIcon class="w-[40px] h-[40px] fill-black dark:fill-white"/>
+      <LogoIcon class="w-[36px] h-[36px] fill-black dark:fill-white"/>
 
-        <span class="ml-[6px] logo-text font-[900] text-[24px] text-[#09090B] dark:text-[#FAFAFA]">ICE</span>
       </div>
 
       <div class="flex items-center justify-center flex-1">
