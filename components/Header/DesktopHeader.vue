@@ -1,11 +1,10 @@
 <template>
   <header ref="header" class="fixed top-0 w-full z-50 py-2 px-8 flex justify-between items-center dark:bg-[#09090B]/[75%] bg-[#FAFAFA]/[75%]  border-[#000]/[0.1] dark:border-[#fff]/[0.1] backdrop-blur-[8px] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
     <div class="max-w-[1440px] mx-auto flex justify-between w-full">
+
      <div class="flex justify-start items-center flex-1">
-
-      <LogoIcon class="w-[36px] h-[36px] fill-black dark:fill-white"/>
-
-      </div>
+      <LogoIcon class="w-[36px] h-[36px] fill-black dark:fill-white hover:scale-110"/>
+     </div>
 
       <div class="flex items-center justify-center flex-1">
         <nav class="text-[14px] w-full rounded-2xl space-y-[6px] px-[4px] py-[6px] bg-[#000]/[0.2] dark:bg-[#fff]/[0.2] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white backdrop-blur-[4px]">
@@ -38,16 +37,16 @@
         <nav class="flex items-center">
           <a target="_blank">
             <button class="inline-flex justify-center whitespace-nowrap rounded-md px-0 p-2 h-9 w-9 hover:bg-[#F4F4F5] dark:hover:bg-[#27272A] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none ">
-              <ContactIcon class="w-[1.2rem] h-[1.2rem] fill-black dark:fill-white" />
+              <ContactIcon class="w-[1.2rem] h-[1.2rem] fill-black dark:fill-white hover:scale-105" />
             </button>
           </a>
 
           <a>
             <button @click="toggleMenu" class="menu-toggle-button inline-flex justify-center whitespace-nowrap rounded-md px-0 p-2 h-9 w-9 hover:bg-[#F4F4F5] dark:hover:bg-[#27272A] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none">
             
-            <ThemeIcon v-if="currentTheme !== 'dark'" class="w-[1.2rem] h-[1.2rem] fill-black"/>
+            <ThemeIcon v-if="currentTheme !== 'dark'" class="w-[1.2rem] h-[1.2rem] fill-black hover:scale-105"/>
 
-            <ThemeDarkIcon v-else class="w-[1.2rem] h-[1.2rem] fill-white"/>
+            <ThemeDarkIcon v-else class="w-[1.2rem] h-[1.2rem] fill-white hover:scale-105"/>
            
 
           </button>

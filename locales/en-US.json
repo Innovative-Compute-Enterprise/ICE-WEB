@@ -26,52 +26,9 @@
       "title": "About"
     },
 
-      "blueSection": {
-        "title": "We love creators",
-        "subtitle": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
-        "paragraph1": "Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.",
-        "paragraph2": "Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim eget. Est augue maecenas risus nulla ultrices congue nunc tortor. Enim et nesciunt doloremque nesciunt voluptate."
-      },
+      
     
-    
-
-    "stoneSection": {
-      "topTitle": "Top",
-      "topDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "bottomTitle": "Bottom",
-      "bottomDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-
-    "whiteSection1": {
-      "title": "Blue Section Title",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    },
-
-    "whiteSection2": {
-      "title": "Blue Section Title"
-    },
-
-    "keySection": {
-      "watch": "Choose the",
-      "video": "best for you",
-      "read": "About Us",
-      "key": "Key Ideas",
-      "policies": "See our policies"
-
-    },
-
-    "principles": {
-      "principle1": "Companies cannot access genetic data held by other partner companies",
-      "principle2": "GENXT does not process, transmit or store any genetic or personal information",
-      "principle3": "Companies establish their own policies for collaboration with their chosen partners",
-      "principle4": "Identified matches contain only the personal information that individuals agreed to disclose",
-      "principle5": "Companies themselves deliver matches to their customer accounts"
-    },
    
-    "bookSection":{
-     "titleMobile": "Focus, Amplify, Achieve",
-     "titlePC": "Focus, Amplify, Achieve"
-    },
 
     "preFooterSection":{
       "title": "Our Process",
@@ -145,6 +102,7 @@
         }
       },
       
+      
         "features": {
           "freeBlackBoxTier": "Free Black-Box tier",
           "basicSupport": "Basic Support",
@@ -156,9 +114,48 @@
           "advancedAnalytics": "Advanced Analytics"
         },
       
+        
+          "faqSection": {
+            "faqs": {
+              "question1": "What's the best thing about Switzerland?",
+              "answer1": "I don't know, but the flag is a big plus.",
+              "question2": "How do you make holy water?",
+              "answer2": "You boil the hell out of it.",
+              "question3": "Why do we tell actors to 'break a leg'?",
+              "answer3": "Because every play has a cast.",
+              "question4": "Why don't scientists trust atoms?",
+              "answer4": "Because they make up everything.",
+              "question5": "Why don't some couples go to the gym?",
+              "answer5": "Because some relationships don't work out.",
+              "question6": "Why did the scarecrow win an award?",
+              "answer6": "Because he was outstanding in his field."
+            }
+          },
 
-      
+          "AboutValues":
+          {
+            "our_values": "Our Values",
+            "values_description": "Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.",
+            "openness": "Openness",
+            "openness_description": "Morbiverra dui mi arcu sed. Tellus semper adipiscing suspendisse.",
+            "innovation": "Innovation",
+            "innovation_description": "Morbiverra dui mi arcu sed. Tellus semper adipiscing suspendisse.",
+            "security": "Security",
+            "security_description": "Morbiverra dui mi arcu sed. Tellus semper adipiscing suspendisse.",
+            "coperation": "Cooperation",
+            "coperation_description": "Morbiverra dui mi arcu sed. Tellus semper adipiscing suspendisse."
+          },
+
+
+      "blueSection": {
+        "quote": "Changing the way we think about AI",
+        "title": "We love creators",
+        "subtitle": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+        "paragraph1": "Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.",
+        "paragraph2": "Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim eget. Est augue maecenas risus nulla ultrices congue nunc tortor. Enim et nesciunt doloremque nesciunt voluptate."
+      },
   
+
     "policies": {
       "title": "Policies",
       "privacyPolicy": "Privacy Policy",

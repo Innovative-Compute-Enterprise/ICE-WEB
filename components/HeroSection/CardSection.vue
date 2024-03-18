@@ -4,7 +4,7 @@
       <!-- Title and Subtitle -->
       <h1 class="md:text-[48px] text-[40px] tracking-[-2.16px] md:leading-[48px] leading-[40px] font-[700] mb-6 text-[#09090B] dark:text-[#FAFAFA] text-center">Why AI ?</h1>
 
-    <div class="justify-center">
+    <div class="justify-center z-50">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-6 text-grid rounded-[40px]">
        <div class="flex flex-col space-y-6">
         <div class="card-medium  overflow-hidden relative p-4 dark:bg-[#09090B] bg-[#FAFAFA] border border-[#000]/[0.2] dark:border-[#fff]/[0.2] focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
@@ -114,7 +114,7 @@ export default {
   flex: 0 0 auto; /* don't grow, don't shrink, based on the height below */
   height: 191.5px;
   margin-right: auto; /* Push the card to the right */
-  width: 80%; /* example fixed height for small cards */
+  width: 70%; /* example fixed height for small cards */
   border-radius: 40px;;
   font-family: "Open Sans", sans-serif;
 }
@@ -123,7 +123,7 @@ export default {
   flex: 0 0 auto; /* don't grow, don't shrink, based on the height below */
   height: 300px;
   margin-left: auto; /* Push the card to the right */
-  width: 80%; /* example fixed height for medium cards */
+  width: 70%; /* example fixed height for medium cards */
   border-radius: 40px;
   font-family: "Open Sans", sans-serif;
 }

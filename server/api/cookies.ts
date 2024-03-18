@@ -12,7 +12,7 @@ export default defineEventHandler(async (event) => {
     maxAge: 60 * 60 * 24 * 365, // 1 year
     secure: true,
     httpOnly: true,
-    sameSite: 'strict', // or 'None' if cross-site requests are necessary
+    sameSite: 'none', // or 'None' if cross-site requests are necessary
   });
   console.log('Setting cookie with consent:', consent);
 

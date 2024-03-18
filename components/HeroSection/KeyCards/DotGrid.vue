@@ -5,7 +5,7 @@
     <div class="inline-block">
       <!-- Use inline-block for inner grid centering -->
       <div class="grid md:grid-cols-10 grid-cols-8 gap-[40px]">
-        <div v-for="n in 40" :key="n" class="dot bg-gray-400 dark:bg-gray-300" :class="{ 'active': activeIndex === n - 1 }"></div>
+        <div v-for="n in 40" :key="n" class="dot bg-black dark:bg-white transition-opacity" :class="{ 'active': activeIndex === n - 1 }"></div>
       </div>
     </div>
   </div>

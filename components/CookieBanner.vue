@@ -12,49 +12,64 @@
     </div>
 
     <div class="flex flex-col sm:flex-row gap-4 w-full max-w-xs md:max-w-sm lg:max-w-md px-4 font-bold">
-      <button @click="declineCookies" class="reject-button bg-transparent border border-gray-400 text-gray-400 hover:bg-white hover:text-red-600 rounded px-3 py-2 transition-colors duration-300 w-full">Reject</button>
-      <button @click="acceptCookies" class="accept-button bg-green-500 text-white hover:bg-green-600 rounded px-3 py-2 transition-colors duration-300 w-full">Accept</button>
+      <button @click="declineCookies" :disabled="isLoading" class="reject-button bg-transparent border border-gray-400 text-gray-400 hover:bg-white hover:text-red-600 rounded px-3 py-2 transition-colors duration-300 w-full">
+        <template v-if="isLoading">Processing...</template>
+        <template v-else>Reject</template>
+      </button>
+      <button @click="acceptCookies" :disabled="isLoading" class="accept-button bg-green-500 text-white hover:bg-green-600 rounded px-3 py-2 transition-colors duration-300 w-full">
+        <template v-if="isLoading">Processing...</template>
+        <template v-else>Accept</template>
+      </button>
     </div>
   </div>
 </template>
 
-
-
 <script setup>
-const cookieConsent = ref(null); // Initialize with default value or null
+import { ref, onMounted } from 'vue';
+
+const isLoading = ref(false);
+let cookieConsent = ref(null);
+
+onMounted(() => {
+  if (process.client) {
+    cookieConsent.value = localStorage.getItem('cookieConsent');
+  }
+});
+
 const showBanner = ref(!cookieConsent.value);
-const acceptCookies = async () => {
-  await fetch('/api/cookies', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ consent: 'accepted' }),
-  });
-  cookieConsent.value = 'accepted';
-  showBanner.value = false;
+
+const updateConsent = async (consentValue) => {
+  isLoading.value = true;
+  try {
+    await fetch('/api/cookies', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ consent: consentValue }),
+    });
+    if (process.client) {
+      localStorage.setItem('cookieConsent', consentValue);
+    }
+    cookieConsent.value = consentValue;
+    showBanner.value = false;
+  } catch (error) {
+    console.error("Error sending cookie consent:", error);
+    // Handle the error appropriately
+  } finally {
+    isLoading.value = false;
+  }
 };
 
-const declineCookies = async () => {
-  await fetch('/api/cookies', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ consent: 'declined' }),
-  });
-  cookieConsent.value = 'declined';
-  showBanner.value = false;
-};
-
+const acceptCookies = () => updateConsent('accepted');
+const declineCookies = () => updateConsent('declined');
 </script>
 
-<!-- Seus estilos aqui -->
 <style scoped>
 .cookie-banner {
-font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-.cookier-banner button {
+.cookie-banner button {
   font-family: "Montserrat", sans-serif;
 }
 </style>

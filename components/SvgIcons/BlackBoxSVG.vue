@@ -1,3 +1,11 @@
 <template>
-<svg xmlns="http://www.w3.org/2000/svg"><path d="M222 228L2 114L0.5 113.293V390.5L223.5 506L444.5 389.5V114L222 228Z" fill="black"/><path d="M0.5 113L222 228V505L0 390.5L0.5 113Z" fill="url(#paint0_linear_666_60)"/><path d="M223 0L25 104L223 206L420.5 103.5L223 0Z" fill="black"/><path d="M221.976 230L223.561 505.002" stroke="white" stroke-opacity="0.1" stroke-width="2"/><defs><linearGradient id="paint0_linear_666_60" x1="20" y1="156" x2="176" y2="530.5" gradientUnits="userSpaceOnUse"><stop/><stop offset="1" stop-color="#575353" stop-opacity="0"/></linearGradient></defs></svg>
+
+<svg width="445" height="506" viewBox="0 0 445 506" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M222 228L2 114L0.5 113.293V390.5L223.5 506L444.5 389.5V114L222 228Z"/>
+<path d="M0.5 113L222 228V505L0 390.5L0.5 113Z" fill-opacity="0.9"/>
+<path d="M223 0L25 104L223 206L420.5 103.5L223 0Z"/>
+<path d="M221.989 228L223.561 505.002" stroke="white" stroke-opacity="0.1" stroke-width="2"/>
+</svg>
+
+
 </template>

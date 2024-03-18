@@ -3,10 +3,15 @@
     <div>
       <!-- Hero Section -->
       <div class="hero bg-gradient-to-r from-blue-700 to-blue-600 flex items-center justify-center h-[28.5rem] md:h-[38.5rem]">
-        <h1 class="hero-title max-w-[1440px]  text-center text-[#FAFAFA] text-[72px] zzzleading-[72px] font-[700] mx-auto my-auto">
+        <h1 class="hero-title max-w-[1440px]  text-center text-[#FAFAFA] text-[72px] leading-[72px] font-[700] mx-auto my-auto">
           {{$t('services.title')}}
         </h1>
       </div>
+    </div>
+
+ <!-- Black Section -->
+    <div>
+      <BlackBoxSection />
     </div>
 
     <!-- Services Grid -->
@@ -14,10 +19,7 @@
       <ServicesGrid />
     </div>
 
-    <!-- Black Section -->
-    <div class="my-[64px]">
-      <BlackBoxSection />
-    </div>
+   
 
     <!-- FAQ Section -->
     <div>
@@ -60,6 +62,7 @@ useHead({
     }
   ]
 });
+
 
 </script>
 

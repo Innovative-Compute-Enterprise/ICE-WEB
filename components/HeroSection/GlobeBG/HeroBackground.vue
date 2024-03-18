@@ -1,5 +1,5 @@
 <template>
-  <div class="m-auto absolute md:top-[38%] top-[40%] w-[100%] max-w-[600px] aspect-square">
+  <div class="m-auto absolute md:top-[35%] top-[45%] w-[100%] max-w-[700px] aspect-square">
     <canvas ref="canvasEl" class="w-full h-full cursor-grab rounded-full" :style="{ transition: 'opacity 1s ease-in-out', opacity: canvasOpacity }" width="1050" height="1050" 
             @pointerdown="handlePointerDown"
             @pointerup="handlePointerUp"

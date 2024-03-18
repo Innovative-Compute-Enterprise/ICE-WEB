@@ -9,29 +9,27 @@
       </div>
   
       <!-- Policies Container -->
-      <div class="policies-container max-w-screen-md text-[#09090B] dark:text-[#FAFAFA] text-left space-y-16 pt-12 px-12">
+      <div class="policies-container max-w-screen-md text-[#09090B] dark:text-[#FAFAFA] text-left pt-12 px-12">
         <!-- Privacy Policy Section -->
-          <pre>{{ data }}</pre>
-
-        <section>
+        <section class="my-[48px]">
           <h2>{{$t('policies.privacyPolicy')}}</h2>
           <p>{{$t('policies.privacyPolicyDesc')}}</p>
         </section>
     
         <!-- Cookie Policy Section -->
-        <section>
+        <section class="my-[48px]">
           <h2>{{$t('policies.cookiePolicy')}}</h2>
           <p>{{$t('policies.cookiePolicyDesc')}}</p>
         </section>
   
         <!-- Copyright Notice Section -->
-        <section >
+        <section class="my-[48px]">
           <h2>{{$t('policies.copyrightNotice')}}</h2>
           <p>{{$t('policies.copyrightNoticeDesc')}}</p>
         </section>
   
         <!-- Terms of Service Section -->
-        <section class="pb-20">
+        <section class="pb-20 my-[48px]" >
           <h2>{{$t('policies.termsOfService')}}</h2>
           <p>{{$t('policies.termsOfServiceDesc')}}</p>
         </section>
@@ -42,7 +40,6 @@
 
 
   <script setup lang="ts">
-  const { data } = await useFetch('/api/hello');
 
   useSeoMeta({
   title: 'Polices',
@@ -90,17 +87,16 @@ useHead({
   
   .policies-container {
     margin: auto;
-    line-height: 1.6;
   }
   
   .policies-container h2 {
-    margin-top: 3rem;
-    font-size: 1.8rem; /* Clear section headings */
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 700;
   }
   .policies-container p {
-    font-size: 0.8rem; /* Clear section headings */
-    font-weight: 600;
+    font-size: 18px; /* Clear section headings */
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
   }
 
   

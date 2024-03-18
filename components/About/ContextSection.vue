@@ -1,9 +1,8 @@
 <template>
-  <div class="flex flex-col my-12 space-y-4">
-    <WhiteSection2 /> 
+  <div class="flex flex-col mb-[124px] space-y-4">
+    <WhiteSection2 class="my-[48px]" /> 
     <BlueSection />
-    <WhiteSection1 />
-   
+    <WhiteSection1 class="my-[64px]" />
   </div>
 </template>
 

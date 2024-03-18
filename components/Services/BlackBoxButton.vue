@@ -7,6 +7,7 @@
   </div>
 </template>
 
+
 <style scoped>
 button{
   font-family: "Mona Sans", sans-serif; 

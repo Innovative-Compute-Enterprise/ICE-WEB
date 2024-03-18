@@ -1,5 +1,5 @@
 <template>
-  <div ref="heroContainer" class="hero-text-container flex flex-col items-center md:my-[24px] lg:my-[48px] py-[12px]">
+  <div ref="heroContainer" class="hero-text-container flex flex-col items-center md:my-[24px] lg:my-[36px] py-[12px]">
     <div class="justify-center news-text">
       <div class="dark:bg-[#09090B] font-semibold bg-[#FAFAFA] relative rounded-full px-3 py-1 md:text-[14px] text-[12px] leading-6 text-gray-800 dark:text-gray-300 ring-1 ring-gray-900/30  dark:ring-gray-700/50  border border-[#E4E4E7]/[100%] dark:border-[#27272a]/[100%]">
         Announcing our next product.
@@ -10,7 +10,7 @@
         </NuxtLink>
       </div>
     </div>
-      <h1 class="text-[#09090B] md:mx-[48x] mx-[36px] dark:text-[#FAFAFA] lg:text-[72px] md:text-[48px] text-[40px] break-words tracking-[-2.16px] lg:leading-[72px] md:leading-[48px] leading-[40px] font-[700] lg:max-w-[900.9px] md:max-w-[675.9px] w-full text-center py-[24px]">
+      <h1 class="text-[#09090B] md:mx-[48x] mx-[36px] dark:text-[#FAFAFA] lg:text-[72px] text-[48px] break-words tracking-[-2.16px] lg:leading-[72px] leading-[48px] font-[700] lg:max-w-[900.9px] md:max-w-[695.9px] w-full text-center py-[12px] md:py-[24px]">
         {{ $t('heroText.title1') }}
       </h1>
 

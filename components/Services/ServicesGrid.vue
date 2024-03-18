@@ -1,22 +1,22 @@
 <template>
-  <section class="pt-[48px] pb-24 dark:bg-[#09090B] bg-[#FAFAFA] px-4">
+  <section class="pt-[48px] pb-24 dark:bg-[#09090B] bg-[#FAFAFA] px-4 my-[48px]">
 
     <div class="text-center mb-[36px]">
-      <h2 class="text-[48px] leading-[48px] font-bold text-[#09090B] dark:text-[#FAFAFA] mb-[24px]">{{$t('ourPlans.title')}}</h2>
+      <h1 class="text-[48px] leading-[48px] font-bold text-[#09090B] dark:text-[#FAFAFA] mb-[24px]"> {{$t('ourPlans.title')}}</h1>
       <p class="text-[16px] text-[#71717A] dark:text-[#A1A1AA]">{{$t('ourPlans.subtitle')}}</p>
     </div>
 
-    <div class="flex justify-center mb-[24px]">
+    <div class="flex justify-center mb-[48px]">
     <div class="border-2 border-gray-300 dark:border-gray-500 rounded-[20px]">
       <button
         v-for="type in ['monthly', 'annual']"
         :key="type"
         @click="togglePlanType(type)"
         :class="{
-          'bg-[#09090B] dark:bg-white text-white dark:text-[#09090B] rounded-[15px]': planType === type,
-          'bg-transparent text-gray-600 dark:text-gray-400 rounded-[15px] hover:bg-gray-200 dark:hover:bg-gray-500': planType !== type
+          'bg-[#09090B] dark:bg-white text-white dark:text-[#09090B] rounded-[18px]': planType === type,
+          'bg-transparent text-gray-600 dark:text-gray-400 rounded-[18px] hover:bg-gray-200 dark:hover:bg-gray-500': planType !== type
         }"
-        class="py-2 px-4 first:mr-1 last:ml-1 transition-colors font-bold duration-300 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#5B21B6]"
+        class="py-2 px-4 first:mr-1 last:ml-1 transition-opacity font-bold duration-400 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#5B21B6]"
         style="min-width: 90px;">
         {{$t(`ourPlans.${type}`)}}
       </button>
@@ -24,7 +24,7 @@
   </div>
 
 
-    <div class="services-container mx-auto p-4 flex flex-wrap justify-center gap-[72px] md:gap-[48px]">
+    <div class="mx-auto flex flex-wrap justify-center gap-[24px]">
       <CardBasic
         :planType="planType"
         :monthlyPrice="getPrice('basic', 'monthly')"
@@ -64,17 +64,6 @@ import CardBusiness from './ServicesCard/CardBusiness.vue';
 import CardEnterprise from './ServicesCard/CardEnterprise.vue';
 
 export default {
-  data() {
-    return {
-      planType: 'monthly',
-      // Assuming you have pricing info structured in this way, otherwise adjust as needed
-      pricing: {
-        basic: { monthly: 0, annual: 0 },
-        business: { monthly: 20, annual: 200 }, // Assuming 10 months payment for annual for simplicity
-        enterprise: { monthly: 40, annual: 400  }
-      }
-    };
-  },
   components: {
     CardBasic,
     CardBusiness,
@@ -87,15 +76,21 @@ export default {
     getPrice(plan, type) {
       return this.pricing[plan][type];
     }
-  }
+  },
+  data() {
+    return {
+      planType: 'monthly',
+      // Assuming you have pricing info structured in this way, otherwise adjust as needed
+      pricing: {
+        basic: { monthly: 0, annual: 0 },
+        business: { monthly: 20, annual: 200 }, // Assuming 10 months payment for annual for simplicity
+        enterprise: { monthly: 40, annual: 400  }
+      }
+    };
+  },
 };
 </script>
 
 <style scoped>
-@media (max-width: 640px) {
-  .services-container .service-card {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
+
 </style>
