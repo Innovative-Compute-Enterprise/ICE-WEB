@@ -63,7 +63,7 @@ useHead({
       hid: 'icon',
       rel: 'icon',
       type: 'image/png',
-      href: '/faviconorange.png'
+      href: '/faviconblack.png'
     }
   ]
 });

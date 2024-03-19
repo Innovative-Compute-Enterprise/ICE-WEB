@@ -58,7 +58,7 @@ useHead({
       hid: 'icon',
       rel: 'icon',
       type: 'image/png',
-      href: '/faviconblue.png'
+      href: '/faviconblack.png'
     }
   ]
 });

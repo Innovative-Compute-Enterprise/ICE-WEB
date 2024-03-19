@@ -24,7 +24,7 @@
   </div>
 
 
-    <div class="mx-auto flex flex-wrap justify-center gap-[24px]">
+    <div class="mx-auto flex flex-wrap justify-center gap-[36px]">
       <CardBasic
         :planType="planType"
         :monthlyPrice="getPrice('basic', 'monthly')"

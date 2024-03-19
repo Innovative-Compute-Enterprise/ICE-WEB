@@ -45,4 +45,6 @@ blockquote {
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 5px 5px, 5px 5px; /* Smaller grain size */
 }
+
+ 
 </style>

@@ -39,7 +39,7 @@ useHead({
       sizes: '64x64',
       rel: 'icon',
       type: 'image/x-icon',
-      href: '/faviconred.png'
+      href: '/faviconblack.png'
     }
   ]
 });

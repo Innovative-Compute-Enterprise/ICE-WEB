@@ -12,11 +12,12 @@
 
 <script setup>
 import { defineAsyncComponent } from 'vue';
-const KeyList = defineAsyncComponent(() => import('@/components/HeroSection/KeyList.vue'));
 const ModelBrands = defineAsyncComponent(() => import('@/components/HeroSection/ModelBrands.vue'));
 const CardSection = defineAsyncComponent(() => import('@/components/HeroSection/CardSection.vue'));
-const HeroSection = defineAsyncComponent(() => import('@/components/HeroSection/HeroSection.vue'));
 const OurProcess = defineAsyncComponent(() => import('@/components/HeroSection/OurProcess.vue'));
+
+import HeroSection from '@/components/HeroSection/HeroSection.vue';
+import KeyList from '@/components/HeroSection/KeyList.vue';
 
 useSeoMeta({
   title: 'Home',
