@@ -99,7 +99,8 @@
         };
       },
    mounted() {
-        this.initTheme(); // Initialize theme based on system preference or stored preference
+        this.initTheme();
+    document.documentElement.classList.toggle('dark', this.darkMode);
     gsap.set(this.$refs.menu, { autoAlpha: 0 }); 
     this.menuTimeline = gsap.timeline({ paused: true })
       .to(this.$refs.menu, { autoAlpha: 1, duration: 0.2, ease: 'power3.in' });
@@ -174,6 +175,12 @@
       return locale === 'en' ? `/${routeName}` : `/${locale}/${routeName}`;
     }
   },
+  watch: {
+  darkMode(newValue) {
+    document.documentElement.classList.toggle('dark', newValue);
+    localStorage.setItem('darkMode', newValue ? 'true' : 'false');
+  }
+},
 };
 </script>
 

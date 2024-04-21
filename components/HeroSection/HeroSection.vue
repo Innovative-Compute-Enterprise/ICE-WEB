@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-section bg-[#FAFAFA] dark:bg-[#09090B] md:mt-[1.8rem] mt-[1rem]">
+  <section class="hero-section bg-[#FAFAFA] dark:bg-[#09090B] md:mt-[1.4rem] mt-[0.4rem]">
     <div class="text-overlay">
       <HeroText />
     </div>
@@ -25,7 +25,7 @@ import HeroText from './HeroText.vue';
 
 .text-overlay {
   position: absolute; /* Keeps the text overlay in place */
-  top: 7%; /* Keeps text position relative to the top */
+  top: 5%; /* Keeps text position relative to the top */
   z-index: 2; /* Ensures text is above the globe */
   width: 100%;
   display: flex;
