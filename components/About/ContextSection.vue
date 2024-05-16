@@ -7,12 +7,9 @@
 </template>
 
 <script setup>
-import { defineAsyncComponent } from 'vue';
-
-const BlueSection = defineAsyncComponent(() => import('@/components/About/BlueSection.vue'));
-const WhiteSection1 = defineAsyncComponent(() => import('@/components/About/WhiteSection1.vue'));
-const WhiteSection2 = defineAsyncComponent(() => import('@/components/About/WhiteSection2.vue'));
-
+import WhiteSection1 from './WhiteSection1.vue';
+import WhiteSection2 from './WhiteSection2.vue';
+import BlueSection from './BlueSection.vue';
 </script>
 
 <style scoped>

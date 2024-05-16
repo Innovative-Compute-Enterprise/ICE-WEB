@@ -11,8 +11,7 @@
               type="email"
               name="email"
               class="w-full p-1 text-black dark:text-white rounded-md placeholder:opacity-50 
-              bg-transparent border-2 border-[#71717A] dark:border-[#A1A1AA] shadow-sm focus-visible:ring-1 
-              focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              bg-transparent border-2 border-[#71717A] dark:border-[#A1A1AA] shadow-sm focus-visible:outline-none"
               placeholder="Enter your email"
               required
             />

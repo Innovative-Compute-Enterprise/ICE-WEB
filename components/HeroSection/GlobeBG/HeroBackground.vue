@@ -1,5 +1,5 @@
 <template>
-  <div class="m-auto absolute md:top-[35%] top-[45%] w-[100%] max-w-[700px] aspect-square">
+  <div class="m-auto absolute md:top-[35%] top-[45%] w-[100%] max-w-[700px] 2xl:max-w-[960px] aspect-square">
     <canvas ref="canvasEl" class="w-full h-full cursor-grab rounded-full" :style="{ transition: 'opacity 1s ease-in-out', opacity: canvasOpacity }" width="1050" height="1050" 
             @pointerdown="handlePointerDown"
             @pointerup="handlePointerUp"
@@ -28,8 +28,8 @@ onMounted(() => {
   const updateSize = () => {
     if (canvasEl.value) {
       width.value = canvasEl.value.offsetWidth;
-      canvasEl.value.width = width.value * 2; // Adjust for devicePixelRatio if needed
-      canvasEl.value.height = width.value * 2;
+      canvasEl.value.width = width.value * 1; // Adjust for devicePixelRatio if needed
+      canvasEl.value.height = width.value * 1;
     }
   };
   updateSize(); // Initial size update
@@ -82,7 +82,7 @@ const handlePointerOut = () => {
 
 const handleMouseMove = (e) => {
   if (pointerInteracting.value) {
-    const delta = (e.clientX - pointerInteractionStart.value) / 200; // Change 200 to adjust sensitivity
+    const delta = (e.clientX - pointerInteractionStart.value) / 150; // Change 200 to adjust sensitivity
     pointerInteractionMovement.value += delta;
     pointerInteractionStart.value = e.clientX; // Reset start position for smooth dragging
   }
@@ -90,7 +90,7 @@ const handleMouseMove = (e) => {
 
 const handleTouchMove = (e) => {
   if (pointerInteracting.value && e.touches.length > 0) {
-    const delta = (e.touches[0].clientX - pointerInteractionStart.value) / 200; // Change 200 to adjust sensitivity
+    const delta = (e.touches[0].clientX - pointerInteractionStart.value) / 100; // Change 200 to adjust sensitivity
     pointerInteractionMovement.value += delta;
     pointerInteractionStart.value = e.touches[0].clientX; // Reset start position for smooth dragging
   }

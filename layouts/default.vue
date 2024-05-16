@@ -11,14 +11,9 @@
 </template>
 
 <script setup>
-import { defineAsyncComponent } from 'vue';
-
-
-// Asynchronous components
-const Header = defineAsyncComponent(() => import('@/components/Header/Header.vue'));
-const Footer = defineAsyncComponent(() => import('@/components/FooterSection/Footer.vue'));
-const LoadingScreen = defineAsyncComponent(() => import('@/components/LoadingScreen'));
-
+import Header from '@/components/Header/Header.vue';
+import Footer from '@/components/FooterSection/Footer.vue';
+import LoadingScreen from '@/components/LoadingScreen.vue';
 </script>
 
 <style scoped>

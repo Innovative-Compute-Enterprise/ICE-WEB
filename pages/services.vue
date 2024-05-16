@@ -30,11 +30,9 @@
 </template>
 
 <script setup>
-import { defineAsyncComponent } from 'vue';
-
-const ServicesGrid = defineAsyncComponent(() => import('~/components/Services/ServicesGrid.vue'));
-const FaqSection = defineAsyncComponent(() => import('~/components/Services/FaqSection.vue'));
-const BlackBoxSection = defineAsyncComponent(() => import('~/components/Services/BlackBoxSection.vue'));
+import ServicesGrid from '@/components/Services/ServicesGrid.vue';
+import FaqSection from '@/components/Services/FaqSection.vue';
+import BlackBoxSection from '@/components/Services/BlackBoxSection.vue';
 
 useSeoMeta({
   title: 'Services',
@@ -62,8 +60,6 @@ useHead({
     }
   ]
 });
-
-
 </script>
 
 <script>

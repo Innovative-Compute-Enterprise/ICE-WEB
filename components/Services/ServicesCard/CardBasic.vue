@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white/70% custom-border dark:bg-black/70% transition-colors duration-300  p-6 rounded-[20px] text-black dark:text-white max-w-[400px] w-full flex flex-col justify-between backdrop-blur-[8px]">
     <div class="space-y-2 z-50">
-      <h2 class="text-[24px] leading-[24px] font-[700] pb-[12px]">Basic</h2>
+      <h2 class="text-[24px] leading-[24px] font-[700] pb-[12px]">Free</h2>
       <p class="text-[14px] w-[80%] font-[500] tracking-wider">Everything you need to supercharge your productivity.</p>
       <p class="text-[60px] font-bold pt-[36px] pb-[36px] leading-[60px]">{{ currentPrice }}</p>
     

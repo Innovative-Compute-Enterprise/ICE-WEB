@@ -13,9 +13,8 @@
 </template>
 
 <script setup>
-import { defineAsyncComponent } from 'vue';
+import ContextSection from '@/components/About/ContextSection.vue';
 
-const ContextSection = defineAsyncComponent(() => import('@/components/About/ContextSection.vue'));
 useSeoMeta({
   title: 'About Us',
   description: '[description]',

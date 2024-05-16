@@ -26,7 +26,7 @@ useSeoMeta({
   ogDescription: '[og:description]',
   ogImage: '[og:image]',
   ogUrl: '[og:url]',
-  twitterTitle: 'Continuum Glow - Home',
+  twitterTitle: 'ICE - Home',
   twitterDescription: '[twitter:description]',
   twitterImage: '[twitter:image]',
   twitterCard: 'summary'

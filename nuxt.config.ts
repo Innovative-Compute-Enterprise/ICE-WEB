@@ -1,9 +1,6 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/i18n', '@nuxtjs/robots'],
-
-  
+  modules: ['@nuxtjs/i18n','@nuxtjs/robots','@pinia/nuxt'],
   ssr: true,
-
   i18n: {
     langDir: 'locales', 
     strategy: 'prefix_except_default',

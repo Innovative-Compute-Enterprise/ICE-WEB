@@ -33,16 +33,7 @@ import HeroText from './HeroText.vue';
   align-items: center;
 }
 
-/* Use transform to move the globe further down */
-HeroBackground {
-  position: absolute;
-  top: 0; /* Reset to top of the section */
-  left: 0;
-  width: 100%;
-  height: 60%; /* Maintain or adjust based on your needs */
-  z-index: 999; /* Ensures globe is below the text */
-  transform: translateY(50%); /* Adjust this value to move the globe down */
-}
+
 
 @media screen and (max-width: 670px) {
   .text-overlay {
