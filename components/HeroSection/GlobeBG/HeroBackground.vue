@@ -1,17 +1,3 @@
-<template>
-  <div class="m-auto absolute md:top-[35%] top-[45%] w-[110%] md:w-[100%] max-w-[700px] 2xl:max-w-[960px] aspect-square">
-    <canvas ref="canvasEl" class="w-full h-full cursor-grab rounded-full" 
-    :style="{ transition: 'opacity 1s ease-in-out', opacity: canvasOpacity }" 
-    width="1050" height="1050" 
-     @pointerdown="handlePointerDown"
-     @pointerup="handlePointerUp"
-     @pointerout="handlePointerOut"
-     @mousemove="handleMouseMove"
-     @touchmove="handleTouchMove" >
-     </canvas>
-  </div>
-</template>
-
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import createGlobe from 'cobe';
@@ -38,9 +24,9 @@ onMounted(() => {
   window.addEventListener('resize', updateSize); 
 
   const globe = createGlobe(canvasEl.value, {
-    devicePixelRatio: 2,
-    width: width.value * 2,
-    height: width.value * 2,
+    devicePixelRatio: 1,
+    width: width.value * 1,
+    height: width.value * 1,
     phi: 0,
     theta: 0.2,
     dark: 1.1,
@@ -51,7 +37,8 @@ onMounted(() => {
     baseColor: [1.1, 1.1, 1.1],
     markerColor: [251 / 255, 100 / 255, 21 / 255],
     glowColor: [1.1, 1.1, 1.1],
-    markers: [],
+    markers: [
+    ],
     opacity: .7,
     onRender: (state) => {
       state.phi = phi + pointerInteractionMovement.value;
@@ -97,3 +84,30 @@ const handleTouchMove = (e) => {
   }
 };
 </script>
+
+
+<template>
+  <div class="m-auto absolute md:top-[35%] top-[45%] w-[110%] md:w-[100%] max-w-[700px] 2xl:max-w-[960px] aspect-square">
+    <div class="absolute inset-0 flex items-center justify-center text-white text-5xl cursor-none">
+      <h1>ICE</h1>
+    </div>    
+    <canvas ref="canvasEl" class="w-full h-full cursor-grab rounded-full" 
+    :style="{ transition: 'opacity 1s ease-in-out', opacity: canvasOpacity }" 
+    width="1050" height="1050" 
+     @pointerdown="handlePointerDown"
+     @pointerup="handlePointerUp"
+     @pointerout="handlePointerOut"
+     @mousemove="handleMouseMove"
+     @touchmove="handleTouchMove" >
+     </canvas>
+  </div>
+</template>
+
+
+<style scoped>
+h1{
+  font-family: 'Mona Sans';
+  font-stretch: 125%;
+  font-weight: 900;
+}
+</style>
