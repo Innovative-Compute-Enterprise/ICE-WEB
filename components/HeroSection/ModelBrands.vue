@@ -28,7 +28,6 @@ const brokers = [
 ];
 
 function getMarginClass(index) {
-  // Assuming the screenshot shows a pattern, we translate this into margin classes
   const classes = [
     'mt-0 mb-[124px] ml-4 mr-2',  // These values should be adjusted based on the actual layout of the screenshot
     'mt-[100px] mb-0 ml-2 mr-4',
