@@ -4,20 +4,18 @@
       <HeroSection />  
       <KeyList />
       <CardSection /> 
-      <ModelBrands />     
       <OurProcess />
+      <ModelBrands />     
     </section>
   </div>
 </template>
 
 <script setup>
-import { defineAsyncComponent } from 'vue';
-const ModelBrands = defineAsyncComponent(() => import('@/components/HeroSection/ModelBrands.vue'));
-const CardSection = defineAsyncComponent(() => import('@/components/HeroSection/CardSection.vue'));
-const OurProcess = defineAsyncComponent(() => import('@/components/HeroSection/OurProcess.vue'));
-
 import HeroSection from '@/components/HeroSection/HeroSection.vue';
 import KeyList from '@/components/HeroSection/KeyList.vue';
+import ModelBrands from '@/components/HeroSection/ModelBrands.vue';
+import CardSection from '@/components/HeroSection/CardSection.vue';
+import OurProcess from '@/components/HeroSection/OurProcess.vue';
 
 useSeoMeta({
   title: 'Home',

@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-section bg-[#FAFAFA] dark:bg-[#09090B] md:mt-[1.4rem] mt-[0.4rem]">
+  <section class="hero-section bg-[#FAFAFA] dark:bg-[#09090B] md:mt-[1.4rem] mt-0">
     <div class="text-overlay">
       <HeroText />
     </div>
@@ -8,25 +8,26 @@
 </template>
 
 <script setup>
-import HeroBackground from './GlobeBG/HeroBackground.vue';
-import HeroText from './HeroText.vue';
+import HeroBackground from '@/components/HeroSection/GlobeBG/HeroBackground.vue';
+import HeroText from '@/components/HeroSection/HeroText.vue';
 </script>
 
 <style scoped>
 .hero-section {
   position: relative;
   width: 100%;
-  height: 130vh; /* Keep or adjust based on your layout needs */
+  height: 150vh; /* Keep or adjust based on your layout needs */
   display: flex;
+  z-index: 2;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
 .text-overlay {
-  position: absolute; /* Keeps the text overlay in place */
-  top: 5%; /* Keeps text position relative to the top */
-  z-index: 2; /* Ensures text is above the globe */
+  position: absolute; 
+  top: 5%; 
+  z-index: 3; 
   width: 100%;
   display: flex;
   justify-content: center;
@@ -40,7 +41,7 @@ import HeroText from './HeroText.vue';
     top: 10%;
   }
   .hero-section {
-    height: 100vh;
+    height: 115vh;
   }
 }
 </style>

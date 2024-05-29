@@ -4,7 +4,7 @@
       <h1 class="text-6xl leading-none font-bold text-[#09090B] dark:text-[#FAFAFA] mb-6">
         {{$t('ourPlans.title')}}
       </h1>
-      <p class="text-lg text-[#71717A] dark:text-[#A1A1AA]">
+      <p class="text-lg text-[#71717A] dark:text-[#A1A1AA] text-center">
         {{$t('ourPlans.subtitle')}}
       </p>
     </div>
@@ -43,9 +43,6 @@
         ]"
       />
       <CardEnterprise
-        :planType="planType"
-        :monthlyPrice="getPrice('enterprise', 'monthly')"
-        :annualPrice="getPrice('enterprise', 'annual')"
         :features="[
           $t('features.unlimitedStorage'),
           $t('features.247Support'),

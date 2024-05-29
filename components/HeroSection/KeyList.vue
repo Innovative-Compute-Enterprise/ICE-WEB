@@ -1,19 +1,19 @@
 <template>
     <section>
-      <div class="flex flex-col items-center dark:bg-[#09090B] bg-[#FAFAFA]  py-[72px] my-[128px] mx-auto max-w-[1440px]">
-        <div class="grid md:grid-cols-3 grid-cols-1 md:gap-6 gap-8  relative md:w-[85%] w-[90%] my-[24px]">
-          <!-- Using TopicCard component -->
-          <!-- Corrected TopicCard with GradientCircles -->
+      <div class="container flex flex-col items-center mt-[64px] mb-[128px] mx-auto max-w-[1440px] px-6 py-[48px]">
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-8  relative md:w-[80%]">
+       
         <div class="md:col-span-2 col-span-1">
            <TopicCard />
         </div>
 
          <div>
-          <div class="relative md:p-[48px] p-[24px] h-full rounded-[40px] border border-[#000]/[0.2] dark:border-[#fff]/[0.2]  focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-            <div class="relative z-10 justify-between">
-              <div class="text-start justify-between ">
-              <h2 class="text-[32px] leading-[32px] font-[600] text-[#09090B] mb-[128px] dark:text-[#FAFAFA]">Primary Topic</h2>
-              <p class="text-[16px] leading-[16px] text-[#09090B] dark:text-[#FAFAFA]">Extended discussion on the secondary topic, similar to the main one.</p>
+          <div class="relative lg:p-[48px] md:p-[24px] p-[16px] h-full rounded-[40px] border border-[#000]/[0.2] dark:border-[#fff]/[0.2] justify-center">
+            <div class="relative z-10 justify-between items-center">
+              <div class="text-center justify-between flex flex-col items-center p-2">
+              <h2 class="text-[24px] leading-[24px] font-[600] text-[#09090B] dark:text-[#FAFAFA]">{{ $t('grid.title2') }}</h2>
+              <p class="lg:text-[72px] md:text-[56px] sm:text-[64px] text-[72px] numbers leading-[72px] text-[#09090B] dark:text-[#FAFAFA] my-16">83%</p>
+              <p class="text-[16px] leading-[16px] text-[#09090B] dark:text-[#FAFAFA]">{{ $t('grid.topic2') }}</p>
               </div>
            </div>
           </div>
@@ -21,11 +21,12 @@
          
          
          <div class="md:col-span-1">
-          <div class="relative md:p-[48px] p-[24px] h-full rounded-[40px]  border border-[#000]/[0.2] dark:border-[#fff]/[0.2]  focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+          <div class="relative lg:p-[48px] md:p-[24px] p-[16px] h-full rounded-[40px]  border border-[#000]/[0.2] dark:border-[#fff]/[0.2]">
             <div class="relative z-10 justify-between">
-              <div class="text-start justify-between ">
-              <h2 class="text-[32px] leading-[32px] font-[600] text-[#09090B] mb-[128px] dark:text-[#FAFAFA]">Primary Topic</h2>
-              <p class="text-[16px] leading-[16px] text-[#09090B] dark:text-[#FAFAFA]">Extended discussion on the secondary topic, similar to the main one.</p>
+              <div class="text-center justify-between flex flex-col items-center p-2">
+              <h2 class="text-[24px] leading-[24px] font-[600] text-[#09090B] dark:text-[#FAFAFA]">{{ $t('grid.title3') }}</h2>
+              <p class="lg:text-[72px] md:text-[56px] sm:text-[64px] text-[72px] numbers leading-[72px] text-[#09090B] dark:text-[#FAFAFA] my-16">+1T$</p>
+              <p class="text-[16px] leading-[16px] text-[#09090B] dark:text-[#FAFAFA]">{{ $t('grid.topic3') }}</p>
             </div>
             </div>
           </div>
@@ -41,11 +42,16 @@
   </template>
   
   <script setup>
-  import TopicCard from './KeyCards/TopicCard.vue'; // Adjust the path as necessary
-  import Integration from './KeyCards/Integration.vue';
+  import TopicCard from './BentoCards1/TopicCard.vue'; 
+  import Integration from './BentoCards1/Integration.vue';
   </script>
   
   <style scoped>
+  .numbers{
+  font-family: "Mona Sans";
+  font-stretch: 125%;
+  font-weight: 900;
+ }
 h2 {
   font-family: "Mona Sans";
   font-stretch: 100%;

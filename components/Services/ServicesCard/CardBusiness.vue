@@ -1,19 +1,19 @@
 <template>
   <div class="dark:bg-white custom-border bg-black transition-colors duration-300  p-6 rounded-[20px] dark:text-black text-white max-w-[400px] w-full flex flex-col justify-between backdrop-blur-[8px]">
     <div class="space-y-2 z-50">
-      <h2 class="text-[24px] leading-[24px] font-[700] pb-[12px]">Business</h2>
-      <p class="text-[14px] w-[80%] font-[500] tracking-wider">Everything you need to supercharge your productivity.</p>
+      <h2 class="text-[32px] leading-[24px] font-[700] pb-[24px]">{{$t('ourPlans.services.2.title')}}</h2>
+      <p class="text-[14px] w-[80%] font-[500] tracking-wider">{{$t('ourPlans.services.2.subtitle')}}</p>
       <div class="flex flex-row items-baseline">
-        <p class="text-[60px] font-bold pt-[36px] pb-[36px] leading-[60px]">{{ currentPrice }}</p>
+        <p class="text-[72px] numbers font-bold pt-[36px] pb-[36px] leading-[60px]">{{ currentPrice }}</p>
         <span class="text-[16px] font-medium pl-[2px]">{{ planPeriod }}</span>
       </div>        
       <div class="cursor-pointer">
       <a class="block shadow-sm focus-visible:ring-1 text-black dark:text-white shrink-0 border-[#E4E4E7]/[100%] dark:border-[#27272a]/[100%] border bg-white hover:bg-[#e2e2e2] dark:bg-black dark:hover:bg-[#424246] rounded-lg font-bold text-center py-3 px-5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors duration-300">
-        {{$t('ourPlans.services.signUp')}}
+        {{$t('ourPlans.services.button2')}}
       </a>
     </div>
       <ul class="pt-[24px]">
-        <p class="text-[14px] font-[500] pb-[6px]">Includes:</p>
+        <p class="text-[14px] font-[500] pb-[6px]">{{$t('ourPlans.services.3.include')}}</p>
         
         <li class="py-3 text-[14px] font-semibold flex items-center">
           <BlackBoxSVG class="w-5 h-5 mr-2 dark:fill-black fill-white" />
@@ -66,4 +66,10 @@ h2{
 p{
   font-family: "Open Sans";
 }
+
+.numbers{
+  font-family: "Mona Sans";
+  font-stretch: 125%;
+  font-weight: 900;
+ }
 </style>

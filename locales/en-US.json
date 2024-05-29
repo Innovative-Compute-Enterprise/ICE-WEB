@@ -5,30 +5,118 @@
       "about": "About",
       "services": "Services",
       "polices": "Polices",
-      "contact": "Contact"
-
+      "contact": "Contact",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
     },
 
-    "headerBrand":{
-      "name": "Continuum Glow",
-      "slogan": "Achieve inovation powered by AI"
+    "mobileHeader":{
+      "home": "Home",
+      "services": "Services",
+      "about": "About",
+      "polices": "Polices",
+      "contact": "Contact", 
+      "account": "Account", 
+      "theme": "Theme" 
     },
 
     "heroText":{
-      "title1": "Amplifying AI integration, delivering innovation."
+      "title": "Amplifying AI integration, delivering innovation.",
+      "announcement": "Announcing our next product.",
+      "more": "Read more",
+      "button": "Get started",
+      "button2": "View more"
     },
 
-    "button":{
-      "main": "Amplify"
-    },
-
-    "aboutPage":{
-      "title": "About"
-    },
-
+    "grid":{
+      "title": "AI efficiency",
+      "topic": " Discover the latest breakthroughs in artificial intelligence. From machine learning advancements to new AI applications, stay updated with cutting-edge innovations.",
       
+      "title2": "Human Eval",
+      "topic2": "More than a 101 IQ person",
+      
+      "title3": "Market e/acc",
+      "topic3": "By 2030 market will surpass a trillion dollars, or even before.",
+      
+      "title4": "Simplicity is the way",
+      "topic4": "Extended discussion on the secondary topic, similar to the main one, keep same size as lorem ipsum, but not lorem ipsum, being lorem ipsum."
+    },
+
+    "cardSection":{
+      "medium1": "Time task reduction in, code documentation, generation and refactoring",
+      "medium2": "The most advanced tech 24 hours a day, 7 days a week",
+      "small1": "FAST",
+      "small2": "POWERFUL",
+      "small3": "EASY",
+      "large1": "AI-Driven Success",
+      "large2": "Reducing project timelines by months and cutting costs significantly, all while delivering high-quality."
+
+    },
+
+    "ourProcess": {
+      "title": "Our Process",
+      "text1": "At ICE (Innovative Compute Enterprise), our mission is to deliver cutting-edge technology powered by AI, with a primary focus on implementing AI safely across various sectors. We aim to make advanced AI, especially large language models (LLMs) and multi modal models, accessible and beneficial to industries such as healthcare, retail, software development, and more. By simplifying AI integration, we empower companies and individuals who are new to AI or uncertain about its potential.",
+      "text2": "We understand that every enterprise has unique requirements, so we offer bespoke solutions designed specifically to address your company's challenges. Our team works closely with you to ensure that the AI use cases we develop are perfectly aligned with your business objectives, enhancing efficiency and driving growth.",
+      "text3": "A core principle of ICE is reinvesting in our future. We allocate 90% of our profits back into the company to fuel the development of our proprietary models. Our vision includes creating innovative models that we will eventually open source, fostering a community of collaboration and advancement in AI technology.",
+      "text4": "While our platform and specific use cases remain proprietary to maintain high standards and customization, the models and research we produce will largely be open source. This approach not only benefits our clients but also contributes to the global AI community, driving innovation and progress in the field.",
+      "text5": "Our ultimate goal is to leverage AI to elevate humanity to new heights. We envision a future where AI improves life expectancy, mental health, economic stability, and every conceivable sector. However, we are committed to achieving this with utmost safety, ensuring that AI is integrated responsibly and ethically. By pushing the boundaries of AI, we strive to create a better, more advanced world for everyone."
+    },
+
+    "models": {
+      "title": "Our software is designed to integrate with these companys models"
+      },
+
+
+
+     "services": {
+       "title": "Services"
+     },
+
+     "blackBox": {
+      "title": "BLACK BOX",
+      "text": "At ICE, we introduce BlackBox—an easy-to-use platform that brings the power of AI to everyone. Whether you’re a business or an individual, BlackBox makes it simple to use advanced AI models. Our focus is on making accessible and impressive without the complexity. Join us in transforming lives with powerful, yet simple solutions."
+    },
     
-   
+    "ourPlans": {
+      "title": "Plans",
+      "monthly": "Monthly",
+      "annual": "Yearly",
+      "subtitle": "Choose the plan that's right for you, with paid plans you will unlock all and latest features.",
+      "services": {
+        "button1": "Test now",
+        "button2": "Join now",
+        "button3": "Contact us",  
+        "1": {
+          "title": "FREE",
+          "subtitle": "For esporadic uses, simple tasks and web search.",
+          "include": "Includes"
+        },
+        "2": {
+          "title": "ATOM",
+          "subtitle": "Everything you need to supercharge your productivity.",
+          "include": "Includes"
+      },
+        "3": {
+          "title": "MOLECULE",
+          "subtitle": "Personalized and exclusive features for your business, with priority support, and centralized instance and accounts.",
+          "include": "Includes"
+        }
+      }
+    },
+
+    "features": {
+      "freeBlackBoxTier": "Free Black-Box tier",
+      "basicSupport": "Basic Support",
+      "prioritySupport": "Priority Support",
+      "crmIntegration": "CRM Integration",
+      "unlimitedStorage": "Everything from Business",
+      "247Support": "24/7 Support",
+      "dedicatedManager": "Dedicated Manager",
+      "advancedAnalytics": "Advanced Analytics"
+    },
+
+
 
     "preFooterSection":{
       "title": "Our Process",
@@ -59,60 +147,9 @@
       "confirmationMessage": "Form has been successfully submitted!"
     },
 
-    "services": {
-      "title": "Services",
-      "blacktitle" : "BLACK-BOX",
-      "blacktext" : "We are dedicated to delivering top-notch services tailored to your unique needs. Our team is committed to innovation, excellence, and building lasting partnerships."
-    },
+  
     
-      "ourPlans": {
-        "title": "Our Plans",
-        "monthly": "Monthly",
-        "annual": "Annual",
-        "subtitle": "Choose the plan that's right for you.",
-        "services": {
-          "signUp": "Sign-up",
-          "1": {
-            "title": "Basic",
-            "features": {
-              "featureA": "Service 1",
-              "featureB": "1",
-              "featureC": "1",  
-              "featureD": "1"   
-            }
-          },
-          "2": {
-            "title": "Business",
-            "features": {
-              "featureA": "Service 2",
-              "featureB": "2",
-              "featureC": "2",
-              "featureD": "2"   
-          }
-        },
-          "3": {
-            "title": "Enterprise",
-            "features": {
-              "featureA": "3",
-              "featureB": "3",
-              "featureC": "3",
-              "featureD": "3"
-            }
-          }
-        }
-      },
       
-      
-        "features": {
-          "freeBlackBoxTier": "Free Black-Box tier",
-          "basicSupport": "Basic Support",
-          "prioritySupport": "Priority Support",
-          "crmIntegration": "CRM Integration",
-          "unlimitedStorage": "Everything from Business",
-          "247Support": "24/7 Support",
-          "dedicatedManager": "Dedicated Manager",
-          "advancedAnalytics": "Advanced Analytics"
-        },
       
         
           "faqSection": {

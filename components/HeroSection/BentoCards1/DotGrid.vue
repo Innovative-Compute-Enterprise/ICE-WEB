@@ -1,11 +1,11 @@
 <!-- components/DotGrid.vue -->
 <template>
-  <div class="text-center absolute md:top-[-10%] md:left-[40%] right-0 left-0 top-[20%]">
+  <div class="absolute inset-y-0 md:right-auto flex md:items-center md:justify-end justify-center md:left-[55%] md:top-0 right-0 left-0 top-[20%]">
     <!-- Center text and content -->
     <div class="inline-block">
       <!-- Use inline-block for inner grid centering -->
-      <div class="grid md:grid-cols-10 grid-cols-8 gap-[40px]">
-        <div v-for="n in 40" :key="n" class="dot bg-black dark:bg-white transition-opacity" :class="{ 'active': activeIndex === n - 1 }"></div>
+      <div class="grid md:grid-cols-6 grid-cols-6 gap-[52px]">
+        <div v-for="n in 36" :key="n" class="dot bg-black dark:bg-white transition-opacity" :class="{ 'active': activeIndex === n - 1 }"></div>
       </div>
     </div>
   </div>
