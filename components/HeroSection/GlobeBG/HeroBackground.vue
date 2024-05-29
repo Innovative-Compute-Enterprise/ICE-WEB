@@ -37,8 +37,7 @@ onMounted(() => {
     baseColor: [1.1, 1.1, 1.1],
     markerColor: [251 / 255, 100 / 255, 21 / 255],
     glowColor: [1.1, 1.1, 1.1],
-    markers: [
-    ],
+    markers: [],
     opacity: .7,
     onRender: (state) => {
       state.phi = phi + pointerInteractionMovement.value;
