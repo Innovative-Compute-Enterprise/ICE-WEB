@@ -29,8 +29,8 @@
         :monthlyPrice="getPrice('basic', 'monthly')"
         :annualPrice="getPrice('basic', 'annual')"
         :features="[
-          $t('features.freeBlackBoxTier'),
-          $t('features.basicSupport')
+          $t('features.1.freeBlackBoxTier'),
+          $t('features.1.basicSupport')
         ]"
       />
       <CardBusiness
@@ -38,16 +38,16 @@
         :monthlyPrice="getPrice('business', 'monthly')"
         :annualPrice="getPrice('business', 'annual')"
         :features="[
-          $t('features.prioritySupport'),
-          $t('features.crmIntegration')
+          $t('features.2.prioritySupport'),
+          $t('features.2.crmIntegration')
         ]"
       />
       <CardEnterprise
         :features="[
-          $t('features.unlimitedStorage'),
-          $t('features.247Support'),
-          $t('features.dedicatedManager'),
-          $t('features.advancedAnalytics')
+          $t('features.3.unlimitedStorage'),
+          $t('features.3.247Support'),
+          $t('features.3.dedicatedManager'),
+          $t('features.3.advancedAnalytics')
         ]"
       />
     </div>

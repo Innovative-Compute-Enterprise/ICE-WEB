@@ -1,15 +1,15 @@
 <template>
-  <div class="flex flex-col mb-[124px] space-y-4">
+  <div class="flex flex-col mb-[124px]">
     <WhiteSection2 class="my-[48px]" /> 
-    <BlueSection />
-    <WhiteSection1 class="my-[64px]" />
+    <MissionSection />
+    <WhiteSection1 />
   </div>
 </template>
 
 <script setup>
 import WhiteSection1 from './WhiteSection1.vue';
 import WhiteSection2 from './WhiteSection2.vue';
-import BlueSection from './BlueSection.vue';
+import MissionSection from './MissionSection.vue';
 </script>
 
 <style scoped>

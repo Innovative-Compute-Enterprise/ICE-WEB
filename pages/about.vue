@@ -1,14 +1,15 @@
 <template>
   <div class="scroll-smooth">
   <div class="hero bg-gradient-to-r from-red-700 to-red-500 flex items-center justify-center h-[28.5rem] md:h-[38.5rem]">
-      <li class="list-none">
-            <h1 class="hero-title max-w-screen-2xl text-center text-[#FAFAFA] text-[72px] leading-[72px] font-[700] mx-auto my-auto">{{$t('aboutPage.title')}}</h1>
-      </li>
+    <li class="list-none">
+       <h1 class="hero-title max-w-screen-2xl text-center text-[#FAFAFA] text-[72px] leading-[72px] font-[700] mx-auto my-auto">{{$t('about.title')}}</h1>
+    </li>
+  </div>
 
-  </div>
   <div class="my-8">
-  <ContextSection />
+    <ContextSection />
   </div>
+  
   </div>
 </template>
 

@@ -2,9 +2,9 @@
   <section class="my-4">
     <div class="max-w-7xl mx-auto md:px-6 px-2 py-16">
       <div class="text-center mb-16">
-        <h2 class="text-[48px] leading-[48px] tracking-[-2.16px] font-[700] mb-[24px] text-[#09090B] dark:text-[#FAFAFA]">{{ $t('AboutValues.our_values') }}</h2>
+        <h2 class="text-[48px] leading-[48px] tracking-[-2.16px] font-[700] mb-[24px] text-[#09090B] dark:text-[#FAFAFA]">{{ $t('about.AboutValues.title') }}</h2>
         <p class="text-[18px] mx-auto leading-relaxed text-[#71717A] dark:text-[#A1A1AA]" style="max-width: 60%;">
-          {{ $t('AboutValues.values_description') }}
+          {{ $t('about.AboutValues.description') }}
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-[24px] items-center mx-4 md:mx-32 md:my-24">
@@ -15,8 +15,8 @@
             <OpenessSVG class="icon-size text-black dark:text-white" />
           </div>
           <div>
-            <h3 class="text-[24px] leading-[24px] font-bold text-[#09090B] dark:text-[#FAFAFA] mb-2">{{ $t('AboutValues.openness') }}</h3>
-            <p class="text-[#71717A] dark:text-[#A1A1AA] text-base md:w-[90%] w-full md:leading-loose leading-relaxed">{{ $t('AboutValues.openness_description') }}</p>
+            <h3 class="text-[24px] leading-[24px] font-bold text-[#09090B] dark:text-[#FAFAFA] mb-2">{{ $t('about.AboutValues.1.value') }}</h3>
+            <p class="text-[#71717A] dark:text-[#A1A1AA] text-base md:w-[90%] w-full md:leading-loose leading-relaxed">{{ $t('about.AboutValues.1.description') }}</p>
           </div>
         </div>
 
@@ -26,8 +26,8 @@
             <InnovationSVG class="icon-size text-black dark:text-white" />
           </div>
           <div>
-            <h3 class="text-[24px] leading-[24px] font-bold text-[#09090B] dark:text-[#FAFAFA] mb-2">{{ $t('AboutValues.innovation') }}</h3>
-            <p class="text-[#71717A] dark:text-[#A1A1AA] text-base md:w-[90%] w-full md:leading-loose leading-relaxed">{{ $t('AboutValues.innovation_description') }}</p>
+            <h3 class="text-[24px] leading-[24px] font-bold text-[#09090B] dark:text-[#FAFAFA] mb-2">{{ $t('about.AboutValues.2.value') }}</h3>
+            <p class="text-[#71717A] dark:text-[#A1A1AA] text-base md:w-[90%] w-full md:leading-loose leading-relaxed">{{ $t('about.AboutValues.2.description') }}</p>
           </div>
         </div>
 
@@ -37,8 +37,8 @@
             <SecuritySVG class="icon-size text-black dark:text-white" />
           </div>
           <div>
-            <h3 class="text-[24px] leading-[24px] font-bold text-[#09090B] dark:text-[#FAFAFA] mb-2">{{ $t('AboutValues.security') }}</h3>
-            <p class="text-[#71717A] dark:text-[#A1A1AA] text-base md:w-[90%] w-full md:leading-loose leading-relaxed">{{ $t('AboutValues.security_description') }}</p>
+            <h3 class="text-[24px] leading-[24px] font-bold text-[#09090B] dark:text-[#FAFAFA] mb-2">{{ $t('about.AboutValues.3.value') }}</h3>
+            <p class="text-[#71717A] dark:text-[#A1A1AA] text-base md:w-[90%] w-full md:leading-loose leading-relaxed">{{ $t('about.AboutValues.3.description') }}</p>
           </div>
         </div>
 
@@ -48,8 +48,8 @@
             <CoperationSVG class="icon-size text-black dark:text-white" />
           </div>
           <div>
-            <h3 class="text-[24px] leading-[24px] font-bold text-[#09090B] dark:text-[#FAFAFA] mb-2">{{ $t('AboutValues.coperation') }}</h3>
-            <p class="text-[#71717A] dark:text-[#A1A1AA] text-base md:w-[90%] w-full md:leading-loose leading-relaxed">{{ $t('AboutValues.coperation_description') }}</p>
+            <h3 class="text-[24px] leading-[24px] font-bold text-[#09090B] dark:text-[#FAFAFA] mb-2">{{ $t('about.AboutValues.4.value') }}</h3>
+            <p class="text-[#71717A] dark:text-[#A1A1AA] text-base md:w-[90%] w-full md:leading-loose leading-relaxed">{{ $t('about.AboutValues.4.description') }}</p>
           </div>
         </div>
 

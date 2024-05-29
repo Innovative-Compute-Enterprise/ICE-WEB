@@ -10,8 +10,8 @@
         </NuxtLink>
 
         <ul class="pt-[24px]">
-          <p class="text-[16px] font-[500] pb-[6px]">{{$t('ourPlans.services.1.include')}}</p>
-          <li class="py-3 text-[14px] font-semibold flex items-center" v-for="feature in features" :key="feature">
+          <p class="text-[14px] font-[500] pb-[6px]">{{$t('ourPlans.services.1.include')}}</p>
+          <li class="py-3 text-[16px] font-semibold flex items-center" v-for="feature in features" :key="feature">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256S119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" fill="currentColor"></path></svg>       
             {{ feature }}
           </li>

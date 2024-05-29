@@ -21,6 +21,9 @@
       "theme": "Theme" 
     },
 
+
+
+
     "heroText":{
       "title": "Amplifying AI integration, delivering innovation.",
       "announcement": "Announcing our next product.",
@@ -69,13 +72,17 @@
 
 
 
-     "services": {
-       "title": "Services"
-     },
 
-     "blackBox": {
+    
+
+     "services": {
+      "title": "Services"
+    },
+
+    "blackBox": {
       "title": "BLACK BOX",
-      "text": "At ICE, we introduce BlackBox—an easy-to-use platform that brings the power of AI to everyone. Whether you’re a business or an individual, BlackBox makes it simple to use advanced AI models. Our focus is on making accessible and impressive without the complexity. Join us in transforming lives with powerful, yet simple solutions."
+      "text": "At ICE, we introduce BlackBox—an easy-to-use platform that brings the power of AI to everyone. Whether you’re a business or an individual, BlackBox makes it simple to use advanced AI models. Our focus is on making accessible and impressive without the complexity. Join us in transforming lives with powerful, yet simple solutions.",
+      "button": "Test now"
     },
     
     "ourPlans": {
@@ -106,25 +113,45 @@
     },
 
     "features": {
-      "freeBlackBoxTier": "Free Black-Box tier",
-      "basicSupport": "Basic Support",
-      "prioritySupport": "Priority Support",
-      "crmIntegration": "CRM Integration",
-      "unlimitedStorage": "Everything from Business",
-      "247Support": "24/7 Support",
-      "dedicatedManager": "Dedicated Manager",
-      "advancedAnalytics": "Advanced Analytics"
+      "1": {
+        "freeBlackBoxTier": "Free Black-Box tier",
+        "basicSupport": "Basic Support"
+      },
+      "2": {
+        "prioritySupport": "Priority Support",
+        "crmIntegration": "CRM Integration",
+        "blackBoxTier": "Black-Box tier"
+      },
+      "3": {
+        "unlimitedStorage": "Everything from Business",
+        "247Support": "24/7 Support",
+        "dedicatedManager": "Dedicated Manager",
+        "advancedAnalytics": "Advanced Analytics"
+      }
+    },
+
+    "faqSection": {
+      "faqs": {
+        "question1": "What's the best thing about Switzerland?",
+        "answer1": "I don't know, but the flag is a big plus.",
+        "question2": "How do you make holy water?",
+        "answer2": "You boil the hell out of it.",
+        "question3": "Why do we tell actors to 'break a leg'?",
+        "answer3": "Because every play has a cast.",
+        "question4": "Why don't scientists trust atoms?",
+        "answer4": "Because they make up everything.",
+        "question5": "Why don't some couples go to the gym?",
+        "answer5": "Because some relationships don't work out.",
+        "question6": "Why did the scarecrow win an award?",
+        "answer6": "Because he was outstanding in his field."
+      }
     },
 
 
 
-    "preFooterSection":{
-      "title": "Our Process",
-      "text1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "text2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "text3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "text4": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-     },
+
+
+
 
      "footerEmail":{
       "title": "Interested to find out more?",
@@ -147,50 +174,77 @@
       "confirmationMessage": "Form has been successfully submitted!"
     },
 
-  
-    
-      
-      
-        
-          "faqSection": {
-            "faqs": {
-              "question1": "What's the best thing about Switzerland?",
-              "answer1": "I don't know, but the flag is a big plus.",
-              "question2": "How do you make holy water?",
-              "answer2": "You boil the hell out of it.",
-              "question3": "Why do we tell actors to 'break a leg'?",
-              "answer3": "Because every play has a cast.",
-              "question4": "Why don't scientists trust atoms?",
-              "answer4": "Because they make up everything.",
-              "question5": "Why don't some couples go to the gym?",
-              "answer5": "Because some relationships don't work out.",
-              "question6": "Why did the scarecrow win an award?",
-              "answer6": "Because he was outstanding in his field."
-            }
-          },
-
-          "AboutValues":
-          {
-            "our_values": "Our Values",
-            "values_description": "Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.",
-            "openness": "Openness",
-            "openness_description": "Morbiverra dui mi arcu sed. Tellus semper adipiscing suspendisse.",
-            "innovation": "Innovation",
-            "innovation_description": "Morbiverra dui mi arcu sed. Tellus semper adipiscing suspendisse.",
-            "security": "Security",
-            "security_description": "Morbiverra dui mi arcu sed. Tellus semper adipiscing suspendisse.",
-            "coperation": "Cooperation",
-            "coperation_description": "Morbiverra dui mi arcu sed. Tellus semper adipiscing suspendisse."
-          },
 
 
-      "blueSection": {
-        "quote": "Changing the way we think about AI",
-        "title": "We love creators",
+
+
+    "about":{
+      "title": "About",
+
+      "AboutValues":{
+        "title": "Our Values",
+        "description": "Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.",
+        "1":{
+         "value": "Openness",
+         "description": "Morbiverra dui mi arcu sed. Tellus semper adipiscing suspendisse."
+        },
+        "2":{
+         "value": "Innovation",
+         "description": "Morbiverra dui mi arcu sed. Tellus semper adipiscing suspendisse."
+        },
+        "3":{
+         "value": "Security",
+         "description": "Morbiverra dui mi arcu sed. Tellus semper adipiscing suspendisse."
+        },
+        "4":{
+         "value": "Cooperation",
+         "description": "Morbiverra dui mi arcu sed. Tellus semper adipiscing suspendisse."
+        }
+      },
+
+      "missionSection": {
+        "title": "Mission",
         "subtitle": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
         "paragraph1": "Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.",
-        "paragraph2": "Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim eget. Est augue maecenas risus nulla ultrices congue nunc tortor. Enim et nesciunt doloremque nesciunt voluptate."
+        "paragraph2": "Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim eget. Est augue maecenas risus nulla ultrices congue nunc tortor. Enim et nesciunt doloremque nesciunt voluptate.",
+        "mission": "We are the answer, never the question"
       },
+
+      "roadMap": {
+        "title": "Road Map",
+        "1": {
+          "title": "The Idea Was Born",
+          "description": "The initial concept of the project was conceived, laying the foundation for what is to come.",
+          "date": "1st Quarter 2021"
+        },
+        "2":{
+          "title": "Development Started",
+          "description": "The development phase began with initial designs and early-stage coding.",
+          "date": "3rd Quarter 2021" 
+        },
+        "3":{
+          "title": "Product Development Started",
+          "description": "The main product development commenced, focusing on core functionalities and features.",
+          "date": "3rd Quarter 2022"
+        },
+        "4":{
+          "title": "ICE Official Launch",
+          "description": "The company was officially launched, making it available to the public and potential clients.",
+          "date": "1st Quarter 2023"
+        },
+        "5":{
+          "title": "Black Box Launch",
+          "description": "The product was officially launched, making it available to the public.",
+          "date": "3st Quarter 2024"
+        }
+      }
+
+    },
+          
+
+  
+
+
   
 
     "policies": {

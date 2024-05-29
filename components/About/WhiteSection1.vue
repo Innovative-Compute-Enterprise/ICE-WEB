@@ -1,15 +1,13 @@
 <template>
-  <div class="flex justify-center p-8 my-[148px]">
-    
-    <ol class="relative w-full max-w-4xl border dark:bg-[#09090B] bg-[#FAFAFA] border-[#000]/[0.1] dark:border-[#fff]/[0.1] rounded-[40px] shadow-sm focus-visible:ring-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">                  
+  <div class="flex flex-col items-center p-8 my-[148px] mt-[164px]">
+    <h1 class="text-[48px] leading-[48px] font-bold mb-10 md:mb-12 text-center text-[#09090B] dark:text-[#FAFAFA] z-10">{{ $t('about.roadMap.title') }}</h1>
+
+    <ol class="relative w-full max-w-4xl border dark:bg-[#09090B] bg-[#FAFAFA] border-[#000]/[0.1] dark:border-[#fff]/[0.1] rounded-[40px] shadow-sm">
       <div class="md:p-8 p-4">
-        <li v-for="(event, index) in events" :key="index" class="md:ml-8 ml-0 relative my-[64px] pl-4 ">
-
-          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{{ event.date }}</time>
-
+        <li v-for="(event, index) in events" :key="index" class="md:ml-8 ml-0 relative my-[86px] pl-4">
+          <time class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-600">{{ event.date }}</time>
           <h3 class="text-[21px] leading-[21px] font-semibold text-[#09090B] dark:text-[#FAFAFA]">{{ event.title }}</h3>
           <p class="mb-4 text-[16px] font-normal text-[#71717A] dark:text-[#A1A1AA] md:leading-loose leading-relaxed">{{ event.description }}</p>
-
         </li>
       </div>
     </ol>
@@ -22,25 +20,30 @@ export default {
     return {
       events: [
         {
-          date: 'February 2022',
-          title: 'Application UI code in Tailwind CSS',
-          description: 'Get access to over 20+ pages including a dashboard layout, interactive components, and more.',
+          date: this.$t('about.roadMap.1.date'),
+          title: this.$t('about.roadMap.1.title'),
+          description: this.$t('about.roadMap.1.description'),
         },
         {
-          date: 'March 2022',
-          title: 'New Component Library Released',
-          description: 'We introduced a comprehensive component library to accelerate your development process.',
+          date: this.$t('about.roadMap.2.date'),
+          title: this.$t('about.roadMap.2.title'),
+          description: this.$t('about.roadMap.2.description'),
         },
         {
-          date: 'April 2022',
-          title: 'Feature Enhancement in Our API',
-          description: 'Our API now supports advanced queries, offering you greater flexibility and efficiency.',
+          date: this.$t('about.roadMap.3.date'),
+          title: this.$t('about.roadMap.3.title'),
+          description: this.$t('about.roadMap.3.description'),
         },
         {
-          date: 'May 2022',
-          title: 'Mobile App Launch',
-          description: 'Exciting news! Our mobile app is now available on both Android and iOS platforms.',
+          date: this.$t('about.roadMap.4.date'),
+          title: this.$t('about.roadMap.4.title'),
+          description: this.$t('about.roadMap.4.description'),
         },
+        {
+          date: this.$t('about.roadMap.5.date'),
+          title: this.$t('about.roadMap.5.title'),
+          description: this.$t('about.roadMap.5.description'),
+        }
       ]
     };
   }
@@ -48,14 +51,18 @@ export default {
 </script>
 
 <style scoped>
-h3{
-  font-family: "Mona Sans", sans-serif;
+h1 {
+  font-family: "Mona Sans";
   font-stretch: 100%;
 }
-p{
+h3 {
+  font-family: "Mona Sans"; 
+  font-stretch: 100%;
+}
+p {
   font-family: "Open Sans", sans-serif;
 }
-a{
+a {
   font-family: "Montserrat", sans-serif;
 }
 time {
@@ -69,5 +76,4 @@ time {
   display: inline-block; /* Align with text */
   margin-bottom: 8px; /* More space below the date */
 }
-
 </style>
