@@ -94,8 +94,8 @@ import { gsap } from 'gsap';
       { id: 2, label: this.$t('mobileHeader.services'), to: '/services', iconComponent: 'ServicesIconM' },        
       { id: 3, label: this.$t('mobileHeader.about'), to: '/about', iconComponent: 'AboutIconM' },
       { id: 4, label: this.$t('mobileHeader.polices'), to: '/polices', iconComponent: 'PolicesIconM' },
-      { id: 5, label: this.$t('mobileHeader.contact'), iconComponent: 'ContactIcon' },
-      { id: 7, label: this.$t('mobileHeader.account'), iconComponent: 'AccountIcon' },
+      { id: 5, label: this.$t('mobileHeader.contact'),to:'https://github.com/Innovative-Compute-Enterprise', iconComponent: 'ContactIcon' },
+      { id: 7, label: this.$t('mobileHeader.account'),to:'https://black-box-azure.vercel.app/0auth/welcome', iconComponent: 'AccountIcon' },
         ],
       };
     },

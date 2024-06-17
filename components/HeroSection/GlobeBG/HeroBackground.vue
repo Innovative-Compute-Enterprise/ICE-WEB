@@ -87,7 +87,7 @@ const handleTouchMove = (e) => {
 
 <template>
   <div class="m-auto absolute md:top-[35%] top-[45%] w-[110%] md:w-[100%] max-w-[700px] 2xl:max-w-[960px] aspect-square">
-    <div class="absolute inset-0 flex items-center justify-center text-white text-5xl cursor-none">
+    <div class="absolute inset-0 flex items-center justify-center text-white text-5xl">
       <h1>ICE</h1>
     </div>    
     <canvas ref="canvasEl" class="w-full h-full cursor-grab rounded-full" 

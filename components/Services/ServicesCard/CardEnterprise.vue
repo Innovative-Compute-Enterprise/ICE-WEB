@@ -7,7 +7,7 @@
       <span class="text-[16px] font-medium pl-[2px]"></span>
       </div>
 
-      <NuxtLink  :to="link" class="block  cursor-pointer dark:text-black text-white shrink-0 dark:border-[#E4E4E7]/[100%] border-[#27272a]/[100%] border dark:bg-white dark:hover:bg-[#e2e2e2] bg-black hover:bg-[#424246] rounded-lg font-bold text-center py-3 px-5 transition-colors duration-300">
+      <NuxtLink target="_blank" :to="link" class="block cursor-pointer dark:text-black text-white shrink-0 dark:border-[#E4E4E7]/[100%] border-[#27272a]/[100%] border dark:bg-white dark:hover:bg-[#e2e2e2] bg-black hover:bg-[#424246] rounded-lg font-bold text-center py-3 px-5 transition-colors duration-300">
         {{$t('ourPlans.services.button3')}}
       </NuxtLink>
 
@@ -27,6 +27,11 @@ export default {
   name: "BasicCard",
   props: {
     features: Array,
+  },
+  data() {
+    return {
+      link: 'https://github.com/Innovative-Compute-Enterprise', 
+    };
   },
   computed: {
     currentPrice() {

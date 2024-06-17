@@ -1,9 +1,9 @@
 <template>
-  <div class="black-section flex flex-col items-center justify-center h-screen py-[60px]">
+  <div class="black-section flex flex-col items-center justify-center h-[110vh] py-[60px]">
     <div class="flex flex-col items-center mt-[64px]">      
-      <h1 class="text-[#FAFAFA] mb-[48px] md:text-[48px] md:leading-[48px] text-[40px] leading-[40px]">{{$t('blackBox.title')}}</h1>
+      <h1 class="text-[#FAFAFA] mb-[48px] md:text-[48px] md:leading-[48px] text-[36px] leading-[40px]">{{$t('blackBox.title')}}</h1>
       <img src="/images/bb.jpg" alt="Your Logo" class=" w-[150px] h-[150px] rounded-full mb-[48px]" /> 
-      <p class="text-[#FAFAFA] text-[18px] text-center w-[60%] md:w-[45%] mb-[48px]">
+      <p class="text-[#FAFAFA] text-[14px]  md:text-[18px] text-center w-[80%] md:w-[45%] mb-[48px]">
         {{$t('blackBox.text')}}
       </p>
     </div>
